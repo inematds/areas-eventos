@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas do INEMA Eventos — o que é cada área">
+<meta name="description" content="Curso rápido: o que é cada uma das nove áreas de assunto do eventos.inema.pro — Gestão de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV e WebMCP."><title>Codex + Claude: um faz, o outro confere | Áreas do INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/curso/trilha2/modulo-2-2.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2", "tracks": [{"n": "1", "title": "Gerenciar e comandar agentes", "modules": [{"id": "1-1", "title": "Gestão de IA: 2027, o ano de gerenciar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: seu trabalho vira comandar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: agente não se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Ferramentas e ambiente", "modules": [{"id": "2-1", "title": "Claude → Codex: separe o cérebro do modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: um faz, o outro confere", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qual edição é pra você", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Melhorar, decidir e abrir", "modules": [{"id": "3-1", "title": "RSI: a IA que ajuda a melhorar a IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisões de IA na prática", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: seu site conversando com agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Gerenciar e comandar agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Ferramentas e ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Melhorar, decidir e abrir</span>
+</a>
+<a href="https://eventos.inema.pro/">eventos.inema.pro ↗</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Ferramentas e ambiente</a> / Módulo 2.2</div>
+<article id="modulo-2-2" data-inema-module="2-2" data-inema-track="2">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 2.2 / 5 DE 9
+</p>
+<h1>Codex + Claude: um faz, o outro confere</h1>
+<p>
+Explicar como usar Claude e Codex no mesmo projeto, com os seis níveis do kit Use Both, o cartão de
+rotas e a diferença entre claudex e Use Both.
+</p>
+<p class="area-note">Página da área: <a href="https://eventos.inema.pro/codex-claude/">eventos.inema.pro/codex-claude/</a> · no menu: “usar os dois juntos”</p>
+<div class="meter" data-inema-meter="modulo:2-2" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Um planeja, o outro critica → Os seis níveis do Use Both → Quem faz o quê: o cartão de rotas → Um caminho só: claudex × Use Both → Imagem com o Codex, peça a peça → Primeiro passo e todos os projetos"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / CODEX-CLAUDE</text><text x="36" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">Um planeja, o outro critica</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / CODEX-CLAUDE</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Os seis níveis do Use Both</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / CODEX-CLAUDE</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Quem faz o quê: o cartão de rotas</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / CODEX-CLAUDE</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Um caminho só: claudex × Use Both</text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / CODEX-CLAUDE</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Imagem com o Codex, peça a peça</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / CODEX-CLAUDE</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Primeiro passo e todos os projetos</text></svg>
+<figcaption class="help-note">Os 6 tópicos deste módulo. No fim, você preenche a ficha da área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~20 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>ficha da área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt pronto</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-2-2#topico-1">
+<h2>
+<span class="number">1</span>Um planeja, o outro critica</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-2-t1-p1">
+A área Codex + Claude tem como tese: &quot;Um planeja, o outro critica. Use os dois juntos.&quot; A
+ideia é que Claude e Codex se completam quando cada um faz uma parte e o outro confere o artefato
+real, isto é, o arquivo, o diff ou a imagem de verdade. A regra que atravessa tudo: o segundo
+assistente recebe o mesmo briefing e o artefato real, nunca um resumo vago do que o primeiro fez. A
+página é o ponto de encontro do INEMA sobre as duas ferramentas e reúne os seis níveis do kit Use
+Both, a tabela de quem faz o quê e os cards de todos os cursos e projetos. Para migrar de um para o
+outro, o caminho continua sendo a área irmã Claude → Codex.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-2-t1-p2">
+É para quem já tem Claude Code e Codex e não quer escolher um só. Um segundo olhar, de outro modelo,
+pega falhas que o autor tende a deixar passar.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-2-t1-p3">
+um faz, o outro confere; artefato real; mesmo briefing; não é Claude ou Codex; área irmã Claude →
+Codex
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-2-t1-ex">
+Uma desenvolvedora escreve o plano de uma feature com um assistente e entrega o mesmo arquivo ao
+outro, só para leitura. A crítica aponta um teste faltando antes de qualquer linha de código ser
+escrita.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Pegue um plano ou documento seu recente e anote quem poderia revisá-lo com o mesmo briefing, sem
+resumo.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Julgar a área pelo nome: leia a tese na página antes de decidir se ela é para você.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-2-2#topico-2">
+<h2>
+<span class="number">2</span>Os seis níveis do Use Both</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-2-t2-p1">
+O kit Use Both organiza o uso conjunto em seis níveis de fluxo de trabalho, com prompts prontos e
+duas skills pequenas. Nível 1 é deixar as duas discutirem: uma escreve o plano, a outra critica o
+mesmo arquivo, só lendo, em no máximo duas rodadas. Nível 2, opcional, é gerar imagens, só se houver
+ferramenta de imagem na sessão e depois de conferir acesso e cobrança. Nível 3 é dividir construir e
+revisar: uma constrói num branch, a outra revisa o diff com o briefing e o resultado dos testes.
+Nível 4 é o uso supervisionado do computador, com senha, pagamento e envios importantes sob o seu
+controle; nível 5 é uma meta com condição de parada, com sucesso observável e limites de arquivos,
+rodadas e gasto. Nível 6 é handoff e prime: o handoff grava o estado num arquivo portátil e o prime
+faz o próximo assistente ler e verificar esse estado antes de continuar.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-2-t2-p2">
+Os níveis dão uma escada: dá para começar pela discussão de um plano e subir só quando precisar.
+Cada nível já traz o limite que evita gasto ou ação sem controle.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-2-t2-p3">
+discutir; gerar imagens; construir e revisar; uso supervisionado do computador; meta com condição de
+parada; handoff e prime
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-2-t2-ex">
+Um time usa o nível 3: um assistente implementa a correção num branch e o outro revisa o diff junto
+com a saída dos testes. O que entra no projeto é decidido pelos testes e pela aprovação humana.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Descubra em qual dos seis níveis você já trabalha hoje e qual seria o próximo.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="Discutir · Imagens · Construir · Computador · Meta c/ parada · Handoff/prime"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Discutir</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Imagens</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Construir</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Computador</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Meta c/ parada</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Handoff/prime</text></svg>
+<figcaption class="help-note">Os seis níveis do Use Both, do debate de um plano até a troca de sessão; cada um traz o seu próprio limite.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-2-2#topico-3">
+<h2>
+<span class="number">3</span>Quem faz o quê: o cartão de rotas</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-2-t3-p1">
+O cartão de rotas é uma tabela do kit que diz, para cada tarefa, quem faz a primeira passada, quem
+faz a segunda e qual é a linha de chegada. Planejar o trabalho: Claude / Opus planeja, o Codex
+critica as premissas, e o resultado é um plano com escopo e testes de aceite. Construir uma feature:
+Claude / Opus constrói, o Codex revisa o diff, e o pronto é testes passando e achados resolvidos.
+Atacar um bug difícil: Codex com uma meta delimitada, testes e um checkpoint humano. Trocar de
+sessão ou de modelo: snapshot de handoff, e o prime confere o estado atual. A página avisa que são
+&quot;escolhas editoriais, não ranking medido de modelos&quot;: experimente e fique com a rota que
+produzir melhor evidência.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-2-t3-p2">
+Ter uma rota inicial evita discutir do zero a cada tarefa. Saber que ela não é benchmark evita
+tratá-la como verdade fixa.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-2-t3-p3">
+primeira passada; segunda passada; linha de chegada; escolhas editoriais, não ranking; modelos e
+cobrança mudam conforme a conta
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-2-t3-ex">
+Uma analista precisa revisar um documento de requisitos. Pela rota, qualquer um dos dois escreve e o
+outro confere fatos e requisitos; o pronto é toda afirmação exigida ter evidência.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Abra a página da área ao lado desta aula.</li>
+<li>Escolha uma tarefa da sua semana e preencha as três colunas do cartão: primeira passada, segunda passada e linha de chegada.</li>
+<li>Anote em uma frase o que mudou no seu entendimento.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Planejar · Construir · Bug difícil · Trocar sessão"><rect x="12.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Planejar</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">Claude; Codex critica</text><rect x="133.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="145.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Construir</text><text x="145.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">Claude; Codex revisa</text><rect x="255.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="267.0" y="40" fill="#f1f5f9" font-size="11" font-family="sans-serif">Bug difícil</text><text x="267.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">Codex com meta</text><rect x="376.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="388.5" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Trocar sessão</text><text x="388.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">handoff e prime</text></svg>
+<figcaption class="help-note">Quatro linhas do cartão de rotas: quem começa e quem confere. São escolhas editoriais, não ranking medido.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-2-2#topico-4">
+<h2>
+<span class="number">4</span>Um caminho só: claudex × Use Both</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-2-t4-p1">
+A página organiza cursos e projetos num caminho: entender, migrar ou ficar agnóstico, usar os dois
+juntos e automatizar o debate. O elo comum são os arquivos Markdown do projeto, como AGENTS.md,
+tasks e handoffs, que qualquer runtime lê. Nesse caminho aparecem duas ferramentas diferentes. O
+claudex é um plugin do Claude Code, ou seja, software: o Claude escreve o PLAN.md e o Codex critica
+de 3 ângulos, em loop até LGTM ou N rodadas. O Use Both é um kit de método, com guia, prompts,
+templates e 2 skills, cobrindo os seis fluxos, de forma manual ou semiautomática. A página resume:
+são complementares; plano grande, claudex; o resto, como revisar diff, meta com condição de parada e
+trocar de sessão, Use Both.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-2-t4-p2">
+Saber em que camada cada ferramenta atua evita instalar software para um problema de método, ou o
+contrário.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-2-t4-p3">
+Entender → Migrar → Usar os dois → Automatizar o debate; claudex = software; Use Both = método;
+LGTM; complementares
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-2-t4-ex">
+Um líder técnico tem um plano de arquitetura grande e usa o claudex para o debate automático. No dia
+a dia, para revisar diffs e trocar de sessão, o time segue os níveis do Use Both.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Compare na tabela claudex × Use Both a linha &quot;Limite&quot; e anote quantas rodadas cada um
+recomenda.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Pular para a ferramenta ou o curso sem entender o problema que a área resolve.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Entender · Migrar · Usar os dois · Automatizar debate"><rect x="12.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Entender</text><path d="M240.0 38.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Migrar</text><path d="M379.0 66v10H123.0v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M118.0 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Usar os dois</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Automatizar debate</text></svg>
+<figcaption class="help-note">Cursos e kits cobrem etapas de um mesmo caminho, ligadas pelos arquivos Markdown do projeto.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-2-2#topico-5">
+<h2>
+<span class="number">5</span>Imagem com o Codex, peça a peça</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-2-t5-p1">
+A página traz um caso real: quem tem assinatura do Codex e usa o gerador de imagem dele, o
+image_gen, que no INEMA é chamado de &quot;imagem 2.5&quot;. Hoje, no INEMA, o Claude Code chama
+codex exec em modo não interativo e pede ao image_gen um PNG numa pasta; se o Codex falhar ou não
+houver crédito, cai para o modelo local FLUX.2 klein. Cada geração consome crédito da assinatura,
+por isso roda só quando autorizada, e a imagem é conferida depois, porque o texto das bordas pode
+vir inventado. O kit propõe o nível 2 peça a peça: confirmar antes a ferramenta e a cobrança, nunca
+trocar sozinho para uma API paga, salvar o arquivo real no projeto e abrir no tamanho de uso. A
+diferença, nas palavras da página: o do INEMA é em lote e automático, com fallback local; o do kit é
+manual, com mais checagem de custo e de revisão.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-2-t5-p2">
+Imagem gerada tem custo e erros visíveis. As duas abordagens mostram como equilibrar automação com
+conferência antes de usar o arquivo.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-2-t5-p3">
+image_gen; codex exec; fallback FLUX.2 klein; checar antes, inspecionar depois; versões irmãs em vez
+de sobrescrever
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-2-t5-ex">
+Um designer gera a capa de um material com o Codex. Antes de publicar, abre o arquivo no tamanho
+real, encontra uma palavra inventada na borda e salva a correção como versão irmã, sem apagar o
+original.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Antes da próxima imagem que você gerar, anote qual ferramenta vai usar e como ela cobra.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Checar ferramenta · Gerar rascunho · Salvar arquivo · Inspecionar · Versões irmãs"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Checar ferramenta</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Gerar rascunho</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Salvar arquivo</text><path d="M421.66666666666663 66v10H165.66666666666669v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M160.66666666666669 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="97.33333333333334" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="109.33333333333334" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Inspecionar</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Versões irmãs</text></svg>
+<figcaption class="help-note">O nível 2 do kit, peça a peça: conferir custo antes e o arquivo real depois, sem sobrescrever o original.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-2-2#topico-6">
+<h2>
+<span class="number">6</span>Primeiro passo e todos os projetos</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-2-t6-p1">
+A página resume o começo assim: &quot;O melhor primeiro passo: um plano seu, revisado pelo
+outro.&quot; Escolha uma tarefa pequena, escreva o briefing e o critério de aceite, peça o plano a
+um e a crítica ao outro, sobre o mesmo arquivo, no máximo duas rodadas, e faça handoff antes de
+fechar a sessão. A área reúne seis cursos: Claude → Codex (PT, EN e ES), Codex Básico, Master Codex,
+iClaudeX, MakeClaudeX e DeepClaudeX. Também reúne kits e referências: agente-claude-codex, Use Both,
+claudex no GitHub, Codex Cheat Sheet e o Mapa do tema no INEMA.CLUB. A página cita um vídeo externo
+de Mark Kashef, que o kit Use Both acompanha, como fonte de opiniões do autor, sem benchmark; o
+resumo dele fica no RESUMO-VIDEO.md do repositório do kit.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-2-t6-p2">
+Um primeiro ciclo curto mostra na prática o valor do segundo olhar. Os cursos e kits deixam claro
+onde aprofundar cada etapa.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-2-t6-p3">
+um plano seu, revisado pelo outro; no máximo duas rodadas; Codex Básico; Master Codex; iClaudeX;
+MakeClaudeX; DeepClaudeX; Use Both; claudex; Codex Cheat Sheet
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-2-t6-ex">
+Uma coordenadora pede ao Claude o plano de uma rotina de relatórios e ao Codex a crítica, só lendo.
+Na segunda rodada o plano fecha, e ela grava o handoff para retomar no dia seguinte.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Abra o guia do Use Both e leia o nível 1 antes de rodar o seu primeiro plano revisado.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Um planeja, o outro critica</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Os seis níveis do Use Both</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Quem faz o quê: o cartão de rotas</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Um caminho só: claudex × Use Both</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Imagem com o Codex, peça a peça</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Primeiro passo e todos os projetos</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua ficha</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a ficha foi feita.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tese</td>
+<td>A área cabe em uma frase sua, fiel à página.</td>
+<td>Releia o topo da página e o tópico 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Você sabe dizer para quem a área é e para quem não é.</td>
+<td>Volte ao tópico 2 e escreva um exemplo do seu trabalho.</td>
+</tr>
+<tr>
+<td>Blocos</td>
+<td>Você nomeia as partes centrais da área.</td>
+<td>Use o diagrama do módulo como roteiro.</td>
+</tr>
+<tr>
+<td>Primeiro passo</td>
+<td>Você escolheu um passo concreto e pequeno.</td>
+<td>Copie o primeiro passo que a própria página recomenda.</td>
+</tr>
+<tr>
+<td>Porta de entrada</td>
+<td>Você sabe qual curso, kit ou projeto abrir primeiro.</td>
+<td>Consulte o tópico 6 e a faixa de acesso da página.</td>
+</tr>
+<tr>
+<td>Fonte</td>
+<td>Cada afirmação da ficha tem origem na página.</td>
+<td>Troque o que você supôs pelo que a página diz.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~10 MIN
+</p>
+<h2>Seu plano revisado pelo outro</h2>
+<p>Deixe a página da área aberta: <a href="https://eventos.inema.pro/codex-claude/">https://eventos.inema.pro/codex-claude/</a>. Use um exemplo do seu trabalho, sem dados pessoais ou de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="2-2-1">
+<span>Escolha uma tarefa pequena e escreva num arquivo plan-v1.md o briefing, o plano e o critério de aceite.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-2-2">
+<span>Rode o comando do bloco copiável (ou o caminho inverso com claude -p) e confirme que o arquivo review.md foi criado e que plan-v1.md não mudou.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-2-3">
+<span>Leia a revisão e marque cada achado como resolvido, rejeitado com motivo ou pendente; não passe de duas rodadas.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-2-4">
+<span>Grave um handoff curto com o estado do plano, as decisões e a próxima ação, para a próxima sessão ler antes de agir.</span>
+</label>
+</li>
+</ol>
+<h3>Comando: Codex revisa seu plano, só lendo</h3>
+<p>
+Cole no Claude, no ChatGPT ou no Codex. Troque o que estiver entre &lt; e &gt; pela sua situação.
+</p>
+<pre><code>codex exec --sandbox read-only -c model_reasoning_effort=medium \
+  --output-last-message review.md \
+  &#x27;Leia plan-v1.md. Aponte falhas de correção e testes faltando, com evidência, impacto e a menor correção. Não altere arquivos.&#x27;
+
+# Caminho inverso (Codex escreveu, Claude revisa):
+claude -p --model opus --effort medium \
+  &#x27;Leia plan-v1.md e revise só lendo: falhas, suposições e testes faltando. Não altere arquivos.&#x27; &gt; review-claude.md</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Explicar como usar Claude e Codex no mesmo projeto, com os seis níveis do kit Use Both, o cartão de
+rotas e a diferença entre claudex e Use Both. Guarde a ficha com a tese, o público, o primeiro passo
+e a porta de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/codex-claude/">Abrir a página da área ↗</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+Claude escreveu o plano e o próprio Claude, na mesma sessão, aprovou. Por que isso não basta?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+Porque o modelo que escreveu tende a aprovar o próprio plano, e duas IAs concordando não é prova
+independente. Quem decide são os testes e a sua aprovação.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>um faz, o outro confere; artefato real; mesmo briefing; não é Claude ou Codex; área irmã Claude → Codex</li>
+<li>discutir; gerar imagens; construir e revisar; uso supervisionado do computador; meta com condição de parada; handoff e prime</li>
+<li>primeira passada; segunda passada; linha de chegada; escolhas editoriais, não ranking; modelos e cobrança mudam conforme a conta</li>
+<li>Entender → Migrar → Usar os dois → Automatizar o debate; claudex = software; Use Both = método; LGTM; complementares</li>
+<li>image_gen; codex exec; fallback FLUX.2 klein; checar antes, inspecionar depois; versões irmãs em vez de sobrescrever</li>
+<li>um plano seu, revisado pelo outro; no máximo duas rodadas; Codex Básico; Master Codex; iClaudeX; MakeClaudeX; DeepClaudeX; Use Both; claudex; Codex Cheat Sheet</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Páginas lidas em 28/09/2026. O conteúdo das áreas muda; a página oficial vale mais que este resumo.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/codex-claude/" target="_blank" rel="noopener">Área Codex + Claude</a>
+</li>
+<li>
+<a href="https://inematds.github.io/use-both-claude-codex/guia/" target="_blank" rel="noopener">Guia do Use Both</a>
+</li>
+<li>
+<a href="https://github.com/inematds/claudex" target="_blank" rel="noopener">claudex no GitHub</a>
+</li>
+<li>
+<a href="https://inematds.github.io/curso-claude-codex/" target="_blank" rel="noopener">Curso Claude → Codex</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha2/modulo-2-1.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha2/modulo-2-3.html">Próxima área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas do INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edição v2 · v1.0.0<br>Conteúdo tirado das páginas de eventos.inema.pro, lidas em 28/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

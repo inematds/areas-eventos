@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas do INEMA Eventos — o que é cada área">
+<meta name="description" content="Curso rápido: o que é cada uma das nove áreas de assunto do eventos.inema.pro — Gestão de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV e WebMCP."><title>AGI-ready: seu trabalho vira comandar agentes | Áreas do INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/curso/trilha1/modulo-1-2.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2", "tracks": [{"n": "1", "title": "Gerenciar e comandar agentes", "modules": [{"id": "1-1", "title": "Gestão de IA: 2027, o ano de gerenciar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: seu trabalho vira comandar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: agente não se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Ferramentas e ambiente", "modules": [{"id": "2-1", "title": "Claude → Codex: separe o cérebro do modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: um faz, o outro confere", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qual edição é pra você", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Melhorar, decidir e abrir", "modules": [{"id": "3-1", "title": "RSI: a IA que ajuda a melhorar a IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisões de IA na prática", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: seu site conversando com agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" aria-current="page">T1<span class="long"> · Gerenciar e comandar agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Ferramentas e ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Melhorar, decidir e abrir</span>
+</a>
+<a href="https://eventos.inema.pro/">eventos.inema.pro ↗</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Gerenciar e comandar agentes</a> / Módulo 1.2</div>
+<article id="modulo-1-2" data-inema-module="1-2" data-inema-track="1">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 1.2 / 2 DE 9
+</p>
+<h1>AGI-ready: seu trabalho vira comandar agentes</h1>
+<p>
+Explicar a diferença entre dar ordens passo a passo e delegar a um agente, usando a escada intenção,
+objetivo, prompt, skill, contexto, ferramentas, memória, permissões e evals.
+</p>
+<p class="area-note">Página da área: <a href="https://eventos.inema.pro/agi-ready/">eventos.inema.pro/agi-ready/</a> · no menu: “comandar agentes”</p>
+<div class="meter" data-inema-meter="modulo:1-2" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="A IA parou de esperar ordens → Tarefa vira responsabilidade → O fim do prompt como programa inteiro → A escada de um agente que trabalha → Seis movimentos para esta semana → Cursos, projetos e três portas"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / AGI-READY</text><text x="36" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">A IA parou de esperar ordens</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / AGI-READY</text><text x="271" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">Tarefa vira responsabilidade</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / AGI-READY</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">O fim do prompt como programa inteiro</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / AGI-READY</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">A escada de um agente que trabalha</text><path d="M355 180v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / AGI-READY</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Seis movimentos para esta semana</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / AGI-READY</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Cursos, projetos e três portas</text></svg>
+<figcaption class="help-note">Os 6 tópicos deste módulo. No fim, você preenche a ficha da área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~20 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>ficha da área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt pronto</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-1-2#topico-1">
+<h2>
+<span class="number">1</span>A IA parou de esperar ordens</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-2-t1-p1">
+A área AGI-ready abre com a frase: &quot;A IA parou de esperar ordens. Seu trabalho vira comandar
+agentes.&quot; A página lembra que, durante três anos, tentamos colocar a operação inteira dentro de
+um prompt gigante. Com agentes que trabalham por horas ou dias, o jogo muda: você diz o destino e o
+agente descobre o caminho. Um agente, aqui, é uma IA que recebe uma responsabilidade, planeja,
+executa, monitora e volta com o resultado. A área reúne o que está mudando, o modelo mental para
+acompanhar e os cursos e projetos do INEMA para começar hoje, sem programar.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-2-t1-p2">
+Quem continua operando a IA só por comandos curtos compete com o próprio agente. Quem aprende a
+delegar multiplica a própria capacidade, e isso se treina.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-2-t1-p3">
+Destino, não caminho; trabalhar por horas ou dias; delegar; comandar agentes sem programar.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-2-t1-ex">
+Um analista pedia à IA, todo mês, cinco comandos separados para montar o relatório de vendas. Passou
+a entregar a responsabilidade inteira, com objetivo e critério de pronto, e a revisar só o
+resultado.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Escreva numa frase qual é o destino do trabalho que você mais repete, sem descrever nenhum passo.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Julgar a área pelo nome: leia a tese na página antes de decidir se ela é para você.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-1-2#topico-2">
+<h2>
+<span class="number">2</span>Tarefa vira responsabilidade</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-2-t2-p1">
+A página descreve seis mudanças: as três primeiras vêm de quem está dentro dos laboratórios, e as
+três seguintes são o que isso significa na sua mesa. Na mesa, a primeira é que tarefa vira
+responsabilidade: você deixa de pedir &quot;faça esta planilha&quot; e passa a entregar &quot;cuide
+da conciliação deste mês&quot;. A segunda é que confiança vira uma curva, não um interruptor: o que
+o agente decide sozinho, o que propõe e você aprova, o que nunca toca, cada linha com um dono. A
+terceira é que seu valor sobe para o que a IA não decide: definir o objetivo, escolher o que
+importa, dizer o que não pode acontecer e julgar se o resultado ficou bom. A página também cita,
+como fonte externa, um vídeo em inglês sobre o artigo &quot;Alien Minds&quot;, de Jakub Pachocki,
+cientista-chefe da OpenAI, que admite que a capacidade cresce mais rápido que o controle.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-2-t2-p2">
+Sem essa troca de unidade, você continua escrevendo receitas para uma ferramenta que já consegue
+cuidar do resultado. E sem a curva de confiança, ou você trava tudo ou solta demais.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-2-t2-p3">
+Tarefa × responsabilidade; confiança como curva; matriz de confiança; papel de gerente de agentes.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-2-t2-ex">
+Uma coordenadora financeira entrega ao agente &quot;cuide da conciliação deste mês&quot;. Ele
+classifica sozinho, propõe os ajustes para ela aprovar e nunca toca em pagamentos, cada linha com um
+responsável nomeado.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Reescreva um pedido seu no formato &quot;cuide de...&quot; e liste o que o agente decide sozinho, o
+que propõe e o que nunca toca.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-1-2#topico-3">
+<h2>
+<span class="number">3</span>O fim do prompt como programa inteiro</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-2-t3-p1">
+A página avisa que falar em &quot;fim do prompt&quot; é uma simplificação exagerada: o prompt não
+desaparece. O que acaba é o prompt como programa inteiro, com toda a inteligência da operação
+escrita em linguagem natural, como se fazia entre 2023 e 2025. Micro-prompting é ensinar cada passo:
+faça A, depois B, depois C; se um passo falta, o resultado sai errado. Agora o prompt diz o
+objetivo, o que importa, as restrições, os recursos e o que conta como resultado bom. E ele trabalha
+junto com o Skill, que é conhecimento ou procedimento reutilizável: instruções, arquivos de
+referência, templates, scripts e orientações de uso de ferramentas.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-2-t3-p2">
+Separar prompt de Skill evita reescrever os mesmos nove passos toda vez. O prompt fica curto, e a
+qualidade vem do manual operacional que o agente já carrega.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-2-t3-p3">
+Prompt = o que quero agora (o briefing); Skill = como nossa organização costuma fazer; Prompt →
+Context → Skill → Agent Engineering → Orchestration.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-2-t3-ex">
+Você diz &quot;transforme esta pesquisa em uma apresentação para empresários brasileiros&quot;. O
+Skill de apresentações traz a estrutura de narrativa, o padrão de slides, as regras de texto e o
+processo de revisão. O agente recebe prompt mais Skill e executa muito melhor.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Abra a página da área ao lado desta aula.</li>
+<li>Pegue seu prompt mais longo e separe em duas colunas: o que muda a cada pedido (prompt) e o que é sempre igual (candidato a Skill).</li>
+<li>Anote em uma frase o que mudou no seu entendimento.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 88" role="img" aria-label="Prompt · Contexto · Skill · Agente · Orquestração"><path d="M30 40h430" stroke="#475569" stroke-width="2"/><circle cx="30.0" cy="40" r="9" fill="#152234" stroke="#34d399" stroke-width="3"/><text x="30.0" y="72" text-anchor="start" fill="#f1f5f9" font-size="12" font-family="sans-serif">Prompt</text><text x="30.0" y="22" text-anchor="start" fill="#94a3b8" font-size="11" font-family="monospace">Era 1</text><circle cx="137.5" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="137.5" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Contexto</text><text x="137.5" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">Era 2</text><circle cx="245.0" cy="40" r="9" fill="#152234" stroke="#34d399" stroke-width="3"/><text x="245.0" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Skill</text><text x="245.0" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">Era 3</text><circle cx="352.5" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="352.5" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Agente</text><text x="352.5" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">Era 4</text><circle cx="460.0" cy="40" r="9" fill="#152234" stroke="#34d399" stroke-width="3"/><text x="460.0" y="72" text-anchor="end" fill="#f1f5f9" font-size="12" font-family="sans-serif">Orquestração</text><text x="460.0" y="22" text-anchor="end" fill="#94a3b8" font-size="11" font-family="monospace">Era 5</text></svg>
+<figcaption class="help-note">Prompt Engineering não desaparece, evolui: a página situa o momento atual na era do Skill Engineering.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-1-2#topico-4">
+<h2>
+<span class="number">4</span>A escada de um agente que trabalha</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-2-t4-p1">
+A página monta a arquitetura em níveis, com um mesmo exemplo: aumentar a conversão de um curso.
+Intenção responde &quot;por quê?&quot;; objetivo, &quot;o quê?&quot;; prompt é a orientação desta
+execução; Skill é como fazer bem, repetidamente. Depois vêm contexto (o que ele precisa saber),
+ferramentas (as mãos do agente, como navegador, CRM, planilhas, APIs e MCP), memória (a experiência
+acumulada) e, por fim, permissões e evals. Evals são testes que dizem se o resultado atende ao
+critério de sucesso; junto com limites, aprovação humana e logs, formam o controle de qualidade.
+Como resume a página, não queremos só um agente poderoso: queremos um agente controlável.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-2-t4-p2">
+Quando um agente falha, a escada mostra em qual degrau está o problema: faltou contexto, faltou
+Skill ou faltou critério. Sem ela, toda falha vira um prompt maior.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-2-t4-p3">
+Intenção; objetivo; prompt; skill; contexto; ferramentas; memória; permissões e evals; humano decide
+o destino e julga o resultado.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-2-t4-ex">
+No exemplo da página, um agente com cinco Skills (pesquisa, copy, campanha, vídeo e analytics)
+recebe uma frase curta: &quot;lance este curso para empresários brasileiros e busque 200
+matrículas&quot;. A frase dispara uma quantidade enorme de trabalho, porque o como já está nos
+Skills.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Preencha os nove degraus da escada para um objetivo seu e marque o degrau que hoje está vazio.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Pular para a ferramenta ou o curso sem entender o problema que a área resolve.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 312" role="img" aria-label="Intenção · Objetivo · Prompt · Skill · Contexto e memória · Permissões e evals"><rect x="12" y="12" width="466" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="24" y="38.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Intenção</text><text x="466" y="37.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">por quê?</text><rect x="22" y="62" width="446" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="34" y="88.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Objetivo</text><text x="456" y="87.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">o quê?</text><rect x="32" y="112" width="426" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="44" y="138.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Prompt</text><text x="446" y="137.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">esta execução</text><rect x="42" y="162" width="406" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="54" y="188.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Skill</text><text x="436" y="187.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">como fazer bem</text><rect x="52" y="212" width="386" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="64" y="238.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Contexto e memória</text><text x="426" y="237.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">o que ele sabe</text><rect x="62" y="262" width="366" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="74" y="288.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Permissões e evals</text><text x="416" y="287.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">controle de qualidade</text></svg>
+<figcaption class="help-note">Cada degrau responde a uma pergunta diferente; permissões e evals no topo são o que torna o agente controlável.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-1-2#topico-5">
+<h2>
+<span class="number">5</span>Seis movimentos para esta semana</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-2-t5-p1">
+A página traduz a mudança em seis dicas que cabem na agenda. Primeira: separe tarefa de
+responsabilidade na sua lista de pedidos à IA. Segunda: reescreva um prompt como delegação, com
+objetivo, o que importa, o que não pode acontecer, recursos e como vai julgar, e peça um plano antes
+de qualquer ação. Terceira: se explicou o mesmo procedimento três vezes, transforme-o em Skill, com
+manual, template, checklist e exemplos. Quarta: escreva a matriz de confiança; quinta: dê contexto
+antes de dar ferramentas; sexta: defina o que é &quot;bom&quot; antes de rodar.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-2-t5-p2">
+São passos pequenos e verificáveis, não um projeto de meses. Cada um é o primeiro degrau de uma
+competência que a página lista: pensar processos, dirigir IA, construir agentes, integrar sistemas,
+avaliar e supervisionar, conhecer o negócio.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-2-t5-p3">
+Tarefa × responsabilidade; delegação em cinco peças; Skill do que se repete; matriz de confiança;
+contexto antes de ferramentas; eval antes de rodar.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-2-t5-ex">
+Uma consultora percebe que explicou três vezes como quer os relatórios de reunião. Ela junta o
+modelo, um checklist e dois exemplos num Skill; na quarta vez, o pedido cabe numa linha.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Escolha uma das seis dicas e aplique hoje a um pedido real; anote o antes e o depois.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Tarefa × resp. · Delegação · Skill · Matriz confiança · Contexto · Definir &quot;bom&quot;"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Tarefa × resp.</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Delegação</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Skill</text><path d="M421.66666666666663 66v10H80.33333333333333v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M75.33333333333333 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Matriz confiança</text><path d="M154.66666666666666 116.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="194.66666666666666" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Contexto</text><path d="M325.3333333333333 116.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="365.3333333333333" y="121.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Definir &quot;bom&quot;</text></svg>
+<figcaption class="help-note">Os seis movimentos da semana seguem uma ordem: primeiro separar e delegar, depois dar contexto e definir o que é &quot;bom&quot;.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-1-2#topico-6">
+<h2>
+<span class="number">6</span>Cursos, projetos e três portas</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-2-t6-p1">
+A área reúne cursos para quem decide e não programa e cursos para quem quer construir. Para começar:
+Os Super-Agentes Chegaram (6 aulas), Super-Agentes na prática (8 aulas) e Arquiteto de Trabalho com
+IA (8 aulas). Para ir à ferramenta: Arquitetura de Intenção, Computer Use com o GPT-6 Astra,
+Subagentes e Superpowers, além da gravação Agentes do Zero: Fundamentos (5 dias). Os projetos com
+código e guia são OS Coach, os-agentes, Kit do Arquiteto de Agentes, INEMACCBOT, Content2Video,
+WebMCP Readiness, Fable 5.1 · Prompt de Sistema e STORM Research. A página fecha com três portas
+para o mesmo ecossistema: INEMA.CLUB (cursos abertos), INEMA.VIP (comunidade) e INEMA.PRO
+(plataforma prática).
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-2-t6-p2">
+Cada projeto é um pedaço da arquitetura funcionando de verdade: o INEMACCBOT mostra a matriz de
+confiança em código, o WebMCP Readiness mostra o lado &quot;tools&quot; visto do site. Ver o exemplo
+pronto acelera a primeira delegação.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-2-t6-p3">
+Comece por Os Super-Agentes Chegaram; cursos abertos em português; projetos com código e guia;
+INEMA.CLUB, INEMA.VIP, INEMA.PRO.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-2-t6-ex">
+Um gestor sem experiência em programação faz primeiro Os Super-Agentes Chegaram, escreve a carta de
+delegação com as seis perguntas e só depois abre o Kit do Arquiteto de Agentes para transformar o
+agente numa especificação de uma página.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Abra https://inematds.github.io/agi-ready/ e faça a primeira aula de Os Super-Agentes Chegaram.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Super-Agentes · Na prática · Arq. Trabalho · Subagentes · Kit Arquiteto"><rect x="12.0" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="24.0" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Super-Agentes</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">comece aqui · 6 aulas</text><rect x="109.2" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="121.2" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Na prática</text><text x="121.2" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">8 aulas</text><rect x="206.4" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="218.4" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Arq. Trabalho</text><text x="218.4" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">processos · 8 aulas</text><rect x="303.6" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="315.6" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Subagentes</text><text x="315.6" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">orquestração</text><rect x="400.8" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="412.8" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Kit Arquiteto</text><text x="412.8" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">especificação</text></svg>
+<figcaption class="help-note">Os três primeiros cursos são para quem decide e não programa; os demais entram na ferramenta.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. A IA parou de esperar ordens</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Tarefa vira responsabilidade</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. O fim do prompt como programa inteiro</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. A escada de um agente que trabalha</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Seis movimentos para esta semana</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Cursos, projetos e três portas</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua ficha</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a ficha foi feita.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tese</td>
+<td>A área cabe em uma frase sua, fiel à página.</td>
+<td>Releia o topo da página e o tópico 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Você sabe dizer para quem a área é e para quem não é.</td>
+<td>Volte ao tópico 2 e escreva um exemplo do seu trabalho.</td>
+</tr>
+<tr>
+<td>Blocos</td>
+<td>Você nomeia as partes centrais da área.</td>
+<td>Use o diagrama do módulo como roteiro.</td>
+</tr>
+<tr>
+<td>Primeiro passo</td>
+<td>Você escolheu um passo concreto e pequeno.</td>
+<td>Copie o primeiro passo que a própria página recomenda.</td>
+</tr>
+<tr>
+<td>Porta de entrada</td>
+<td>Você sabe qual curso, kit ou projeto abrir primeiro.</td>
+<td>Consulte o tópico 6 e a faixa de acesso da página.</td>
+</tr>
+<tr>
+<td>Fonte</td>
+<td>Cada afirmação da ficha tem origem na página.</td>
+<td>Troque o que você supôs pelo que a página diz.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~10 MIN
+</p>
+<h2>Sua primeira delegação real</h2>
+<p>Deixe a página da área aberta: <a href="https://eventos.inema.pro/agi-ready/">https://eventos.inema.pro/agi-ready/</a>. Use um exemplo do seu trabalho, sem dados pessoais ou de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="1-2-1">
+<span>Escolha na sua lista de pedidos à IA da última semana um que seja responsabilidade, não tarefa com receita.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-2-2">
+<span>Reescreva o pedido com as cinco peças da página: objetivo, o que importa, o que não pode acontecer, recursos disponíveis e como você vai julgar o resultado.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-2-3">
+<span>Monte a matriz de confiança em três colunas (decide sozinho, propõe e eu aprovo, nunca toca), com um dono em cada linha.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-2-4">
+<span>Envie o pedido pedindo um plano antes de qualquer ação e confira: o plano respeita as restrições e o critério de &quot;bom&quot; que você definiu? Anote o que faltou.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: transformar um pedido em delegação</h3>
+<p>
+Cole no Claude, no ChatGPT ou no Codex. Troque o que estiver entre &lt; e &gt; pela sua situação.
+</p>
+<pre><code>Leia https://eventos.inema.pro/agi-ready/ (área AGI-ready do INEMA), em especial a arquitetura (intenção, objetivo, prompt, skill, contexto, ferramentas, memória, permissões e evals) e as seis dicas.
+
+Meu pedido de hoje, do jeito que eu escrevo: &lt;cole aqui seu prompt passo a passo&gt;
+Minha área e o que já existe: &lt;empresa, clientes, ferramentas disponíveis&gt;
+
+Reescreva como delegação, com cinco peças: objetivo, o que importa, o que não pode acontecer, recursos disponíveis e como vou julgar o resultado. Depois: 1) aponte quais partes são sempre iguais e deveriam virar um Skill; 2) monte a matriz de confiança (decide sozinho | propõe e eu aprovo | nunca toca); 3) diga qual degrau da arquitetura está faltando. Peça um plano antes de qualquer ação e não invente informações da minha empresa.</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Explicar a diferença entre dar ordens passo a passo e delegar a um agente, usando a escada intenção,
+objetivo, prompt, skill, contexto, ferramentas, memória, permissões e evals. Guarde a ficha com a
+tese, o público, o primeiro passo e a porta de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/agi-ready/">Abrir a página da área ↗</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+Seu pedido à IA tem 30 passos numerados e ainda assim o resultado sai errado quando um passo falta.
+O que a área AGI-ready propõe?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+Subir o nível do pedido: dizer o destino (objetivo, restrições, recursos e critério de sucesso) e
+colocar o &quot;como fazer bem&quot; num Skill reutilizável, em vez de ensinar cada passo.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>Destino, não caminho; trabalhar por horas ou dias; delegar; comandar agentes sem programar.</li>
+<li>Tarefa × responsabilidade; confiança como curva; matriz de confiança; papel de gerente de agentes.</li>
+<li>Prompt = o que quero agora (o briefing); Skill = como nossa organização costuma fazer; Prompt → Context → Skill → Agent Engineering → Orchestration.</li>
+<li>Intenção; objetivo; prompt; skill; contexto; ferramentas; memória; permissões e evals; humano decide o destino e julga o resultado.</li>
+<li>Tarefa × responsabilidade; delegação em cinco peças; Skill do que se repete; matriz de confiança; contexto antes de ferramentas; eval antes de rodar.</li>
+<li>Comece por Os Super-Agentes Chegaram; cursos abertos em português; projetos com código e guia; INEMA.CLUB, INEMA.VIP, INEMA.PRO.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Páginas lidas em 28/09/2026. O conteúdo das áreas muda; a página oficial vale mais que este resumo.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/agi-ready/" target="_blank" rel="noopener">Área AGI-ready</a>
+</li>
+<li>
+<a href="https://inematds.github.io/agi-ready/" target="_blank" rel="noopener">Os Super-Agentes Chegaram</a>
+</li>
+<li>
+<a href="https://inematds.github.io/agi-pratica/" target="_blank" rel="noopener">Super-Agentes na prática</a>
+</li>
+<li>
+<a href="https://inematds.github.io/kit-arquiteto-agentes/guia/" target="_blank" rel="noopener">Kit do Arquiteto de Agentes</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha1/modulo-1-1.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha1/modulo-1-3.html">Próxima área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas do INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edição v2 · v1.0.0<br>Conteúdo tirado das páginas de eventos.inema.pro, lidas em 28/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

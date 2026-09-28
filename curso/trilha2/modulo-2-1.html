@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas do INEMA Eventos — o que é cada área">
+<meta name="description" content="Curso rápido: o que é cada uma das nove áreas de assunto do eventos.inema.pro — Gestão de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV e WebMCP."><title>Claude → Codex: separe o cérebro do modelo | Áreas do INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/curso/trilha2/modulo-2-1.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2", "tracks": [{"n": "1", "title": "Gerenciar e comandar agentes", "modules": [{"id": "1-1", "title": "Gestão de IA: 2027, o ano de gerenciar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: seu trabalho vira comandar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: agente não se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Ferramentas e ambiente", "modules": [{"id": "2-1", "title": "Claude → Codex: separe o cérebro do modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: um faz, o outro confere", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qual edição é pra você", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Melhorar, decidir e abrir", "modules": [{"id": "3-1", "title": "RSI: a IA que ajuda a melhorar a IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisões de IA na prática", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: seu site conversando com agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Gerenciar e comandar agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Ferramentas e ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Melhorar, decidir e abrir</span>
+</a>
+<a href="https://eventos.inema.pro/">eventos.inema.pro ↗</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Ferramentas e ambiente</a> / Módulo 2.1</div>
+<article id="modulo-2-1" data-inema-module="2-1" data-inema-track="2">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 2.1 / 4 DE 9
+</p>
+<h1>Claude → Codex: separe o cérebro do modelo</h1>
+<p>
+Explicar por que o lock-in mora no runtime e como o método Auditar → Adaptar → Provar → Handoff leva
+o conhecimento do projeto para um núcleo portátil.
+</p>
+<p class="area-note">Página da área: <a href="https://eventos.inema.pro/claude-codex/">eventos.inema.pro/claude-codex/</a> · no menu: “migre ou fique agnóstico”</p>
+<div class="meter" data-inema-meter="modulo:2-1" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="A tese: separe o cérebro do modelo → O lock-in está no runtime → O método: auditar antes de mudar → O núcleo portátil, arquivo por arquivo → Migrar ou ficar agnóstico → Curso, kit e o primeiro passo"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / CLAUDE-CODEX</text><text x="36" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">A tese: separe o cérebro do modelo</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / CLAUDE-CODEX</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">O lock-in está no runtime</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / CLAUDE-CODEX</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">O método: auditar antes de mudar</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / CLAUDE-CODEX</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">O núcleo portátil, arquivo por arquivo</text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / CLAUDE-CODEX</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Migrar ou ficar agnóstico</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / CLAUDE-CODEX</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Curso, kit e o primeiro passo</text></svg>
+<figcaption class="help-note">Os 6 tópicos deste módulo. No fim, você preenche a ficha da área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~20 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>ficha da área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt pronto</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-2-1#topico-1">
+<h2>
+<span class="number">1</span>A tese: separe o cérebro do modelo</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t1-p1">
+A área Claude → Codex parte de uma frase: &quot;Não migre o seu cérebro. Separe o cérebro do
+modelo.&quot; O &quot;cérebro&quot; é tudo o que você acumulou num projeto: contexto, regras,
+decisões, tarefas, skills, handoffs e memória. Segundo a página, só CLAUDE.md e AGENTS.md estão
+presos ao provedor; todo o resto é Markdown portátil, texto simples que qualquer agente consegue
+ler. Quando esse material vive numa camada portátil dentro do projeto, Claude Code, Codex CLI,
+Gemini ou um modelo local em container viram apenas executores, isto é, programas que fazem o
+trabalho a partir desses arquivos. Trocar de modelo passa a ser trocar uma borda, não o centro. A
+área junta a tese, o método, um curso de 3 trilhas, um kit de scripts e mega-prompts que fazem isso
+na prática.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t1-p2">
+Modelos mudam com frequência, por preço, acesso ou qualidade. Se o conhecimento do projeto estiver
+no lugar certo, cada troca custa pouco em vez de exigir reconstrução.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t1-p3">
+cérebro = contexto, regras, decisões, tarefas, skills, handoffs e memória; Markdown portátil;
+executor; trocar a borda, não o centro
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t1-ex">
+Uma analista usa um assistente de código há meses e o time decide testar outro. Como as regras e
+decisões do projeto estão em arquivos Markdown no repositório, o novo executor lê os mesmos arquivos
+e continua o trabalho.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Liste três coisas que o seu agente &quot;sabe&quot; hoje sobre um projeto e anote onde cada uma está
+gravada.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Julgar a área pelo nome: leia a tese na página antes de decidir se ela é para você.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-2-1#topico-2">
+<h2>
+<span class="number">2</span>O lock-in está no runtime</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t2-p1">
+Lock-in é ficar preso a um fornecedor porque sair dele custa caro. A página afirma: &quot;O lock-in
+não está no modelo. Está no que você deixou dentro do runtime.&quot; Runtime é o programa que roda o
+agente, como o Claude Code ou o Codex CLI. Quem usa um assistente de código há alguns meses acumulou
+instruções, memória, skills, hooks e milhares de sessões num formato que só aquele runtime lê. A
+página descreve três mudanças: o lock-in é invisível até o dia da troca; o mesmo conhecimento pode
+servir a qualquer modelo; e você passa a ter menos dependência e mais controle. O conteúdo é
+durável, o formato é descartável, e misturar os dois é o que trava a migração.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t2-p2">
+A área é para quem usa Claude Code ou Codex em projetos reais e teme a troca de modelo. Entender
+onde está a dependência mostra o que precisa sair do runtime antes que a troca seja obrigatória.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t2-p3">
+lock-in; runtime; CLAUDE.md, memória nativa e sessões JSONL são armazenamento do trabalho, não o
+trabalho; conteúdo durável, formato descartável
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t2-ex">
+Um desenvolvedor descobre que as decisões mais importantes do projeto estão só no histórico de
+sessões do assistente. Ao trocar de ferramenta, ninguém sabe por que certas escolhas foram feitas,
+porque nada foi anotado fora do runtime.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Abra um projeto seu e separe o que está em arquivos do repositório do que só existe na memória ou no
+histórico do assistente.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Lock-in · Mesmo saber · Mais controle"><rect x="12.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Lock-in</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">invisível até a troca</text><rect x="174.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="186.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Mesmo saber</text><text x="186.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">qualquer modelo</text><rect x="336.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="348.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Mais controle</text><text x="348.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">modelo reversível</text></svg>
+<figcaption class="help-note">As três mudanças da página: o problema só aparece na troca, o conhecimento pode servir a qualquer modelo e o controle volta para você.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-2-1#topico-3">
+<h2>
+<span class="number">3</span>O método: auditar antes de mudar</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t3-p1">
+O método tem quatro passos, nessa ordem: Auditar, Adaptar, Provar e Handoff, &quot;nunca
+implementando antes de auditar&quot;. Auditar é fazer um inventário somente leitura dos dois
+runtimes: skills, comandos, subagentes, hooks e MCP; cada skill vira reutilizável, adaptador, nativo
+ou não resolvido. Adaptar é dividir o CLAUDE.md: regras portáteis vão para o AGENTS.md, e o que
+depende de plugin, hook ou menu do Claude fica no arquivo específico, que apenas importa o portátil.
+Provar é abrir uma sessão nova e fazer cinco perguntas de continuidade: objetivo e critério de
+pronto, uma regra com o arquivo de origem, a última decisão, a próxima ação e conflitos. Handoff é
+gravar decisões, pendências, próximos passos e caminhos num Markdown que a próxima sessão lê antes
+de agir.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t3-p2">
+A ordem evita o erro mais caro: mudar arquivos antes de saber o que existe. E a regra de prova
+impede que você confunda arquivo criado com conhecimento realmente usado.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t3-p3">
+Auditar → Adaptar → Provar → Handoff; MODE: audit; portátil × resíduo; cinco perguntas de
+continuidade; arquivo existir não é prova
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t3-ex">
+Uma equipe quer levar um projeto para o Codex. Primeiro roda a auditoria, que só lê e classifica;
+depois separa o CLAUDE.md; por fim abre uma sessão nova e confere se o agente responde a próxima
+ação citando o arquivo certo.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Abra a página da área ao lado desta aula.</li>
+<li>Escreva as cinco perguntas de continuidade num arquivo e responda cada uma apontando o arquivo de origem.</li>
+<li>Anote em uma frase o que mudou no seu entendimento.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Auditar · Adaptar · Provar · Handoff"><rect x="12.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Auditar</text><path d="M240.0 38.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Adaptar</text><path d="M379.0 66v10H123.0v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M118.0 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Provar</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Handoff</text></svg>
+<figcaption class="help-note">A ordem importa: primeiro só ler e classificar, depois adaptar, provar em sessão nova e registrar o handoff.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-2-1#topico-4">
+<h2>
+<span class="number">4</span>O núcleo portátil, arquivo por arquivo</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t4-p1">
+O núcleo portátil são sete lugares, cada um com um dono e uma regra de atualização. AGENTS.md guarda
+regras estáveis e ordem de leitura; context/overview.md, fatos verificados com fonte e data;
+context/current-state.md, o que funciona e o que está pendente; context/sources.md, de onde vem cada
+informação. context/decisions/ tem uma decisão aceita por arquivo; tasks/current.md traz objetivo,
+dono, critério de pronto e próxima ação; handoffs/latest.md é a continuação para a próxima sessão. A
+página avisa que esses nomes são convenção: nenhum runtime carrega essas pastas sozinho, quem manda
+ler é a ordem de leitura no topo do AGENTS.md. Cada informação tem um tipo: fato, preferência,
+hipótese ou decisão, e &quot;provenance vence timestamp&quot;, ou seja, a origem pesa mais que a
+data e nada se apaga, usa-se superseded_by.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t4-p2">
+Misturar fato com hipótese, ou decisão com preferência, faz o agente repetir erro antigo e
+contradizer o que já foi resolvido. Dono e data permitem promover uma informação para contexto
+aprovado, sempre com a sua aprovação.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t4-p3">
+AGENTS.md; context/; decisions/; tasks/current.md; handoffs/latest.md; fato, preferência, hipótese,
+decisão; provenance vence timestamp; segredos fora do repositório
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t4-ex">
+Num projeto com decisões antigas em conflito, cada decisão aceita vira um arquivo em
+context/decisions/. Quando uma é substituída, ela não é apagada: ganha a marca superseded_by e o
+agente para de seguir a regra velha.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Crie num projeto de teste o arquivo tasks/current.md com objetivo, dono, critério de pronto e
+próxima ação.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Pular para a ferramenta ou o curso sem entender o problema que a área resolve.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 230" role="img" aria-label="AGENTS.md · context/ · overview.md · current-state.md · sources.md · decisions/ · tasks/current.md · handoffs/latest.md"><rect x="4" y="8" width="482" height="216" rx="10" fill="#152234" stroke="#60a5fa"/><text x="16" y="26" fill="#f1f5f9" font-size="14" font-family="monospace">AGENTS.md</text><text x="16" y="52" fill="#f1f5f9" font-size="14" font-family="monospace">context/</text><text x="42" y="78" fill="#f1f5f9" font-size="14" font-family="monospace">overview.md</text><text x="42" y="104" fill="#f1f5f9" font-size="14" font-family="monospace">current-state.md</text><text x="42" y="130" fill="#f1f5f9" font-size="14" font-family="monospace">sources.md</text><text x="42" y="156" fill="#f1f5f9" font-size="14" font-family="monospace">decisions/</text><text x="16" y="182" fill="#f1f5f9" font-size="14" font-family="monospace">tasks/current.md</text><text x="16" y="208" fill="#f1f5f9" font-size="14" font-family="monospace">handoffs/latest.md</text></svg>
+<figcaption class="help-note">Os sete lugares do núcleo portátil: nenhum runtime lê isso sozinho, é a ordem de leitura no AGENTS.md que manda.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-2-1#topico-5">
+<h2>
+<span class="number">5</span>Migrar ou ficar agnóstico</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t5-p1">
+A página separa a decisão em três níveis de esforço, não em opiniões. Nível 1 é importar no app, com
+um clique: rápido, mas limitado ao que o outro lado aceita, e o CLI do Codex, por exemplo, não tem
+import nativo. Nível 2 é migrar com o kit, com um comando: rodar os scripts do agente-claude-codex
+para auditar, adaptar, instalar o núcleo, portar skills e provar. Nível 3 é a camada pessoal
+portátil, duradoura: o conhecimento vive no projeto e o runtime fica intercambiável. Ficar
+agnóstico, isto é, não depender de nenhum modelo específico, é o nível 3, e segundo a página é o
+único que sobrevive à próxima troca. Agnóstico não é abandonar o Claude: você continua escolhendo o
+executor por tarefa.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t5-p2">
+Nem todo mundo precisa do nível 3 agora. A página lista quando migrar já, por custo, acesso ou
+política, e quando vale ficar agnóstico, como ao usar dois executores ou ter trabalho de cliente.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t5-p3">
+Nível 1 importar; Nível 2 migrar com o kit; Nível 3 camada pessoal portátil; migrar agora × ficar
+agnóstico; custo de não fazer nada
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t5-ex">
+Um consultor precisa usar o Codex nesta semana por política de um cliente e tem poucas skills, quase
+todas em Markdown puro: é caso de migrar agora. Outro já trocou de ferramenta uma vez e não quer
+refazer: é caso de ficar agnóstico.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Leia as duas listas da página (&quot;Migre agora se…&quot; e &quot;Fique agnóstico se…&quot;) e
+marque quantos itens valem para você em cada uma.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 162" role="img" aria-label="Nível 1 · Nível 2 · Nível 3"><rect x="12" y="12" width="466" height="42" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24" y="38.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Nível 1</text><text x="466" y="37.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">importar no app</text><rect x="22" y="62" width="446" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="34" y="88.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Nível 2</text><text x="456" y="87.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">migrar com o kit</text><rect x="32" y="112" width="426" height="42" rx="9" fill="#152234" stroke="#60a5fa"/><text x="44" y="138.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Nível 3</text><text x="446" y="137.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">camada portátil</text></svg>
+<figcaption class="help-note">Cada nível custa mais esforço uma vez, e só o terceiro sobrevive à próxima troca de modelo.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-2-1#topico-6">
+<h2>
+<span class="number">6</span>Curso, kit e o primeiro passo</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t6-p1">
+O curso Claude → Codex: migre ou fique agnóstico é aberto, em português, com versões em inglês e
+espanhol; segundo o currículo, são 3 trilhas, 18 módulos e 108 tópicos. A Trilha 1 cobre fundamentos
+e vocabulário, a Trilha 2 é o kit comando por comando e a Trilha 3 traz seis projetos sobre um
+sistema real. O kit agente-claude-codex é bash mais Markdown, em três formas de uso: scripts,
+mega-prompts e o template do núcleo portátil. O doctor.sh responde &quot;meu ambiente está
+pronto?&quot; e o audit.sh grava um relatório somente leitura; há ainda adapt-instructions.sh,
+init-core.sh, sync-skills.sh com polyskill, readback-test.sh, drift-report.sh e promover-memoria.sh.
+A página resume: &quot;O melhor primeiro passo é um projeto seu, em modo audit.&quot;
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t6-p2">
+O curso explica o porquê e o kit faz o trabalho sem apagar nada: nada em ~/.claude ou ~/.codex é
+copiado em massa ou apagado, e instalar skill faz backup ao lado. Começar pela auditoria mostra em
+uma sessão o que é portátil e o que depende de hook.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t6-p3">
+curso de 3 trilhas; kit agente-claude-codex; doctor.sh; audit.sh; mega-prompts A e B; Mapa do tema;
+área irmã Codex + Claude
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t6-ex">
+Uma gestora de TI quer avaliar a troca de ferramenta sem risco. Ela clona o kit, roda o doctor.sh,
+lê a auditoria e só depois decide qual nível de migração vale a pena para o time.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Abra o guia do kit agente-claude-codex e leia o que o doctor.sh verifica antes de rodar qualquer
+outro script.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. A tese: separe o cérebro do modelo</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. O lock-in está no runtime</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. O método: auditar antes de mudar</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. O núcleo portátil, arquivo por arquivo</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Migrar ou ficar agnóstico</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Curso, kit e o primeiro passo</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua ficha</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a ficha foi feita.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tese</td>
+<td>A área cabe em uma frase sua, fiel à página.</td>
+<td>Releia o topo da página e o tópico 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Você sabe dizer para quem a área é e para quem não é.</td>
+<td>Volte ao tópico 2 e escreva um exemplo do seu trabalho.</td>
+</tr>
+<tr>
+<td>Blocos</td>
+<td>Você nomeia as partes centrais da área.</td>
+<td>Use o diagrama do módulo como roteiro.</td>
+</tr>
+<tr>
+<td>Primeiro passo</td>
+<td>Você escolheu um passo concreto e pequeno.</td>
+<td>Copie o primeiro passo que a própria página recomenda.</td>
+</tr>
+<tr>
+<td>Porta de entrada</td>
+<td>Você sabe qual curso, kit ou projeto abrir primeiro.</td>
+<td>Consulte o tópico 6 e a faixa de acesso da página.</td>
+</tr>
+<tr>
+<td>Fonte</td>
+<td>Cada afirmação da ficha tem origem na página.</td>
+<td>Troque o que você supôs pelo que a página diz.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~10 MIN
+</p>
+<h2>Sua primeira auditoria em modo audit</h2>
+<p>Deixe a página da área aberta: <a href="https://eventos.inema.pro/claude-codex/">https://eventos.inema.pro/claude-codex/</a>. Use um exemplo do seu trabalho, sem dados pessoais ou de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="2-1-1">
+<span>Escolha um projeto seu que você conhece bem e anote quais arquivos de instrução ele tem hoje (CLAUDE.md, AGENTS.md, skills, memória).</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-1-2">
+<span>Cole o prompt do bloco copiável no seu agente e confira que a resposta é só inventário e plano: nenhum arquivo pode ter sido alterado.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-1-3">
+<span>Verifique a classificação devolvida: cada skill como reutilizável, adaptador, nativo ou não resolvido, e cada trecho do CLAUDE.md como portátil ou resíduo.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-1-4">
+<span>Responda por escrito as cinco perguntas de continuidade do passo Provar e marque as que ainda não têm resposta nos arquivos do projeto.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: auditoria somente leitura do seu projeto</h3>
+<p>
+Cole no Claude, no ChatGPT ou no Codex. Troque o que estiver entre &lt; e &gt; pela sua situação.
+</p>
+<pre><code>MODE: audit
+Leia https://eventos.inema.pro/claude-codex/ para entender o método Auditar → Adaptar → Provar → Handoff.
+Depois, sem alterar nenhum arquivo, faça um inventário deste projeto: &lt;caminho da pasta do seu projeto&gt;.
+1. Liste instruções (CLAUDE.md, AGENTS.md), skills, comandos, hooks e MCP que você encontrar.
+2. Classifique cada skill como reutilizável, adaptador, nativo ou não resolvido.
+3. Separe o CLAUDE.md em linhas portáteis (vão para o AGENTS.md) e resíduo específico do Claude.
+4. Diga quais das cinco perguntas de continuidade (objetivo e critério de pronto, uma regra com arquivo de origem, última decisão, próxima ação, conflitos) os arquivos atuais já respondem.
+Devolva só o relatório e um plano. Não implemente nada.</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Explicar por que o lock-in mora no runtime e como o método Auditar → Adaptar → Provar → Handoff leva
+o conhecimento do projeto para um núcleo portátil. Guarde a ficha com a tese, o público, o primeiro
+passo e a porta de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/claude-codex/">Abrir a página da área ↗</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+Um colega diz que migrar do Claude para o Codex é só copiar o CLAUDE.md para outro lugar. O que
+falta nessa ideia?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+Falta separar o que é portátil do que é resíduo e provar em sessão nova. Como diz a página, arquivo
+existir não é prova; o agente ter lido e usado é.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>cérebro = contexto, regras, decisões, tarefas, skills, handoffs e memória; Markdown portátil; executor; trocar a borda, não o centro</li>
+<li>lock-in; runtime; CLAUDE.md, memória nativa e sessões JSONL são armazenamento do trabalho, não o trabalho; conteúdo durável, formato descartável</li>
+<li>Auditar → Adaptar → Provar → Handoff; MODE: audit; portátil × resíduo; cinco perguntas de continuidade; arquivo existir não é prova</li>
+<li>AGENTS.md; context/; decisions/; tasks/current.md; handoffs/latest.md; fato, preferência, hipótese, decisão; provenance vence timestamp; segredos fora do repositório</li>
+<li>Nível 1 importar; Nível 2 migrar com o kit; Nível 3 camada pessoal portátil; migrar agora × ficar agnóstico; custo de não fazer nada</li>
+<li>curso de 3 trilhas; kit agente-claude-codex; doctor.sh; audit.sh; mega-prompts A e B; Mapa do tema; área irmã Codex + Claude</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Páginas lidas em 28/09/2026. O conteúdo das áreas muda; a página oficial vale mais que este resumo.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/claude-codex/" target="_blank" rel="noopener">Área Claude → Codex</a>
+</li>
+<li>
+<a href="https://inematds.github.io/curso-claude-codex/" target="_blank" rel="noopener">Curso Claude → Codex</a>
+</li>
+<li>
+<a href="https://inematds.github.io/agente-claude-codex/guia/" target="_blank" rel="noopener">Guia do kit agente-claude-codex</a>
+</li>
+<li>
+<a href="https://inema.club/guias/claude-codex.html" target="_blank" rel="noopener">Mapa do tema</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha1/modulo-1-3.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha2/modulo-2-2.html">Próxima área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas do INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edição v2 · v1.0.0<br>Conteúdo tirado das páginas de eventos.inema.pro, lidas em 28/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

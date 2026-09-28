@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas do INEMA Eventos — o que é cada área">
+<meta name="description" content="Curso rápido: o que é cada uma das nove áreas de assunto do eventos.inema.pro — Gestão de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV e WebMCP."><title>O que é cada área | Áreas do INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/index.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2", "tracks": [{"n": "1", "title": "Gerenciar e comandar agentes", "modules": [{"id": "1-1", "title": "Gestão de IA: 2027, o ano de gerenciar agentes", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: seu trabalho vira comandar agentes", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: agente não se programa, se cultiva", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Ferramentas e ambiente", "modules": [{"id": "2-1", "title": "Claude → Codex: separe o cérebro do modelo", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: um faz, o outro confere", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qual edição é pra você", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Melhorar, decidir e abrir", "modules": [{"id": "3-1", "title": "RSI: a IA que ajuda a melhorar a IA", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisões de IA na prática", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: seu site conversando com agentes", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/learn.css">
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="curso/trilha1/index.html" >T1<span class="long"> · Gerenciar e comandar agentes</span>
+</a>
+<a href="curso/trilha2/index.html" >T2<span class="long"> · Ferramentas e ambiente</span>
+</a>
+<a href="curso/trilha3/index.html" >T3<span class="long"> · Melhorar, decidir e abrir</span>
+</a>
+<a href="https://eventos.inema.pro/">eventos.inema.pro ↗</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<header class="hero">
+<div>
+<p class="kicker">
+INEMA · CURSO RÁPIDO / V2
+</p>
+<h1>Nove áreas. <span class="accent">Um mapa.</span>
+</h1>
+<p>
+O eventos.inema.pro organiza o estudo em nove áreas de assunto. Este curso explica o que é cada uma,
+para quem ela serve e por onde começar, com as palavras das próprias páginas.
+</p>
+<div class="actions">
+<a class="button primary" href="curso/trilha1/modulo-1-1.html">Começar pela primeira área →</a>
+<button data-os-resume>Continuar de onde parei</button>
+<a class="button" href="https://eventos.inema.pro/">Abrir o eventos.inema.pro ↗</a>
+</div>
+<div class="meter" data-inema-meter="curso" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+<p class="help-note">
+Sem pré-requisito. Cada módulo termina com um prompt pronto para aplicar a área ao seu trabalho.
+</p>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 500" role="img" aria-label="Gestão de IA → AGI-ready → IA Cultivada → Claude → Codex → Codex + Claude → OSWork → RSI → JEV → WebMCP"><path d="M10 10H480V485H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#facc15"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / ÁREA</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Gestão de IA</text><path d="M120 90v25" stroke="#facc15" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / ÁREA</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">AGI-ready</text><path d="M355 90v25" stroke="#facc15" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#facc15"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / ÁREA</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">IA Cultivada</text><path d="M120 180v25" stroke="#facc15" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / ÁREA</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Claude → Codex</text><path d="M355 180v25" stroke="#facc15" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#facc15"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / ÁREA</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Codex + Claude</text><path d="M120 270v25" stroke="#facc15" stroke-width="2"/><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / ÁREA</text><text x="271" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">OSWork</text><path d="M355 270v25" stroke="#facc15" stroke-width="2"/><rect x="20" y="295" width="215" height="65" rx="10" fill="#152234" stroke="#facc15"/><text x="36" y="320" fill="#cbd5e1" font-size="10" font-family="monospace">07 / ÁREA</text><text x="36" y="342" fill="#f1f5f9" font-size="14" font-family="sans-serif">RSI</text><path d="M120 360v25" stroke="#facc15" stroke-width="2"/><rect x="255" y="295" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="320" fill="#cbd5e1" font-size="10" font-family="monospace">08 / ÁREA</text><text x="271" y="342" fill="#f1f5f9" font-size="14" font-family="sans-serif">JEV</text><rect x="20" y="385" width="215" height="65" rx="10" fill="#152234" stroke="#facc15"/><text x="36" y="410" fill="#cbd5e1" font-size="10" font-family="monospace">09 / ÁREA</text><text x="36" y="432" fill="#f1f5f9" font-size="14" font-family="sans-serif">WebMCP</text></svg>
+<figcaption class="help-note">As nove áreas, na ordem do curso. Cada uma vira um módulo de seis tópicos.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>3</strong>
+<span>trilhas</span>
+</div>
+<div><strong>9</strong>
+<span>áreas, uma por módulo</span>
+</div>
+<div><strong>54</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~3h</strong>
+<span>estimativa com prática</span>
+</div>
+</div>
+<section class="band">
+<p class="kicker">
+SEU PERCURSO
+</p>
+<h2>Três trilhas, três áreas cada.</h2>
+<div class="grid">
+<a class="card" href="curso/trilha1/index.html">
+<div class="overline">
+<span>TRILHA 01</span>
+<span>3 ÁREAS · 18 TÓPICOS</span>
+</div>
+<h2>Gerenciar e comandar agentes</h2>
+<p>
+Gestão de IA, AGI-ready e IA Cultivada: o trabalho passa a ser dirigir, cultivar e avaliar agentes.
+</p>
+<span class="accent">Explorar trilha →</span>
+</a>
+<a class="card" href="curso/trilha2/index.html">
+<div class="overline">
+<span>TRILHA 02</span>
+<span>3 ÁREAS · 18 TÓPICOS</span>
+</div>
+<h2>Ferramentas e ambiente</h2>
+<p>
+Claude → Codex, Codex + Claude e OSWork: onde os agentes trabalham e como não ficar preso a um só.
+</p>
+<span class="accent">Explorar trilha →</span>
+</a>
+<a class="card" href="curso/trilha3/index.html">
+<div class="overline">
+<span>TRILHA 03</span>
+<span>3 ÁREAS · 18 TÓPICOS</span>
+</div>
+<h2>Melhorar, decidir e abrir</h2>
+<p>
+RSI, JEV e WebMCP: melhorar com teste, decidir com avaliação e preparar o site para agentes.
+</p>
+<span class="accent">Explorar trilha →</span>
+</a>
+</div>
+</section>
+<section class="band">
+<p class="kicker">
+O QUE É CADA UMA
+</p>
+<h2>As nove áreas em uma linha</h2>
+<div class="grid">
+<a class="card" href="curso/trilha1/modulo-1-1.html">
+<div class="overline">
+<span>1.1</span>
+<span>~20 min</span>
+</div>
+<h3>Gestão de IA: 2027, o ano de gerenciar agentes</h3>
+<p class="area-note">
+No menu do site: “2027: gerenciar agentes”
+</p>
+<p>
+Explicar por que a empresa com agentes precisa de gestão, e não só de tecnologia, usando as 8
+competências e o LOOP-R.
+</p>
+</a>
+<a class="card" href="curso/trilha1/modulo-1-2.html">
+<div class="overline">
+<span>1.2</span>
+<span>~20 min</span>
+</div>
+<h3>AGI-ready: seu trabalho vira comandar agentes</h3>
+<p class="area-note">
+No menu do site: “comandar agentes”
+</p>
+<p>
+Explicar a diferença entre dar ordens passo a passo e delegar a um agente, usando a escada intenção,
+objetivo, prompt, skill, contexto, ferramentas, memória, permissões e evals.
+</p>
+</a>
+<a class="card" href="curso/trilha1/modulo-1-3.html">
+<div class="overline">
+<span>1.3</span>
+<span>~20 min</span>
+</div>
+<h3>IA Cultivada: agente não se programa, se cultiva</h3>
+<p class="area-note">
+No menu do site: “não se programa, se cultiva”
+</p>
+<p>
+Explicar por que um agente melhora pelo ambiente que você cultiva, e não pelo modelo, usando os oito
+elementos, o ciclo e os cinco arquivos do kit.
+</p>
+</a>
+<a class="card" href="curso/trilha2/modulo-2-1.html">
+<div class="overline">
+<span>2.1</span>
+<span>~20 min</span>
+</div>
+<h3>Claude → Codex: separe o cérebro do modelo</h3>
+<p class="area-note">
+No menu do site: “migre ou fique agnóstico”
+</p>
+<p>
+Explicar por que o lock-in mora no runtime e como o método Auditar → Adaptar → Provar → Handoff leva
+o conhecimento do projeto para um núcleo portátil.
+</p>
+</a>
+<a class="card" href="curso/trilha2/modulo-2-2.html">
+<div class="overline">
+<span>2.2</span>
+<span>~20 min</span>
+</div>
+<h3>Codex + Claude: um faz, o outro confere</h3>
+<p class="area-note">
+No menu do site: “usar os dois juntos”
+</p>
+<p>
+Explicar como usar Claude e Codex no mesmo projeto, com os seis níveis do kit Use Both, o cartão de
+rotas e a diferença entre claudex e Use Both.
+</p>
+</a>
+<a class="card" href="curso/trilha2/modulo-2-3.html">
+<div class="overline">
+<span>2.3</span>
+<span>~20 min</span>
+</div>
+<h3>OSWork: qual edição é pra você</h3>
+<p class="area-note">
+No menu do site: “do chat ao seu ambiente de agentes”
+</p>
+<p>
+Explicar o que é o OSWork, o que se constrói nele e qual das cinco edições (v2, v6.2, v6, v5, Quick)
+combina com a experiência e o tempo de cada pessoa.
+</p>
+</a>
+<a class="card" href="curso/trilha3/modulo-3-1.html">
+<div class="overline">
+<span>3.1</span>
+<span>~20 min</span>
+</div>
+<h3>RSI: a IA que ajuda a melhorar a IA</h3>
+<p class="area-note">
+No menu do site: “ciclos de melhoria em IA”
+</p>
+<p>
+Explicar os três níveis de melhoria em IA e transformar uma ideia de melhoria num teste verificável,
+com versão registrada e caminho de volta.
+</p>
+</a>
+<a class="card" href="curso/trilha3/modulo-3-2.html">
+<div class="overline">
+<span>3.2</span>
+<span>~20 min</span>
+</div>
+<h3>JEV: decisões de IA na prática</h3>
+<p class="area-note">
+No menu do site: “decisões de IA na prática”
+</p>
+<p>
+Explicar o que é uma decisão estruturada com Jev, escolher entre Choice, Noul e Score e separar o
+que já foi observado do que ainda falta medir.
+</p>
+</a>
+<a class="card" href="curso/trilha3/modulo-3-3.html">
+<div class="overline">
+<span>3.3</span>
+<span>~20 min</span>
+</div>
+<h3>WebMCP: seu site conversando com agentes</h3>
+<p class="area-note">
+No menu do site: “sites que conversam com agentes”
+</p>
+<p>
+Explicar o que muda quando agentes visitam sites, o que é WebMCP e qual é o primeiro passo concreto:
+diagnosticar o próprio site e corrigir o básico.
+</p>
+</a>
+</div>
+</section>
+<section class="band grid">
+<div>
+<p class="kicker">
+O QUE VOCÊ LEVA
+</p>
+<h2>Uma ficha por área.</h2>
+<p>
+Em cada módulo você preenche uma ficha curta: a tese da área em uma frase, para quem ela serve, o
+primeiro passo que a página recomenda e o curso ou projeto por onde entrar.
+</p>
+<p>
+Ao final você sabe em qual área começar, sem precisar ler as nove páginas inteiras antes.
+</p>
+</div>
+<div class="card">
+<h3>Estude do seu jeito</h3>
+<p>
+Marque tópicos lidos, registre dúvidas e selecione trechos para anotar. Ajuste tema e tamanho da
+leitura em Aa. Exporte seu progresso em Minha jornada.
+</p>
+<p class="help-note">
+Tudo fica no seu navegador. Não há cadastro.
+</p>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">Áreas do INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edição v2 · v1.0.0<br>Conteúdo tirado das páginas de eventos.inema.pro, lidas em 28/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada.<br>
+<a href="https://www.inema.club/aprender-inteligencia-artificial/">Guia: como aprender inteligência artificial</a> · <a href="https://www.inema.club/cursos/">Todos os cursos</a>
+</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="assets/learn.js">
+</script>
+<script src="assets/site.js">
+</script>
+</body>
+</html>

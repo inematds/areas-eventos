@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas do INEMA Eventos — o que é cada área">
+<meta name="description" content="Curso rápido: o que é cada uma das nove áreas de assunto do eventos.inema.pro — Gestão de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV e WebMCP."><title>JEV: decisões de IA na prática | Áreas do INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-2.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2", "tracks": [{"n": "1", "title": "Gerenciar e comandar agentes", "modules": [{"id": "1-1", "title": "Gestão de IA: 2027, o ano de gerenciar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: seu trabalho vira comandar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: agente não se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Ferramentas e ambiente", "modules": [{"id": "2-1", "title": "Claude → Codex: separe o cérebro do modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: um faz, o outro confere", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qual edição é pra você", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Melhorar, decidir e abrir", "modules": [{"id": "3-1", "title": "RSI: a IA que ajuda a melhorar a IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisões de IA na prática", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: seu site conversando com agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Gerenciar e comandar agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Ferramentas e ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" aria-current="page">T3<span class="long"> · Melhorar, decidir e abrir</span>
+</a>
+<a href="https://eventos.inema.pro/">eventos.inema.pro ↗</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Melhorar, decidir e abrir</a> / Módulo 3.2</div>
+<article id="modulo-3-2" data-inema-module="3-2" data-inema-track="3">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 3.2 / 8 DE 9
+</p>
+<h1>JEV: decisões de IA na prática</h1>
+<p>
+Explicar o que é uma decisão estruturada com Jev, escolher entre Choice, Noul e Score e separar o
+que já foi observado do que ainda falta medir.
+</p>
+<p class="area-note">Página da área: <a href="https://eventos.inema.pro/jev/">eventos.inema.pro/jev/</a> · no menu: “decisões de IA na prática”</p>
+<div class="meter" data-inema-meter="modulo:3-2" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="O que é o JEV → Choice, Noul e Score → 20 casos no laboratório público → O curso: 3 trilhas, 36 aulas → 17 pacotes e caminhos de uso → O que foi observado e o que falta"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / JEV</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">O que é o JEV</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / JEV</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Choice, Noul e Score</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / JEV</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">20 casos no laboratório público</text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / JEV</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">O curso: 3 trilhas, 36 aulas</text><path d="M355 180v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / JEV</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">17 pacotes e caminhos de uso</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / JEV</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">O que foi observado e o que falta</text></svg>
+<figcaption class="help-note">Os 6 tópicos deste módulo. No fim, você preenche a ficha da área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~20 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>ficha da área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt pronto</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-3-2#topico-1">
+<h2>
+<span class="number">1</span>O que é o JEV</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-2-t1-p1">
+Jev é o modelo de decisões estruturadas da TypeSafe. Uma decisão estruturada é uma pergunta fechada,
+com contexto e critérios, cuja resposta é uma escolha, uma probabilidade ou um nível, e não um texto
+livre. O Jev Decision Lab é o projeto educacional do INEMA para formular perguntas, comparar
+respostas e entender quando uma decisão precisa de revisão. O modelo recebe contexto e critérios; o
+seu sistema continua responsável pelas ações. O laboratório separa essa escolha da geração de texto
+e da execução de ferramentas.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-2-t1-p2">
+Muitas tarefas de IA no trabalho não pedem um texto, pedem uma decisão: para qual fila vai este
+chamado, este trecho sustenta a afirmação. Separar decidir, gerar e executar deixa claro quem
+responde por cada parte e facilita medir o acerto.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-2-t1-p3">
+modelo de decisões estruturadas; TypeSafe; Jev Decision Lab; contexto e critérios; o sistema
+responde pelas ações
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-2-t1-ex">
+Uma equipe de suporte quer que a IA encaminhe chamados. Em vez de pedir um parágrafo, ela usa o Jev
+para escolher a fila entre opções fixas; o sistema da empresa é quem move o chamado, e casos
+duvidosos vão para uma pessoa.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Liste duas decisões repetitivas do seu trabalho que hoje viram texto livre e reescreva cada uma como
+pergunta fechada com opções.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Julgar a área pelo nome: leia a tese na página antes de decidir se ela é para você.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-3-2#topico-2">
+<h2>
+<span class="number">2</span>Choice, Noul e Score</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-2-t2-p1">
+A página apresenta três formas de perguntar. Choice escolhe entre alternativas explícitas, como qual
+fila ou qual agente. Noul estima a probabilidade de uma resposta afirmativa, como a chance de um
+trecho apoiar uma afirmação. Score avalia uma rubrica com níveis ordenados, como baixo, médio e
+alto. O curso dedica um módulo a distinguir as três a partir do tipo de resposta necessário, e outro
+a confiança e erro: usar incerteza sem transformá-la em autorização automática.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-2-t2-p2">
+Escolher a forma errada produz respostas difíceis de usar: uma nota quando você precisava de uma
+fila, ou um sim quando havia vários níveis. A forma da pergunta define como você vai medir e qual
+política aplicar.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-2-t2-p3">
+Choice: alternativas explícitas; Noul: probabilidade de sim; Score: níveis ordenados; confiança não
+é autorização
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-2-t2-ex">
+Na triagem de reuniões, &quot;a ata tem responsável e prazo?&quot; é Noul; &quot;qual equipe cuida
+disto?&quot; é Choice; &quot;qual a prioridade do log, de 1 a 4?&quot; é Score. A mesma reunião pode
+gerar as três perguntas.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Pegue uma das decisões que você listou e escreva-a nas três formas; fique com a que devolve a
+resposta que o seu processo consegue usar.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Choice · Noul · Score"><rect x="12.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Choice</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">uma alternativa</text><rect x="174.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="186.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Noul</text><text x="186.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">probabilidade de sim</text><rect x="336.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="348.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Score</text><text x="348.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">níveis ordenados</text></svg>
+<figcaption class="help-note">A forma da pergunta vem do tipo de resposta que o seu processo precisa usar: uma opção, uma chance de sim ou um nível.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-3-2#topico-3">
+<h2>
+<span class="number">3</span>20 casos no laboratório público</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-2-t3-p1">
+O laboratório abre no navegador, não pede chave e não consulta nenhuma API: as respostas são
+simuladas. Cada um dos 20 casos inclui contexto, perguntas, critérios, resposta simulada, explicação
+e próximo passo, como triagem de atendimento, checklist de contratos, roteamento de agentes e
+revisão semântica de diff. Você pode editar as perguntas, importar uma requisição, exportar o
+resultado ou abrir um relatório; alterar um caso invalida sua resposta simulada anterior. Para ir
+além, é possível clonar o projeto e rodar o servidor local com Python 3.10 ou superior. O núcleo usa
+só a biblioteca padrão.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-2-t3-p2">
+O laboratório permite errar sem custo e sem risco: você aprende a formular o contexto, as opções e a
+política antes de gastar crédito ou tocar num sistema real.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-2-t3-p3">
+laboratório sem chave; respostas simuladas; 20 casos; contexto, perguntas, critérios; servidor local
+em Python
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-2-t3-ex">
+Um coordenador abre o caso &quot;Intenções simultâneas&quot; e vê que uma conversa pode conter
+vendas e agendamento ao mesmo tempo. Ele percebe que a pergunta da sua empresa, com uma única opção
+por mensagem, precisa mudar.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Abra a página da área ao lado desta aula.</li>
+<li>Abra https://inematds.github.io/jev/app/, escolha o caso mais próximo do seu trabalho e reescreva uma das perguntas dele com os seus critérios.</li>
+<li>Anote em uma frase o que mudou no seu entendimento.</li>
+</ol>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-3-2#topico-4">
+<h2>
+<span class="number">4</span>O curso: 3 trilhas, 36 aulas</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-2-t4-p1">
+O curso &quot;Jev na prática&quot; tem três trilhas, 12 módulos e 36 aulas com teoria, exemplos,
+exercícios e respostas. A trilha Entender cobre onde o Jev entra, os três tipos de pergunta,
+confiança e erro, e custo; Aplicar trata atendimento, documentos, modelos e agentes, e navegador;
+Construir e avaliar cobre integração, medição de qualidade, operação e o projeto final. Os módulos 1
+a 8 são conceituais; os módulos 9 a 12 usam JSON, terminal e Python, e a estimativa é de 18 horas.
+São 12 laboratórios com dados fictícios e gabaritos, e o projeto final pede concluir se há evidência
+para adotar, coletar mais dados ou não automatizar. O curso HTML v2 está em português, com
+progresso, dúvidas e anotações.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-2-t4-p2">
+O curso leva de &quot;entender a ideia&quot; a &quot;decidir a adoção&quot; com rubrica. O projeto
+final aceita a resposta &quot;não automatizar&quot;, o que treina julgamento em vez de entusiasmo.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-2-t4-p3">
+Entender; Aplicar; Construir e avaliar; 12 módulos; 36 aulas; 12 laboratórios; projeto final; 18
+horas
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-2-t4-ex">
+Uma analista sem programação faz os módulos 1 a 8 e resolve os laboratórios de atendimento e
+evidências. O colega que programa segue para os módulos 9 a 12 e monta a requisição real.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Abra o curso em https://inematds.github.io/jev-curso/ e escolha o módulo que corresponde à decisão
+que você listou.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Pular para a ferramenta ou o curso sem entender o problema que a área resolve.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 88" role="img" aria-label="Entender · Aplicar · Construir · Projeto final"><path d="M30 40h430" stroke="#475569" stroke-width="2"/><circle cx="30.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="30.0" y="72" text-anchor="start" fill="#f1f5f9" font-size="14" font-family="sans-serif">Entender</text><text x="30.0" y="22" text-anchor="start" fill="#94a3b8" font-size="11" font-family="monospace">módulos 1-4</text><circle cx="173.33333333333334" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="173.33333333333334" y="72" text-anchor="middle" fill="#f1f5f9" font-size="14" font-family="sans-serif">Aplicar</text><text x="173.33333333333334" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">módulos 5-8</text><circle cx="316.6666666666667" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="316.6666666666667" y="72" text-anchor="middle" fill="#f1f5f9" font-size="14" font-family="sans-serif">Construir</text><text x="316.6666666666667" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">módulos 9-12</text><circle cx="460.0" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="460.0" y="72" text-anchor="end" fill="#f1f5f9" font-size="14" font-family="sans-serif">Projeto final</text><text x="460.0" y="22" text-anchor="end" fill="#94a3b8" font-size="11" font-family="monospace">adotar ou não</text></svg>
+<figcaption class="help-note">As três trilhas vão do conceito ao projeto final; os módulos 9 a 12 são os únicos que pedem JSON, terminal e Python.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-3-2#topico-5">
+<h2>
+<span class="number">5</span>17 pacotes e caminhos de uso</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-2-t5-p1">
+Um pacote é um kit por área com contexto, critérios, requisição, fixture (um exemplo pronto para
+teste) e instruções. O acervo atual reúne 17, de atendimento e vendas a comentários do YouTube,
+reuniões, cortes e curadoria. Todos compartilham o executor e o núcleo Python: sem a opção --live o
+pacote usa a fixture simulada; com ela, faz uma consulta real, que requer chave no backend e pode
+consumir créditos. Há também execução em lotes com retomada, a skill jev-decidir para Codex e Claude
+Code e o jev-gw, um gateway com teto de gasto diário, cache, registro de custo e falha conservadora
+que devolve revisão humana. Os pacotes estão no repositório; ainda não há distribuição PyPI,
+instalador universal ou conector pronto para n8n.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-2-t5-p2">
+O caminho é gradual: começar offline, entender a saída e só depois pagar por consultas reais. O
+gateway mostra como proteger quem chama o Jev quando algo falha.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-2-t5-p3">
+pacote por área; fixture; --live; lotes e retomada; skill jev-decidir; jev-gw; falha conservadora
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-2-t5-ex">
+Uma equipe de conteúdo usa o pacote de comentários do YouTube primeiro com a fixture. Quando a saída
+faz sentido, configura a consulta real no servidor e coloca o jev-gw na frente, para que um teto
+estourado mande o caso para revisão em vez de quebrar o sistema.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Escolha, entre os 17 pacotes da página, o que mais se parece com o seu trabalho e anote em que ponto
+do seu processo ele entraria.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Navegador · Servidor local · Pacote offline · Consulta --live · Lotes · jev-gw"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Navegador</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Servidor local</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Pacote offline</text><path d="M421.66666666666663 66v10H80.33333333333333v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M75.33333333333333 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Consulta --live</text><path d="M154.66666666666666 116.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="194.66666666666666" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Lotes</text><path d="M325.3333333333333 116.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="365.3333333333333" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">jev-gw</text></svg>
+<figcaption class="help-note">Comece simples e avance quando precisar: a consulta real só entra depois do teste offline, e o gateway protege quem chama.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-3-2#topico-6">
+<h2>
+<span class="number">6</span>O que foi observado e o que falta</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-2-t6-p1">
+A página separa quatro situações. Simulação para aprender: os 20 casos e o replay são autorais e
+simulados, não medem a qualidade do modelo. Baseline de regras: 20 acertos em 24 tickets fictícios
+(83,33%), resultado das regras, não do Jev. Integração real testada: em 19/09/2026 os dez pacotes
+originais receberam respostas pelo OpenRouter com as classificações esperadas nos exemplos
+fictícios, o que confirma integração, não benchmark; os sete pacotes novos só têm testes
+controlados. Avaliação ainda necessária: qualidade em português, calibração e uso operacional pedem
+dados independentes e referência humana. O Laya, alternativa local em avaliação, teve 14 testes da
+aplicação aprovados e 13 acertos em 16 exemplos sintéticos, o que não comprova superioridade.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-2-t6-p2">
+Essa separação é o que torna a área confiável: cada número vem com o que ele prova e o que não
+prova. Repetir esses números fora de contexto seria inflar o resultado.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-2-t6-p3">
+simulação; baseline de regras; integração real; avaliação necessária; Laya em avaliação; não é
+benchmark
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-2-t6-ex">
+Um gestor lê &quot;dez consultas reais sem falhas&quot; e quase aprova a adoção. Ao ler a seção
+inteira, vê que o teste confirma que a integração funciona, não que o Jev acerta com os dados da
+empresa, e pede um piloto com referência humana.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Para a sua decisão, escreva uma linha em cada coluna: o que você já observou e o que falta medir
+antes de automatizar.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Simulação · Baseline · Integração · Avaliação"><rect x="12.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Simulação</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">para aprender</text><rect x="133.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="145.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Baseline</text><text x="145.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">regras, não Jev</text><rect x="255.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="267.0" y="40" fill="#f1f5f9" font-size="12" font-family="sans-serif">Integração</text><text x="267.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">funciona, não mede</text><rect x="376.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="388.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Avaliação</text><text x="388.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">ainda necessária</text></svg>
+<figcaption class="help-note">Cada evidência tem um alcance: só a última coluna mediria qualidade real, e ela ainda está por fazer.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. O que é o JEV</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Choice, Noul e Score</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. 20 casos no laboratório público</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. O curso: 3 trilhas, 36 aulas</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. 17 pacotes e caminhos de uso</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. O que foi observado e o que falta</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua ficha</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a ficha foi feita.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tese</td>
+<td>A área cabe em uma frase sua, fiel à página.</td>
+<td>Releia o topo da página e o tópico 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Você sabe dizer para quem a área é e para quem não é.</td>
+<td>Volte ao tópico 2 e escreva um exemplo do seu trabalho.</td>
+</tr>
+<tr>
+<td>Blocos</td>
+<td>Você nomeia as partes centrais da área.</td>
+<td>Use o diagrama do módulo como roteiro.</td>
+</tr>
+<tr>
+<td>Primeiro passo</td>
+<td>Você escolheu um passo concreto e pequeno.</td>
+<td>Copie o primeiro passo que a própria página recomenda.</td>
+</tr>
+<tr>
+<td>Porta de entrada</td>
+<td>Você sabe qual curso, kit ou projeto abrir primeiro.</td>
+<td>Consulte o tópico 6 e a faixa de acesso da página.</td>
+</tr>
+<tr>
+<td>Fonte</td>
+<td>Cada afirmação da ficha tem origem na página.</td>
+<td>Troque o que você supôs pelo que a página diz.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~10 MIN
+</p>
+<h2>Sua decisão estruturada, do caso ao piloto</h2>
+<p>Deixe a página da área aberta: <a href="https://eventos.inema.pro/jev/">https://eventos.inema.pro/jev/</a>. Use um exemplo do seu trabalho, sem dados pessoais ou de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="3-2-1">
+<span>Abra o laboratório público do JEV, escolha um dos 20 casos e anote contexto, pergunta, critérios e a resposta simulada.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-2-2">
+<span>Escreva uma decisão parecida do seu trabalho e indique se ela é Choice, Noul ou Score, justificando pelo tipo de resposta de que você precisa.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-2-3">
+<span>Defina a política: com que confiança a sugestão segue, quando o sistema se abstém e quando vai para revisão humana.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-2-4">
+<span>Confira sua ficha contra a seção &quot;O que já foi observado e o que falta medir&quot;: marque o que você conseguiria medir com dados próprios e referência humana.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: minha decisão estruturada com JEV</h3>
+<p>
+Cole no Claude, no ChatGPT ou no Codex. Troque o que estiver entre &lt; e &gt; pela sua situação.
+</p>
+<pre><code>Leia https://eventos.inema.pro/jev/ e o guia https://inematds.github.io/jev/guia/.
+Quero transformar uma decisão repetitiva do meu trabalho numa decisão estruturada, sem prometer qualidade que eu não medi.
+Minha decisão: &lt;descreva, ex.: para qual equipe vai cada e-mail de cliente&gt;.
+Opções ou níveis possíveis: &lt;liste&gt;.
+1. Diga se a pergunta é Choice, Noul ou Score e por quê.
+2. Escreva o contexto mínimo, os critérios e a pergunta.
+3. Proponha a política: quando seguir a sugestão, quando se abster e quando mandar para revisão humana.
+4. Indique qual dos 20 casos do laboratório e qual dos 17 pacotes da página mais se parecem com a minha decisão.
+5. Monte a lista &quot;já observado x falta medir&quot; para o meu caso. Não trate simulação como medida de qualidade.</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Explicar o que é uma decisão estruturada com Jev, escolher entre Choice, Noul e Score e separar o
+que já foi observado do que ainda falta medir. Guarde a ficha com a tese, o público, o primeiro
+passo e a porta de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/jev/">Abrir a página da área ↗</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+O laboratório público mostrou respostas corretas em todos os casos que você abriu. Isso mede a
+qualidade do Jev?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+Não. Os 20 casos públicos e o replay são autorais e simulados; servem para estudar formulação,
+políticas e erros. Qualidade em português e calibração ainda precisam de dados independentes e
+referência humana.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>modelo de decisões estruturadas; TypeSafe; Jev Decision Lab; contexto e critérios; o sistema responde pelas ações</li>
+<li>Choice: alternativas explícitas; Noul: probabilidade de sim; Score: níveis ordenados; confiança não é autorização</li>
+<li>laboratório sem chave; respostas simuladas; 20 casos; contexto, perguntas, critérios; servidor local em Python</li>
+<li>Entender; Aplicar; Construir e avaliar; 12 módulos; 36 aulas; 12 laboratórios; projeto final; 18 horas</li>
+<li>pacote por área; fixture; --live; lotes e retomada; skill jev-decidir; jev-gw; falha conservadora</li>
+<li>simulação; baseline de regras; integração real; avaliação necessária; Laya em avaliação; não é benchmark</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Páginas lidas em 28/09/2026. O conteúdo das áreas muda; a página oficial vale mais que este resumo.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/jev/" target="_blank" rel="noopener">Área JEV · eventos.inema.pro</a>
+</li>
+<li>
+<a href="https://inematds.github.io/jev/app/" target="_blank" rel="noopener">Laboratório JEV</a>
+</li>
+<li>
+<a href="https://inematds.github.io/jev-curso/" target="_blank" rel="noopener">Curso JEV</a>
+</li>
+<li>
+<a href="https://inematds.github.io/jev-gw/guia/" target="_blank" rel="noopener">Guia do jev-gw</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha3/modulo-3-1.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha3/modulo-3-3.html">Próxima área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas do INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edição v2 · v1.0.0<br>Conteúdo tirado das páginas de eventos.inema.pro, lidas em 28/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>
