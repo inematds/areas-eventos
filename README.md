@@ -28,3 +28,9 @@ python3 scripts/validate.py
 ```
 
 Estudar localmente: `python3 -m http.server 8080` e abrir http://localhost:8080 (progresso entre páginas precisa de origem HTTP).
+
+## Mais no INEMA.CLUB
+
+- Ficha do curso: https://www.inema.club/cursos/307-areas-do-inema-eventos-o-que-e-cada-area/
+- Guia: https://www.inema.club/aprender-inteligencia-artificial/
+- Todos os cursos: https://www.inema.club/cursos/
