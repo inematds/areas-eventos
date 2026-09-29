@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-es">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas de INEMA Eventos — qué es cada área">
+<meta name="description" content="Curso rápido: qué es cada una de las nueve áreas temáticas de eventos.inema.pro — Gestión de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV y WebMCP."><title>IA Cultivada: un agente no se programa, se cultiva | Áreas de INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/es/curso/trilha1/modulo-1-3.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha1/modulo-1-3.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha1/modulo-1-3.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha1/modulo-1-3.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha1/modulo-1-3.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-es", "tracks": [{"n": "1", "title": "Gestionar y dirigir agentes", "modules": [{"id": "1-1", "title": "Gestión de IA: 2027, el año de gestionar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: tu trabajo pasa a ser dirigir agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: un agente no se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Herramientas y entorno", "modules": [{"id": "2-1", "title": "Claude → Codex: separa el cerebro del modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: uno hace, el otro revisa", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qué edición es para ti", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Mejorar, decidir y abrir", "modules": [{"id": "3-1", "title": "RSI: la IA que ayuda a mejorar la IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisiones de IA en la práctica", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: tu sitio conversa con agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav class="topnav" aria-label="Navegación principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Mi recorrido</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Apariencia</button>
+<button onclick="toggleTheme()" aria-label="Cambiar entre tema claro y oscuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" aria-current="page">T1<span class="long"> · Gestionar y dirigir agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Herramientas y entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Mejorar, decidir y abrir</span>
+</a>
+<a href="https://eventos.inema.pro/es/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Idioma del curso">
+<a href="../../../curso/trilha1/modulo-1-3.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../en/curso/trilha1/modulo-1-3.html" hreflang="en" lang="en">English</a>
+<a href="modulo-1-3.html" hreflang="es" lang="es" aria-current="page">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Oscuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Enfoque</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifas</button>
+<button data-inema-set-font="leitura">Con serifas</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Gestionar y dirigir agentes</a> / Módulo 1.3</div>
+<article id="modulo-1-3" data-inema-module="1-3" data-inema-track="1">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 1.3 / 3 DE 9
+</p>
+<h1>IA Cultivada: un agente no se programa, se cultiva</h1>
+<p>
+Explicar por qué un agente mejora gracias al entorno que cultivas y no al modelo, usando los ocho
+elementos, el ciclo y los cinco archivos del kit.
+</p>
+<p class="area-note">Página del área: <a href="https://eventos.inema.pro/ia-cultivada/es/">eventos.inema.pro/ia-cultivada/es/</a> · en el menú: “no se programa, se cultiva”</p>
+<div class="meter" data-inema-meter="modulo:1-3" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="El proceso que produce el comportamiento → Los ocho elementos del cultivo → Cada vuelta del ciclo es una cosecha → Los jardines personal y Jarvis → El jardín de los negocios → El kit: cinco archivos y el curso"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / IA-CULTIVADA</text><text x="36" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">El proceso que produce el comportamiento</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / IA-CULTIVADA</text><text x="271" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">Los ocho elementos del cultivo</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / IA-CULTIVADA</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Cada vuelta del ciclo es una cosecha</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / IA-CULTIVADA</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Los jardines personal y Jarvis</text><path d="M355 180v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / IA-CULTIVADA</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">El jardín de los negocios</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / IA-CULTIVADA</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">El kit: cinco archivos y el curso</text></svg>
+<figcaption class="help-note">Los 6 temas de este módulo. Al final, completas la ficha del área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>temas</span>
+</div>
+<div><strong>~20 min</strong>
+<span>lectura y práctica</span>
+</div>
+<div><strong>1</strong>
+<span>ficha del área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt listo</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-1-3#topico-1">
+<h2>
+<span class="number">1</span>El proceso que produce el comportamiento</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-3-t1-p1">
+El área IA Cultivada comienza con la tesis: &quot;Antes, programábamos el comportamiento. Ahora,
+programamos el proceso que produce el comportamiento.&quot; Nadie escribe línea por línea la
+capacidad de un modelo grande para hacer analogías o planificar una empresa: los laboratorios crean
+las condiciones y las capacidades surgen. La página distingue dos niveles de cultivo. En el nivel 1,
+el laboratorio cultiva el modelo con arquitectura, datos, objetivo, compute, entrenamiento y
+feedback, y tú no participas. En el nivel 2, cultivas el agente: el modelo ya viene listo, con los
+pesos congelados, y lo que cultivas es el entorno que lo rodea.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-3-t1-p2">
+Esta distinción explica por qué el mismo modelo se convierte en un pasante confundido para una
+persona y en un profesional confiable para otra. El modelo es igual al de tu competencia; el jardín
+no.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-3-t1-p3">
+Cultivar, no construir; nivel 1 (modelo) × nivel 2 (agente); pesos congelados; lo que aprende es el
+sistema.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-3-t1-ex">
+Dos equipos usan el mismo modelo para responder a clientes. Uno tiene una página de contexto,
+ejemplos anotados y reglas escritas; el otro solo abre el chat. La diferencia en calidad viene del
+entorno, no de la IA.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Escribe en una línea qué ya &quot;cultivas&quot; alrededor de la IA que usas hoy: ¿algún archivo de
+contexto, regla o ejemplo?
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Juzgar el área por su nombre: lee la idea central en la página antes de decidir si es para ti.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-1-3#topico-2">
+<h2>
+<span class="number">2</span>Los ocho elementos del cultivo</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-3-t2-p1">
+Todo agente, ya sea un asistente personal o un agente de ventas, se cultiva con los mismos ocho
+ingredientes. Función: de qué se encarga, un papel a la vez. Contexto: lo que necesita saber; una
+buena página vale más que veinte páginas volcadas sin orden. Herramientas: lo que puede operar,
+empezando por la lectura; reglas y límites: qué hace sin preguntar, qué requiere confirmación y qué
+nunca hace. Los ejemplos son casos reales anotados, incluidos los malos; la memoria es lo que
+permanece entre sesiones; la evaluación pregunta si está bien y con qué se compara; el feedback
+convierte cada falla en un cambio en el archivo, no en la conversación. Los cuatro primeros hacen
+que el agente funcione; los cuatro últimos hacen que mejore.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-3-t2-p2">
+La página observa que la mayoría de las personas se detiene en el cuarto elemento y se queja de que
+&quot;la IA no aprende&quot;. Conocer los ocho permite ver dónde está el vacío.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-3-t2-p3">
+Función; contexto; herramientas; reglas y límites; ejemplos; memoria; evaluación; feedback; software
+tradicional × IA Cultivada.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-3-t2-ex">
+Un agente de clasificación responde bien la primera semana y después repite los mismos errores.
+Tiene función, contexto, herramientas y reglas, pero no tiene ejemplos anotados, evaluación ni
+feedback que vuelva al archivo.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Marca cuáles de los ocho elementos de tu agente están por escrito y cuáles solo existen en tu
+cabeza.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="Función · Contexto · Herramientas · Reglas · Ejemplos · Memoria · Evaluación · Comentarios"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Función</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Contexto</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Herramientas</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Reglas</text><rect x="10.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="22.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Ejemplos</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Memoria</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Evaluación</text><rect x="370.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="101.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Comentarios</text></svg>
+<figcaption class="help-note">Los primeros cuatro elementos hacen que el agente funcione; los últimos cuatro hacen que mejore.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-1-3#topico-3">
+<h2>
+<span class="number">3</span>Cada vuelta del ciclo es una cosecha</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-3-t3-p1">
+El ciclo es el corazón del método: proceso, agente, ejecución, resultado, evaluación, feedback y, al
+final, un agente mejor. Lo que cambia entre una cosecha y otra no es el modelo, sino lo que anotaste
+sobre sus errores y los ajustes que hiciste en el entorno. La página presenta tres reglas. La
+evaluación produce registros, no impresiones: una línea por falla en el diario; después de diez
+líneas, aparece un patrón. Corrige el archivo, no la conversación; y la autonomía se gana con ciclos
+sin fallas, en tres niveles: propone y tú ejecutas; ejecuta y tú revisas; ejecuta e informa.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-3-t3-p2">
+Sin el ciclo, los primeros cuatro elementos se convierten en un agente que se estanca. La regla de
+autonomía protege contra el error más costoso: empezar confiando demasiado.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-3-t3-p3">
+Diario de fallas; scorecard; cambio en el entorno; la ficha sube de versión; nunca se empieza en el
+nivel 3.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-3-t3-ex">
+Un agente que redacta correos de cobro permanece tres semanas en el nivel 1, sin nuevas entradas en
+el diario de fallas. Solo entonces pasa al nivel 2, donde envía los borradores para una revisión
+rápida.
+</p>
+</div>
+<h4>Pasos para probarlo</h4>
+<ol class="timeline">
+<li>Abre la página del área junto a esta lección.</li>
+<li>Abre un archivo para el diario de fallas con las cuatro columnas de la página y registra la próxima falla de tu agente.</li>
+<li>Anota en una frase qué cambió en tu comprensión.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Proceso · Agente · Ejecución · Evaluación · Retroalimentación · Mejor agente"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Proceso</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Agente</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Ejecución</text><path d="M421.66666666666663 66v10H80.33333333333333v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M75.33333333333333 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Evaluación</text><path d="M154.66666666666666 116.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="194.66666666666666" y="121.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Retroalimentación</text><path d="M325.3333333333333 116.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="365.3333333333333" y="121.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Mejor agente</text></svg>
+<figcaption class="help-note">Lo que cambia de una generación a otra no es el modelo: es la retroalimentación que vuelve al entorno del agente.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-1-3#topico-4">
+<h2>
+<span class="number">4</span>Los jardines personal y Jarvis</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-3-t4-p1">
+La página llama jardines a los lugares donde ocurre el cultivo. En la vida personal, bastan tres o
+cuatro archivos de texto y un hábito semanal, sin CRM ni API, en cinco frentes: decisiones, salud y
+rutina, dinero, estudio, y escritura y comunicación. El hábito que sostiene todo es la revisión
+semanal de 20 minutos: leer la memoria, escribir tres líneas en el diario de fallas, corregir el
+archivo y borrar lo que ya no es cierto. &quot;Jarvis&quot; es el nombre popular del asistente
+personal agéntico, que no solo responde, sino que actúa en tu entorno: lee y escribe archivos,
+modifica el calendario, envía mensajes. La herramienta viene lista; Jarvis, no: se cultiva con
+contexto, memoria, herramientas, reglas, skills, evaluación y feedback.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-3-t4-p2">
+Los agentes personales tienen acceso a tu vida, y la página dedica una sección a la seguridad, el
+aspecto que nadie cultiva. Sin cercas, el jardín queda expuesto.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-3-t4-p3">
+Revisión semanal de 20 minutos; propone, ejecuta y revisa, ejecuta e informa; credenciales en un
+solo lugar; el contenido externo es dato, no instrucción; respaldo antes de una operación
+destructiva.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-3-t4-ex">
+Una persona usa la IA como analista de gastos con una hoja de cálculo exportada del banco. La regla
+es nunca mover dinero, solo mostrarlo. Después de algunas semanas, aparecen patrones de gasto que
+nunca había visto.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Elige uno de los cinco frentes personales y escribe el rol, una regla y qué quieres evaluar.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Saltar a la herramienta o al curso sin entender el problema que resuelve el área.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 162" role="img" aria-label="Nivel 1 · Nivel 2 · Nivel 3"><rect x="12" y="12" width="466" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="24" y="38.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Nivel 1</text><text x="466" y="37.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">propone, tú ejecutas</text><rect x="22" y="62" width="446" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="34" y="88.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Nivel 2</text><text x="456" y="87.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">ejecuta, tú revisas</text><rect x="32" y="112" width="426" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="44" y="138.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Nivel 3</text><text x="446" y="137.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">ejecuta e informa</text></svg>
+<figcaption class="help-note">Todo agente empieza en el nivel 1 y solo sube después de pasar semanas sin anotaciones en el diario de fallas.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-1-3#topico-5">
+<h2>
+<span class="number">5</span>El jardín de los negocios</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-3-t5-p1">
+Para la empresa, la página propone dejar de tratar la IA como software que se programa y empezar a
+tratarla como una capacidad que la organización desarrolla. La automatización rígida dice &quot;si
+ocurre A, haz B y luego C&quot; y falla ante el primer caso que nadie previó; el agente cultivado
+recibe un entorno de trabajo con un rol, criterios, ejemplos, límites y un resultado esperado. El
+primer agente siempre empieza en el nivel &quot;propone, un humano ejecuta&quot;: un proceso, un
+agente, un indicador. La página sugiere puntos de partida por área, como calificación de leads en
+ventas, clasificación inicial en atención al cliente y conciliación en finanzas. También enumera por
+qué fallan los proyectos, con la corrección mínima para cada síntoma.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-3-t5-p2">
+Cuando los proyectos fallan, rara vez el motivo es el modelo; suele ser la falta de contexto, de
+proceso y de feedback. Saber diagnosticar evita cambiar de herramienta cuando el problema está en el
+cultivo.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-3-t5-p3">
+&quot;El agente alucina&quot;: falta contexto o está saturado; &quot;nadie confía&quot;: no hay
+evaluación por muestra; &quot;dejó de mejorar&quot;: el feedback no vuelve al entorno; cargo que
+surge: gestor de agentes.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-3-t5-ex">
+Un equipo de ventas se queja de que el agente de calificación &quot;falló en producción&quot;. El
+diagnóstico de la página señala que los ejemplos solo incluyen casos fáciles; la corrección es
+agregar casos difíciles y excepciones a los ejemplos.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Elige un proceso de tu empresa con volumen, una regla clara y bajo costo de error, y define el único
+indicador del primer agente.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-1-3#topico-6">
+<h2>
+<span class="number">6</span>El kit: cinco archivos y el curso</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-3-t6-p1">
+Todo cultivo cabe en cinco archivos de texto, iguales para el jardín personal y el empresarial. La
+ficha del agente incluye su función, el resultado esperado, la persona responsable, lo que hace por
+su cuenta, lo que requiere confirmación y lo que nunca hace, además de la versión y la fecha. El
+contexto es &quot;Sobre mí&quot; o &quot;Sobre la empresa&quot;; los ejemplos anotados reúnen casos
+buenos, malos y excepciones aprobadas, con sus motivos; el diario de fallas tiene una línea por
+falla; el scorecard registra la revisión y la decisión de mantener, subir o bajar de nivel. El área
+reúne el curso IA Cultivada, en una sola página y también en inglés y español; los kits personal,
+Jarvis y empresa; el generador de fichas; el diagnóstico de madurez de ocho preguntas; y el
+repositorio iacultivada en GitHub, con las skills /cultivar y /revisao-semanal. Para gestionar los
+agentes en la empresa, la página indica el área Gestión de IA; para construirlos, el área AGI-ready.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-3-t6-p2">
+Con los archivos listos, no empiezas desde cero ni dependes de recordar lo que acordaste con la IA.
+La página resume el punto de partida: elige un jardín, una función y tres reglas; lo demás es un
+ciclo.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-3-t6-p3">
+Ficha del agente; contexto; ejemplos anotados; diario de fallas; scorecard; kits; generador;
+diagnóstico; /cultivar y /revisao-semanal.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-3-t6-ex">
+La dueña de una tienda pequeña responde el diagnóstico de ocho preguntas, descubre que su punto
+débil es la evaluación y descarga el kit empresa. Completa la ficha con el generador, directamente
+en el navegador, sin que nada salga de la computadora.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Haz el diagnóstico en https://inematds.github.io/iacultivada/diagnostico/ y anota qué kit te
+recomienda.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Ficha del agente · Contexto · Ejemplos · Diario de fallas · Scorecard"><rect x="12.0" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="24.0" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Ficha del agente</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">función y límites</text><rect x="109.2" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="121.2" y="40" fill="#f1f5f9" font-size="11" font-family="sans-serif">Contexto</text><text x="121.2" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">sobre mí o la empresa</text><rect x="206.4" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="218.4" y="40" fill="#f1f5f9" font-size="11" font-family="sans-serif">Ejemplos</text><text x="218.4" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">bueno, malo, excepción</text><rect x="303.6" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="315.6" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Diario de fallas</text><text x="315.6" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">una línea por falla</text><rect x="400.8" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="412.8" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Scorecard</text><text x="412.8" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">revisión semanal</text></svg>
+<figcaption class="help-note">Los cinco archivos son los mismos en el jardín personal y en el empresarial: cambia el contenido, no la estructura.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Temas de este módulo">
+<p class="kicker">
+EN ESTA LECCIÓN
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. El proceso que produce el comportamiento</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Los ocho elementos del cultivo</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Cada vuelta del ciclo es una cosecha</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Los jardines personal y Jarvis</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. El jardín de los negocios</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. El kit: cinco archivos y el curso</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratorio final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criterios para revisar tu ficha</h2>
+<p>
+Usa esta rúbrica después del laboratorio. Cada fila pide una evidencia; marcar como leído no
+significa que completaste la ficha.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia esperada</th>
+<th>Si no cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idea central</td>
+<td>Puedes resumir el área en una frase propia, fiel a la página.</td>
+<td>Vuelve a leer la parte superior de la página y el tema 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Sabes decir para quién es el área y para quién no.</td>
+<td>Vuelve al tema 2 y escribe un ejemplo de tu trabajo.</td>
+</tr>
+<tr>
+<td>Bloques</td>
+<td>Puedes nombrar las partes centrales del área.</td>
+<td>Usa el diagrama del módulo como guía.</td>
+</tr>
+<tr>
+<td>Primer paso</td>
+<td>Elegiste un paso concreto y pequeño.</td>
+<td>Copia el primer paso que recomienda la propia página.</td>
+</tr>
+<tr>
+<td>Punto de entrada</td>
+<td>Sabes qué curso, kit o proyecto abrir primero.</td>
+<td>Consulta el tema 6 y la sección de acceso de la página.</td>
+</tr>
+<tr>
+<td>Fuente</td>
+<td>Cada afirmación de la ficha se basa en la página.</td>
+<td>Cambia lo que supusiste por lo que dice la página.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+A PRACTICAR / ~10 MIN
+</p>
+<h2>El primer jardín</h2>
+<p>Deja abierta la página del área: <a href="https://eventos.inema.pro/ia-cultivada/es/">https://eventos.inema.pro/ia-cultivada/es/</a>. Usa un ejemplo de tu trabajo, sin datos personales ni de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="1-3-1">
+<span>Elige un jardín (vida personal, Jarvis o negocio) y una sola función para el agente.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-3-2">
+<span>Escribe la ficha del agente: función, resultado esperado, responsable humano, qué hace por su cuenta, qué requiere confirmación y qué nunca hace, con versión v1.0 y fecha.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-3-3">
+<span>Usa el agente para esa función durante una semana y registra cada falla en una línea del diario: fecha, qué falló, la corrección mínima posible, instrucción o infraestructura.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-3-4">
+<span>En la revisión semanal, convierte cada línea en un cambio en el contexto, las reglas, los ejemplos o las herramientas y sube la ficha a v1.1. Comprueba: ¿el cambio quedó registrado en el archivo o solo en la conversación?</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: preparar el jardín de un agente</h3>
+<p>
+Pégalo en Claude, ChatGPT o Codex. Cambia lo que está entre &lt; y &gt; por tu situación.
+</p>
+<pre><code>Lee https://eventos.inema.pro/ia-cultivada/ (área IA Cultivada del INEMA): los ocho elementos, el ciclo, los tres niveles de autonomía y los cinco archivos del kit.
+
+Mi jardín: &lt;vida personal, Jarvis o negocio&gt;
+La función del agente: &lt;una sola responsabilidad&gt;
+Lo que ya existe: &lt;herramientas, documentos, ejemplos que tengo&gt;
+
+Prepara los cinco archivos en texto: 1) ficha del agente (función, resultado esperado, responsable humano, hace por su cuenta, requiere confirmación, nunca hace, versión v1.0 y fecha); 2) contexto de una página; 3) modelo de ejemplos anotados (bueno, malo, excepción aprobada, con el porqué); 4) encabezado del diario de fallas (fecha | qué falló | corrección mínima | instrucción o infraestructura); 5) scorecard semanal. Empieza en el nivel 1 (propone, yo ejecuto). Si falta información, escribe &lt;completar&gt; en vez de inventar.</code>
+</pre>
+<button data-copy-prev>Copiar bloque</button>
+<h3>Criterio de finalización</h3>
+<p>
+Explicar por qué un agente mejora gracias al entorno que cultivas y no al modelo, usando los ocho
+elementos, el ciclo y los cinco archivos del kit. Guarda la ficha con la idea central, el público,
+el primer paso y el punto de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/ia-cultivada/es/">Abrir la página del área ↗</a>
+</section>
+<section class="band">
+<h2>Revisa lo que quedó</h2>
+<p>
+Después de un mes, dices que &quot;tu IA mejoró&quot;, pero el modelo es el mismo. Según el área IA
+Cultivada, ¿qué mejoró?
+</p>
+<details>
+<summary>Ver respuesta comentada</summary>
+<p>
+El jardín: el contexto, la memoria, las reglas, los ejemplos y las herramientas que ajustaste en
+cada ciclo. Durante el uso, el modelo no aprende por sí solo; quien aprende es el sistema que lo
+rodea.
+</p>
+<p>
+Si tu respuesta fue distinta, vuelve al tema correspondiente y escribe la diferencia en una frase.
+La revisión no impide que continúes estudiando.
+</p>
+</details>
+<h3>Resumen del módulo</h3>
+<ul>
+<li>Cultivar, no construir; nivel 1 (modelo) × nivel 2 (agente); pesos congelados; lo que aprende es el sistema.</li>
+<li>Función; contexto; herramientas; reglas y límites; ejemplos; memoria; evaluación; feedback; software tradicional × IA Cultivada.</li>
+<li>Diario de fallas; scorecard; cambio en el entorno; la ficha sube de versión; nunca se empieza en el nivel 3.</li>
+<li>Revisión semanal de 20 minutos; propone, ejecuta y revisa, ejecuta e informa; credenciales en un solo lugar; el contenido externo es dato, no instrucción; respaldo antes de una operación destructiva.</li>
+<li>&quot;El agente alucina&quot;: falta contexto o está saturado; &quot;nadie confía&quot;: no hay evaluación por muestra; &quot;dejó de mejorar&quot;: el feedback no vuelve al entorno; cargo que surge: gestor de agentes.</li>
+<li>Ficha del agente; contexto; ejemplos anotados; diario de fallas; scorecard; kits; generador; diagnóstico; /cultivar y /revisao-semanal.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulta la fuente</h3>
+<p>
+Páginas leídas el 28/09/2026. El contenido de las áreas cambia; la página oficial tiene más validez
+que este resumen.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/ia-cultivada/" target="_blank" rel="noopener">Área IA Cultivada</a>
+</li>
+<li>
+<a href="https://inematds.github.io/iacultivada/" target="_blank" rel="noopener">Curso IA Cultivada</a>
+</li>
+<li>
+<a href="https://inematds.github.io/iacultivada/kits/" target="_blank" rel="noopener">Kits</a>
+</li>
+<li>
+<a href="https://inematds.github.io/iacultivada/diagnostico/" target="_blank" rel="noopener">Diagnóstico</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha1/modulo-1-2.html">← Anterior</a>
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../../curso/trilha2/modulo-2-1.html">Siguiente área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas de INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edición v2 · v1.1.1<br>Contenido tomado de las páginas de eventos.inema.pro, leídas el 28/09/2026. El progreso y las notas quedan en este navegador; expórtalos desde tu recorrido.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

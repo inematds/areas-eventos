@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-en">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="INEMA Events Areas — what each area is">
+<meta name="description" content="Quick course: what each of the nine subject areas on eventos.inema.pro is—AI Management, AGI-ready, Cultivated AI, Claude → Codex, Codex + Claude, OSWork, RSI, JEV, and WebMCP."><title>OSWork: Which Edition Is for You? | INEMA Events Areas</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/en/curso/trilha2/modulo-2-3.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha2/modulo-2-3.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha2/modulo-2-3.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha2/modulo-2-3.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha2/modulo-2-3.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-en", "tracks": [{"n": "1", "title": "Manage and direct agents", "modules": [{"id": "1-1", "title": "AI Management: 2027, the year of managing agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: Your Work Becomes Managing Agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Cultivated AI: you cultivate an agent; you don’t program one", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Tools and environment", "modules": [{"id": "2-1", "title": "Claude → Codex: Separate the brain from the model", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: one does the work, the other reviews it", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: Which Edition Is for You?", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Improve, decide, and open up", "modules": [{"id": "3-1", "title": "RSI: AI that helps improve AI", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: AI Decisions in Practice", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: Your Site Talking to Agents", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav class="topnav" aria-label="Main navigation">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">INEMA Areas<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>My Journey</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Appearance</button>
+<button onclick="toggleTheme()" aria-label="Toggle light and dark theme">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Manage and direct agents</span>
+</a>
+<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Tools and environment</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Improve, decide, and open up</span>
+</a>
+<a href="https://eventos.inema.pro/en/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Course language">
+<a href="../../../curso/trilha2/modulo-2-3.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="modulo-2-3.html" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="../../../es/curso/trilha2/modulo-2-3.html" hreflang="es" lang="es">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Dark</button>
+<button type="button" data-inema-set-theme="claro">Light</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Focus</button>
+<button type="button" data-inema-set-theme="contraste">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Home</a> / <a href="index.html">Tools and environment</a> / Module 2.3</div>
+<article id="modulo-2-3" data-inema-module="2-3" data-inema-track="2">
+<header class="hero">
+<div>
+<p class="kicker">
+MODULE 2.3 / 6 OF 9
+</p>
+<h1>OSWork: Which Edition Is for You?</h1>
+<p>
+Explain what OSWork is, what you build with it, and which of the five editions (v2, v6.2, v6, v5,
+Quick) fits each person’s experience and available time.
+</p>
+<p class="area-note">Area page: <a href="https://eventos.inema.pro/oswork/en/">eventos.inema.pro/oswork/en/</a> · in the menu: “from chat to your agent environment”</p>
+<div class="meter" data-inema-meter="modulo:2-3" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="AI as a Work System → Five editions, five paths → v2 and v6.2: the complete path → v6, v5, and Quick: for beginners → What you build → Start with a small task"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / OSWORK</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">AI as a Work System</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / OSWORK</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Five editions, five paths</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / OSWORK</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">v2 and v6.2: the complete path</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / OSWORK</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">v6, v5, and Quick: for beginners</text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / OSWORK</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">What you build</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / OSWORK</text><text x="271" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Start with a small task</text></svg>
+<figcaption class="help-note">The 6 topics in this module. At the end, you’ll fill out the area worksheet.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>topics</span>
+</div>
+<div><strong>~20 min</strong>
+<span>reading and practice</span>
+</div>
+<div><strong>1</strong>
+<span>area worksheet</span>
+</div>
+<div><strong>1</strong>
+<span>ready-to-use prompt</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-2-3#topico-1">
+<h2>
+<span class="number">1</span>AI as a Work System</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-3-t1-p1">
+OSWork presents itself as “AI as a work system” and “from chat to your agent environment.” An agent
+is an AI that carries out tasks using tools and files, rather than only replying in a conversation.
+The course teaches you to organize files, instructions, memory, and tools into a work system you can
+verify. The page’s central line is: “Your next conversation can start where the last one left off.”
+To do that, OSWork teaches you to turn loose requests into organized work: define the goal, choose
+the context, do a small task, and check the result. You start in chat and work your way up to a
+restricted bot and supervised operation on a VPS, a server rented online.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-3-t1-p2">
+Without organization, every conversation with AI starts from scratch. A system with files and rules
+keeps track of what’s already been decided and makes the result verifiable.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-3-t1-p3">
+work system; from chat to an agent environment; goal, context, small task, check; restricted bot;
+supervised VPS
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-3-t1-ex">
+A manager asks AI for the same report every week and explains everything again each time. With a
+project folder and its own instructions, the next conversation already starts with the right
+context.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do</h4>
+<p>
+Write one sentence describing a task you have to start from scratch every time you open chat.
+</p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p>
+Judging the area by its name: read the main idea on the page before deciding if it’s for you.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-2-3#topico-2">
+<h2>
+<span class="number">2</span>Five editions, five paths</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-3-t2-p1">
+The page offers “five ways to organize your work with AI” and asks you to choose based on your
+experience and available time. OSWork v2 is the technical path. OSWork v6.2 is the complete,
+step-by-step path. OSWork v6 is for beginners and takes a visual approach. OSWork v5 is for
+beginners 40+. OSWork Quick gets straight to the point. According to the page, courses and videos
+are available in Portuguese, Spanish, and English; through the area access, v6.2 and v6 have their
+own links in EN and ES.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-3-t2-p2">
+Choosing the right edition can keep you from giving up at the first terminal or getting bored with
+the basics. Each path covers the same idea at a different level of depth.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-3-t2-p3">
+v2 technical; v6.2 complete, step by step; v6 visual for beginners; v5 for beginners 40+; Quick gets
+straight to the point
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-3-t2-ex">
+On a team, the developer follows v2 while the administrative coordinator, who has no AI experience,
+starts with Quick. Both learn the same way to organize their work, at their own pace.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Choose the two of the five editions that suit you best right now.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="v2 · v6.2 · v6 · v5 · Quick"><rect x="12.0" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">v2</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">technical path</text><rect x="109.2" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="121.2" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">v6.2</text><text x="121.2" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">complete step by step</text><rect x="206.4" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="218.4" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">v6</text><text x="218.4" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">beginners, visual</text><rect x="303.6" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="315.6" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">v5</text><text x="315.6" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">beginners 40+</text><rect x="400.8" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="412.8" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Quick</text><text x="412.8" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">straight to the point</text></svg>
+<figcaption class="help-note">The five OSWork editions: choose based on your experience and the time you have.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-2-3#topico-3">
+<h2>
+<span class="number">3</span>v2 and v6.2: the complete path</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-3-t3-p1">
+OSWork v2 is the technical path: eight modules, four tracks, and 48 topics. It goes from chat to the
+terminal and Codex, files, Skills, Git, a Telegram bot, and supervised VPS operation. It also
+includes a practice kit. The eight modules are: Models; Chat, Work, and Desktop; Terminal and Codex
+in Practice; Folders, Markdown, and Secrets; AGENTS, Skills, and Memory; Git and GitHub Without
+Losing Work; Telegram as a Work Interface; and VPS from Scratch and 24/7 Operation. OSWork v6.2 is
+the same path redesigned for beginners: eight modules and 48 lessons of about 15 minutes each, with
+visual step-by-step guidance and a glossary of technical terms. In v2, students can mark topics as
+read, record questions, take notes, and export their learning journey; progress is saved in the
+browser and kept separate by language.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-3-t3-p2">
+If you want to get as far as a bot and server, you need the full path. v6.2 makes that path
+accessible even without a technical background.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-3-t3-p3">
+v2: 8 modules, 4 tracks, 48 topics, kit; v6.2: 48 lessons of ~15 min, glossary; Codex; Skills; Git;
+Telegram; VPS
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-3-t3-ex">
+An analyst wants to automate Telegram queries but has never opened a terminal. She chooses v6.2,
+which covers the same modules as v2 in short, visual lessons.
+</p>
+</div>
+<h4>Steps to try</h4>
+<ol class="timeline">
+<li>Open the area page beside this lesson.</li>
+<li>Read the titles of the eight v2 modules on the page and mark how far you want to go.</li>
+<li>Write one sentence about what changed in your understanding.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="Models · Chat/Work · Terminal/Codex · Folders/MD · AGENTS/Skills · Git/GitHub · Telegram · VPS 24/7"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Models</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Chat/Work</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Terminal/Codex</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Folders/MD</text><rect x="10.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="22.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">AGENTS/Skills</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Git/GitHub</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Telegram</text><rect x="370.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="382.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">VPS 24/7</text></svg>
+<figcaption class="help-note">The eight modules in the v2 path (and v6.2), from chat to VPS operations.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-2-3#topico-4">
+<h2>
+<span class="number">4</span>v6, v5, and Quick: for beginners</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-3-t4-p1">
+Three editions are for beginners and don’t require installation or programming. OSWork v6 has seven
+lessons of about 15 minutes each, with simulated chat screens, real before-and-after examples, and
+visual step-by-step guidance. You create folders by topic, a sheet with your rules, a request
+template, and a review routine, without installing anything. OSWork v5 is for professionals 40+ who
+aren’t very familiar with AI: seven lessons of 20 to 25 minutes on organizing folders, guidelines,
+reusable requests, and a review routine, with no programming. OSWork Quick is the short, visual
+version for professionals 40+: seven lessons and about 77 minutes of study, covering the same topics
+as v5 with less text. Quick is also available as a video, with Nei’s avatar and voice,
+illustrations, and SRT captions in Portuguese, Spanish, and English.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-3-t4-p2">
+For beginners, the value comes from organizing and checking your work, not from technical tools.
+These editions teach you to do that in a short time.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-3-t4-p3">
+v6: 7 lessons of ~15 min, visual, no installation; v5: 7 lessons of 20 to 25 min, 40+; Quick: 7
+lessons, ~77 min, also available as video
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-3-t4-ex">
+A 50-year-old accountant wants to use AI more confidently. He watches OSWork Quick as a video and
+comes away with folders by topic and a routine for checking responses.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do</h4>
+<p>
+Watch the first OSWork Quick video lesson in your language.
+</p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p>
+Jumping to the tool or course without understanding the problem the area addresses.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-2-3#topico-5">
+<h2>
+<span class="number">5</span>What you build</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-3-t5-p1">
+The page lists what you build along the way: a project folder with inputs, outputs, and its own
+instructions; a record of decisions and failures, along with a reusable Skill; a Git history for
+reviewing and recovering changes; and a query bot with sample data and an operations plan. A Skill
+is a packaged procedure an agent can reuse; Git is a system that keeps file versions. The kit
+section says: “Your first environment starts with real files.” The kit includes templates for
+AGENTS.md, memory, decisions, a failure log, a task contract, a report Skill, and a VPS plan. It
+also includes a Python bot with an offline self-test. The practice bot is deterministic: it doesn’t
+call an AI model or run messages as commands.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-3-t5-p2">
+Finishing with concrete files, rather than just notes, makes what you learn reusable at work. The
+kit templates save you from starting from scratch.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-3-t5-p3">
+project folder; record of decisions and failures; Skill; Git; query bot with sample data; ZIP kit;
+deterministic bot
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-3-t5-ex">
+A project assistant downloads the kit, adapts the task contract for the team’s monthly report, and
+starts recording each failure as a line in the failure log.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Download the area’s ZIP kit and open the task contract template.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 212" role="img" aria-label="Project folder · Memory and Skill · Git history · Lookup bot"><rect x="12" y="12" width="466" height="42" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24" y="38.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Project folder</text><text x="466" y="37.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">inputs, outputs, rules</text><rect x="22" y="62" width="446" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="34" y="88.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Memory and Skill</text><text x="456" y="87.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">decisions and failures</text><rect x="32" y="112" width="426" height="42" rx="9" fill="#152234" stroke="#60a5fa"/><text x="44" y="138.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Git history</text><text x="446" y="137.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">review and restore</text><rect x="42" y="162" width="406" height="42" rx="9" fill="#152234" stroke="#34d399"/><text x="54" y="188.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Lookup bot</text><text x="436" y="187.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">fictional data</text></svg>
+<figcaption class="help-note">What you’ll build: each layer supports the next, from a folder to a bot with an operating plan.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-2-3#topico-6">
+<h2>
+<span class="number">6</span>Start with a small task</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-3-t6-p1">
+The page advises: “Start with a small task.” There are three steps: choose the first module and
+compare two options available in your environment; create a practice folder and adapt the kit’s task
+contract; save the result, record a question, and return to your learning journey. In the “Before
+you start” section, the page explains that you can begin with the fundamentals without programming,
+and that the technical labs introduce the terminal, Git, and Python step by step. You can read the
+content without signing up; subscriptions, API usage, and VPS rentals are separate services that
+students choose for themselves. The course doesn’t promise an unsupervised autonomous agent: it
+teaches limits, verification, logs, and recovery.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-3-t6-p2">
+A small task gives you a quick result and shows what still needs organizing. Knowing what costs
+extra helps you avoid surprises.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-3-t6-p3">
+small task; practice folder; task contract; no programming at the start; read without signing up;
+paid services are separate; supervised operation
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-3-t6-ex">
+A teacher creates a practice folder, adapts the task contract to make a set of exercises, and saves
+the result with a question to revisit in the next lesson.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Create a practice folder today and write the contract for your first small task in it.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="First module · Practice folder · Task contract · Save and note"><rect x="12.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">First module</text><path d="M240.0 38.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Practice folder</text><path d="M379.0 66v10H123.0v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M118.0 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Task contract</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Save and note</text></svg>
+<figcaption class="help-note">The page’s suggested first step: small, with a saved result and one question recorded.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Topics in this module">
+<p class="kicker">
+IN THIS LESSON
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. AI as a Work System</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Five editions, five paths</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. v2 and v6.2: the complete path</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. v6, v5, and Quick: for beginners</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. What you build</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Start with a small task</a>
+</li>
+</ul>
+<a href="#laboratorio">Final lab ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criteria for reviewing your worksheet</h2>
+<p>
+Use this rubric after the lab. Each row asks for evidence; marking a topic as read doesn’t mean the
+worksheet is complete.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Expected evidence</th>
+<th>If it doesn’t meet the criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main idea</td>
+<td>You can describe the area in one sentence that reflects the page.</td>
+<td>Reread the top of the page and topic 1.</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>You can say who the area is for and who it isn’t for.</td>
+<td>Return to topic 2 and write an example from your work.</td>
+</tr>
+<tr>
+<td>Core elements</td>
+<td>You can name the area’s core elements.</td>
+<td>Use the module diagram as a guide.</td>
+</tr>
+<tr>
+<td>First step</td>
+<td>You chose a small, concrete step.</td>
+<td>Copy the first step recommended on the page itself.</td>
+</tr>
+<tr>
+<td>Starting point</td>
+<td>You know which course, kit, or project to open first.</td>
+<td>Check topic 6 and the page’s access section.</td>
+</tr>
+<tr>
+<td>Source</td>
+<td>Every statement in the worksheet comes from the page.</td>
+<td>Replace your assumptions with what the page says.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+HANDS-ON / ~10 MIN
+</p>
+<h2>Choose Your Edition</h2>
+<p>Keep the area page open: <a href="https://eventos.inema.pro/oswork/en/">https://eventos.inema.pro/oswork/en/</a>. Use an example from your work, without personal or client data.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="2-3-1">
+<span>Write down your situation: your experience with AI, whether you have used a terminal, and how much time you have each week.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-3-2">
+<span>Paste the prompt from the copyable block into Claude or ChatGPT. Check that the answer recommends an edition and cites the page text that supports the choice.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-3-3">
+<span>Open the course using the link in the area and confirm that the number of lessons or modules matches the page description.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-3-4">
+<span>Do the first small task: create a practice folder and save your first result and one recorded question in it.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: Which OSWork Edition Is for Me?</h3>
+<p>
+Paste it into Claude, ChatGPT, or Codex. Replace the words inside &lt; and &gt; with details about
+your situation.
+</p>
+<pre><code>Read https://eventos.inema.pro/oswork/ and compare the five OSWork editions (v2, v6.2, v6, v5, and Quick).
+My situation: &lt;your experience with AI&gt;, &lt;whether you have used a terminal&gt;, &lt;how much time you have each week&gt;, &lt;what you want to build&gt;.
+1. Recommend an edition and cite the page text that supports your choice.
+2. State how many lessons or modules it has, according to the page.
+3. Suggest my first small task, following the section &quot;Start with a small task.&quot;
+Use only what is on the page; if something is not there, say so.</code>
+</pre>
+<button data-copy-prev>Copy block</button>
+<h3>Completion criterion</h3>
+<p>
+Explain what OSWork is, what you build with it, and which of the five editions (v2, v6.2, v6, v5,
+Quick) fits each person’s experience and available time. Keep the worksheet with the main idea,
+audience, first step, and starting point.
+</p>
+<a class="button" href="https://eventos.inema.pro/oswork/en/">Open the area page ↗</a>
+</section>
+<section class="band">
+<h2>Review what you’ve learned</h2>
+<p>
+A 45-year-old with little time and no familiarity with AI wants to get started. Which edition does
+the page recommend, and why?
+</p>
+<details>
+<summary>View suggested answer</summary>
+<p>
+OSWork Quick (or v5): the page describes Quick as a short, visual version for professionals 40+,
+with seven lessons and about 77 minutes of material. It describes v5 as seven lessons with no
+programming for the same audience.
+</p>
+<p>
+If your answer was different, return to the relevant topic and describe the difference in one
+sentence. This check won’t block your progress.
+</p>
+</details>
+<h3>Module summary</h3>
+<ul>
+<li>work system; from chat to an agent environment; goal, context, small task, check; restricted bot; supervised VPS</li>
+<li>v2 technical; v6.2 complete, step by step; v6 visual for beginners; v5 for beginners 40+; Quick gets straight to the point</li>
+<li>v2: 8 modules, 4 tracks, 48 topics, kit; v6.2: 48 lessons of ~15 min, glossary; Codex; Skills; Git; Telegram; VPS</li>
+<li>v6: 7 lessons of ~15 min, visual, no installation; v5: 7 lessons of 20 to 25 min, 40+; Quick: 7 lessons, ~77 min, also available as video</li>
+<li>project folder; record of decisions and failures; Skill; Git; query bot with sample data; ZIP kit; deterministic bot</li>
+<li>small task; practice folder; task contract; no programming at the start; read without signing up; paid services are separate; supervised operation</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Check the source</h3>
+<p>
+Pages read on 28/09/2026. Area content changes; the official page takes precedence over this
+summary.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/oswork/" target="_blank" rel="noopener">OSWork area</a>
+</li>
+<li>
+<a href="https://inematds.github.io/oswork/" target="_blank" rel="noopener">OSWork v2</a>
+</li>
+<li>
+<a href="https://inematds.github.io/oswork-v62/" target="_blank" rel="noopener">OSWork v6.2</a>
+</li>
+<li>
+<a href="https://inematds.github.io/oswork-quick/videos/" target="_blank" rel="noopener">OSWork Quick Videos</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha2/modulo-2-2.html">← Previous</a>
+<a class="button" href="index.html">Back to learning path</a>
+<a class="button primary" href="../../curso/trilha3/modulo-3-1.html">Next area →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">INEMA Events Areas · quick course · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edition v2 · v1.1.1<br>Content drawn from the eventos.inema.pro pages, read on 28/09/2026. Progress and notes stay in this browser; export them from My Journey.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Module complete</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

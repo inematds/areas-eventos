@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-en">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="INEMA Events Areas — what each area is">
+<meta name="description" content="Quick course: what each of the nine subject areas on eventos.inema.pro is—AI Management, AGI-ready, Cultivated AI, Claude → Codex, Codex + Claude, OSWork, RSI, JEV, and WebMCP."><title>JEV: AI Decisions in Practice | INEMA Events Areas</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/en/curso/trilha3/modulo-3-2.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-2.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha3/modulo-3-2.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha3/modulo-3-2.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-2.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-en", "tracks": [{"n": "1", "title": "Manage and direct agents", "modules": [{"id": "1-1", "title": "AI Management: 2027, the year of managing agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: Your Work Becomes Managing Agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Cultivated AI: you cultivate an agent; you don’t program one", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Tools and environment", "modules": [{"id": "2-1", "title": "Claude → Codex: Separate the brain from the model", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: one does the work, the other reviews it", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: Which Edition Is for You?", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Improve, decide, and open up", "modules": [{"id": "3-1", "title": "RSI: AI that helps improve AI", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: AI Decisions in Practice", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: Your Site Talking to Agents", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav class="topnav" aria-label="Main navigation">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">INEMA Areas<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>My Journey</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Appearance</button>
+<button onclick="toggleTheme()" aria-label="Toggle light and dark theme">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Manage and direct agents</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Tools and environment</span>
+</a>
+<a href="../../curso/trilha3/index.html" aria-current="page">T3<span class="long"> · Improve, decide, and open up</span>
+</a>
+<a href="https://eventos.inema.pro/en/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Course language">
+<a href="../../../curso/trilha3/modulo-3-2.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="modulo-3-2.html" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="../../../es/curso/trilha3/modulo-3-2.html" hreflang="es" lang="es">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Dark</button>
+<button type="button" data-inema-set-theme="claro">Light</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Focus</button>
+<button type="button" data-inema-set-theme="contraste">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Home</a> / <a href="index.html">Improve, decide, and open up</a> / Module 3.2</div>
+<article id="modulo-3-2" data-inema-module="3-2" data-inema-track="3">
+<header class="hero">
+<div>
+<p class="kicker">
+MODULE 3.2 / 8 OF 9
+</p>
+<h1>JEV: AI Decisions in Practice</h1>
+<p>
+Explain what a structured decision with Jev is, choose between Choice, Noul, and Score, and separate
+what has already been observed from what still needs to be measured.
+</p>
+<p class="area-note">Area page: <a href="https://eventos.inema.pro/jev/en/">eventos.inema.pro/jev/en/</a> · in the menu: “AI decisions in practice”</p>
+<div class="meter" data-inema-meter="modulo:3-2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="What JEV is → Choice, Noul, and Score → 20 cases in the public lab → The course: 3 learning paths, 36 lessons → 17 packages and ways to use them → What has been observed and what still needs to be measured"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / JEV</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">What JEV is</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / JEV</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Choice, Noul, and Score</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / JEV</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">20 cases in the public lab</text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / JEV</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">The course: 3 learning paths, 36 lessons</text><path d="M355 180v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / JEV</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">17 packages and ways to use them</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / JEV</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">What has been observed and what still needs to be measured</text></svg>
+<figcaption class="help-note">The 6 topics in this module. At the end, you’ll fill out the area worksheet.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>topics</span>
+</div>
+<div><strong>~20 min</strong>
+<span>reading and practice</span>
+</div>
+<div><strong>1</strong>
+<span>area worksheet</span>
+</div>
+<div><strong>1</strong>
+<span>ready-to-use prompt</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-3-2#topico-1">
+<h2>
+<span class="number">1</span>What JEV is</h2>
+<h3>What it is</h3>
+<p data-inema-block="m3-2-t1-p1">
+Jev is TypeSafe’s structured decision model. A structured decision is a closed question with context
+and criteria. Its answer is a choice, a probability, or a level, not free-form text. The Jev
+Decision Lab is INEMA’s educational project for formulating questions, comparing answers, and
+understanding when a decision needs review. The model receives context and criteria; your system
+remains responsible for taking action. The lab separates this choice from text generation and tool
+execution.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m3-2-t1-p2">
+Many AI tasks at work don’t call for text; they call for a decision: which queue should this ticket
+go to? Does this passage support the claim? Separating decisions, generation, and execution makes
+clear who is responsible for each part and makes it easier to measure accuracy.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m3-2-t1-p3">
+structured decision model; TypeSafe; Jev Decision Lab; context and criteria; the system is
+responsible for actions
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m3-2-t1-ex">
+A support team wants AI to route tickets. Instead of asking for a paragraph, it uses Jev to choose a
+queue from fixed options. The company’s system moves the ticket, and uncertain cases go to a person.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do</h4>
+<p>
+List two repetitive decisions in your work that currently turn into free-form text, and rewrite each
+as a closed question with options.
+</p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p>
+Judging the area by its name: read the main idea on the page before deciding if it’s for you.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-3-2#topico-2">
+<h2>
+<span class="number">2</span>Choice, Noul, and Score</h2>
+<h3>What it is</h3>
+<p data-inema-block="m3-2-t2-p1">
+The page presents three ways to ask a question. Choice selects from explicit alternatives, such as
+which queue or which agent. Noul estimates the probability of an affirmative answer, such as the
+chance that a passage supports a claim. Score evaluates a rubric with ordered levels, such as low,
+medium, and high. One course module covers how to distinguish the three based on the kind of answer
+you need, and another covers confidence and error: using uncertainty without turning it into
+automatic authorization.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m3-2-t2-p2">
+Choosing the wrong format produces answers that are hard to use: a score when you needed a queue, or
+a yes when there were several levels. The form of the question determines how you will measure
+results and which policy to apply.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m3-2-t2-p3">
+Choice: explicit alternatives; Noul: probability of yes; Score: ordered levels; confidence is not
+authorization
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m3-2-t2-ex">
+For meeting follow-up, &quot;does the meeting record include an owner and a deadline?&quot; is Noul;
+&quot;which team handles this?&quot; is Choice; &quot;what is the log’s priority, from 1 to 4?&quot;
+is Score. The same meeting can lead to all three questions.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Take one of the decisions you listed and write it in all three forms. Keep the one that gives you an
+answer your process can use.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Choice · Noul · Score"><rect x="12.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Choice</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">one alternative</text><rect x="174.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="186.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Noul</text><text x="186.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">probability of yes</text><rect x="336.0" y="14" width="154.0" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="348.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Score</text><text x="348.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">ordered levels</text></svg>
+<figcaption class="help-note">The form of the question depends on the kind of answer your process needs to use: one option, a chance of yes, or a level.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-3-2#topico-3">
+<h2>
+<span class="number">3</span>20 cases in the public lab</h2>
+<h3>What it is</h3>
+<p data-inema-block="m3-2-t3-p1">
+The lab runs in your browser, requires no key, and doesn’t call any API: its answers are simulated.
+Each of the 20 cases includes context, questions, criteria, a simulated answer, an explanation, and
+a next step. Examples include support triage, a contract checklist, agent routing, and semantic diff
+review. You can edit the questions, import a request, export the result, or open a report; changing
+a case invalidates its previous simulated answer. To go further, you can clone the project and run
+the local server with Python 3.10 or later. The core uses only the standard library.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m3-2-t3-p2">
+The lab lets you make mistakes without cost or risk. You learn to formulate the context, options,
+and policy before spending credits or touching a real system.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m3-2-t3-p3">
+lab requires no key; simulated answers; 20 cases; context, questions, criteria; local Python server
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m3-2-t3-ex">
+A coordinator opens the &quot;Simultaneous intents&quot; case and sees that a conversation can
+include sales and scheduling at the same time. They realize their company’s question, which allows
+only one option per message, needs to change.
+</p>
+</div>
+<h4>Steps to try</h4>
+<ol class="timeline">
+<li>Open the area page beside this lesson.</li>
+<li>Open https://inematds.github.io/jev/app/, choose the case closest to your work, and rewrite one of its questions using your criteria.</li>
+<li>Write one sentence about what changed in your understanding.</li>
+</ol>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-3-2#topico-4">
+<h2>
+<span class="number">4</span>The course: 3 learning paths, 36 lessons</h2>
+<h3>What it is</h3>
+<p data-inema-block="m3-2-t4-p1">
+The course &quot;Jev in Practice&quot; has three learning paths, 12 modules, and 36 lessons with
+theory, examples, exercises, and answers. The Understand path covers where Jev fits, the three
+question types, confidence and error, and cost. Apply covers support, documents, models and agents,
+and the browser. Build and Evaluate covers integration, quality measurement, operations, and the
+final project. Modules 1 through 8 are conceptual; modules 9 through 12 use JSON, the terminal, and
+Python. The estimated time is 18 hours. There are 12 labs with fictional data and answer keys. The
+final project asks you to decide whether there is evidence to adopt, collect more data, or not
+automate. The HTML v2 course is in Portuguese, with progress tracking, questions, and notes.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m3-2-t4-p2">
+The course takes you from &quot;understanding the idea&quot; to &quot;deciding whether to
+adopt&quot; using a rubric. The final project accepts &quot;do not automate&quot; as an answer,
+which trains sound judgment rather than enthusiasm.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m3-2-t4-p3">
+Understand; Apply; Build and Evaluate; 12 modules; 36 lessons; 12 labs; final project; 18 hours
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m3-2-t4-ex">
+An analyst with no programming experience completes modules 1 through 8 and works through the labs
+on support and evidence. Their programming colleague continues with modules 9 through 12 and builds
+the real request.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do</h4>
+<p>
+Open the course at https://inematds.github.io/jev-curso/ and choose the module that matches the
+decision you listed.
+</p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p>
+Jumping to the tool or course without understanding the problem the area addresses.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 88" role="img" aria-label="Understand · Apply · Build · Final project"><path d="M30 40h430" stroke="#475569" stroke-width="2"/><circle cx="30.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="30.0" y="72" text-anchor="start" fill="#f1f5f9" font-size="14" font-family="sans-serif">Understand</text><text x="30.0" y="22" text-anchor="start" fill="#94a3b8" font-size="11" font-family="monospace">modules 1-4</text><circle cx="173.33333333333334" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="173.33333333333334" y="72" text-anchor="middle" fill="#f1f5f9" font-size="14" font-family="sans-serif">Apply</text><text x="173.33333333333334" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">modules 5-8</text><circle cx="316.6666666666667" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="316.6666666666667" y="72" text-anchor="middle" fill="#f1f5f9" font-size="14" font-family="sans-serif">Build</text><text x="316.6666666666667" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">modules 9-12</text><circle cx="460.0" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="460.0" y="72" text-anchor="end" fill="#f1f5f9" font-size="14" font-family="sans-serif">Final project</text><text x="460.0" y="22" text-anchor="end" fill="#94a3b8" font-size="11" font-family="monospace">adopt or not</text></svg>
+<figcaption class="help-note">The three tracks go from the concept to the final project; only modules 9 to 12 require JSON, the terminal, and Python.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-3-2#topico-5">
+<h2>
+<span class="number">5</span>17 packages and ways to use them</h2>
+<h3>What it is</h3>
+<p data-inema-block="m3-2-t5-p1">
+A package is a kit for a specific area with context, criteria, a request, a fixture (a ready-made
+example for testing), and instructions. The current collection has 17 packages, covering areas from
+support and sales to YouTube comments, meetings, video clips, and curation. All packages share the
+executor and Python core: without the --live option, a package uses the simulated fixture; with it,
+the package makes a real query, which requires a backend key and may use credits. There is also
+batch execution with resume support, the jev-decidir skill for Codex and Claude Code, and jev-gw, a
+gateway with a daily spending cap, cache, cost logging, and a conservative failure mode that sends
+cases for human review. The packages are in the repository; there is no PyPI distribution, universal
+installer, or ready-made n8n connector yet.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m3-2-t5-p2">
+You can move gradually: start offline, understand the output, and only then pay for real queries.
+The gateway shows how to protect the system that calls Jev when something fails.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m3-2-t5-p3">
+area-specific package; fixture; --live; batch runs and resume; jev-decidir skill; jev-gw;
+conservative failure mode
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m3-2-t5-ex">
+A content team first uses the YouTube comments package with the fixture. When the output makes
+sense, they configure the real query on the server and put jev-gw in front of it, so exceeding a
+spending cap sends the case for review instead of breaking the system.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Choose the package from the page’s 17 that most resembles your work, and note where it would fit
+into your process.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Browser · Local server · Offline package · Query --live · Batches · jev-gw"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Browser</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Local server</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Offline package</text><path d="M421.66666666666663 66v10H80.33333333333333v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M75.33333333333333 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Query --live</text><path d="M154.66666666666666 116.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="194.66666666666666" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Batches</text><path d="M325.3333333333333 116.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="365.3333333333333" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">jev-gw</text></svg>
+<figcaption class="help-note">Start simple and move forward when you need to: the live query comes only after the offline test, and the gateway protects the caller.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-3-2#topico-6">
+<h2>
+<span class="number">6</span>What has been observed and what still needs to be measured</h2>
+<h3>What it is</h3>
+<p data-inema-block="m3-2-t6-p1">
+The page separates four situations. Learning simulation: the 20 cases and replay are original and
+simulated; they do not measure model quality. Rules baseline: 20 correct out of 24 fictional tickets
+(83.33%), a result of the rules, not Jev. Real integration tested: on 09/19/2026, the ten original
+packages received responses through OpenRouter with the expected classifications in the fictional
+examples. This confirms the integration, not a benchmark; the seven new packages have only
+controlled tests. Evaluation still needed: quality in Portuguese, calibration, and operational use
+require independent data and human reference judgments. Laya, a local alternative under evaluation,
+passed 14 application tests and got 13 correct out of 16 synthetic examples. This does not prove it
+is superior.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m3-2-t6-p2">
+This separation is what makes the area trustworthy: every number comes with what it proves and what
+it does not prove. Repeating these numbers out of context would overstate the results.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m3-2-t6-p3">
+simulation; rules baseline; real integration; evaluation needed; Laya under evaluation; not a
+benchmark
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m3-2-t6-ex">
+A manager reads &quot;ten real queries without failures&quot; and nearly approves the adoption.
+After reading the whole section, they see that the test confirms the integration works, not that Jev
+gets the company’s data right, and ask for a pilot with human reference judgments.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+For your decision, write one line in each column: what you have observed so far and what still needs
+to be measured before automating.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Simulation · Baseline · Integration · Evaluation"><rect x="12.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="40" fill="#f1f5f9" font-size="12" font-family="sans-serif">Simulation</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">for learning</text><rect x="133.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="145.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Baseline</text><text x="145.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">rules, not Jev</text><rect x="255.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="267.0" y="40" fill="#f1f5f9" font-size="11" font-family="sans-serif">Integration</text><text x="267.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">works, does not measure</text><rect x="376.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="388.5" y="40" fill="#f1f5f9" font-size="12" font-family="sans-serif">Evaluation</text><text x="388.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">still needed</text></svg>
+<figcaption class="help-note">Each piece of evidence has a scope: only the last column would measure real quality, and it still needs to be done.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Topics in this module">
+<p class="kicker">
+IN THIS LESSON
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. What JEV is</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Choice, Noul, and Score</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. 20 cases in the public lab</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. The course: 3 learning paths, 36 lessons</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. 17 packages and ways to use them</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. What has been observed and what still needs to be measured</a>
+</li>
+</ul>
+<a href="#laboratorio">Final lab ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criteria for reviewing your worksheet</h2>
+<p>
+Use this rubric after the lab. Each row asks for evidence; marking a topic as read doesn’t mean the
+worksheet is complete.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Expected evidence</th>
+<th>If it doesn’t meet the criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main idea</td>
+<td>You can describe the area in one sentence that reflects the page.</td>
+<td>Reread the top of the page and topic 1.</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>You can say who the area is for and who it isn’t for.</td>
+<td>Return to topic 2 and write an example from your work.</td>
+</tr>
+<tr>
+<td>Core elements</td>
+<td>You can name the area’s core elements.</td>
+<td>Use the module diagram as a guide.</td>
+</tr>
+<tr>
+<td>First step</td>
+<td>You chose a small, concrete step.</td>
+<td>Copy the first step recommended on the page itself.</td>
+</tr>
+<tr>
+<td>Starting point</td>
+<td>You know which course, kit, or project to open first.</td>
+<td>Check topic 6 and the page’s access section.</td>
+</tr>
+<tr>
+<td>Source</td>
+<td>Every statement in the worksheet comes from the page.</td>
+<td>Replace your assumptions with what the page says.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+HANDS-ON / ~10 MIN
+</p>
+<h2>Your structured decision, from case to pilot</h2>
+<p>Keep the area page open: <a href="https://eventos.inema.pro/jev/en/">https://eventos.inema.pro/jev/en/</a>. Use an example from your work, without personal or client data.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="3-2-1">
+<span>Open the public JEV lab, choose one of the 20 cases, and note the context, question, criteria, and simulated answer.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-2-2">
+<span>Write a similar decision from your work and indicate whether it is Choice, Noul, or Score. Explain your choice based on the kind of answer you need.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-2-3">
+<span>Define the policy: how confident the system must be for the suggestion to be followed, when it abstains, and when it goes for human review.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-2-4">
+<span>Compare your worksheet with the section &quot;What has already been observed and what still needs to be measured&quot;: mark what you could measure with your own data and human reference answers.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: my structured decision with JEV</h3>
+<p>
+Paste it into Claude, ChatGPT, or Codex. Replace the words inside &lt; and &gt; with details about
+your situation.
+</p>
+<pre><code>Read https://eventos.inema.pro/jev/ and the guide https://inematds.github.io/jev/guia/.\nI want to turn a repetitive decision from my work into a structured decision, without claiming quality I haven’t measured.\nMy decision: &lt;describe, e.g., which team each customer email should go to&gt;.\nPossible options or levels: &lt;list them&gt;.\n1. Say whether the question is Choice, Noul, or Score, and why.\n2. Write the minimum context, criteria, and question.\n3. Propose the policy: when to follow the suggestion, when to abstain, and when to send it for human review.\n4. Indicate which of the lab’s 20 cases and which of the page’s 17 packages are most similar to my decision.\n5. Make a &quot;already observed vs. still needs measuring&quot; list for my case. Do not treat simulation as a quality measurement.</code>
+</pre>
+<button data-copy-prev>Copy block</button>
+<h3>Completion criterion</h3>
+<p>
+Explain what a structured decision with Jev is, choose between Choice, Noul, and Score, and separate
+what has already been observed from what still needs to be measured. Keep the worksheet with the
+main idea, audience, first step, and starting point.
+</p>
+<a class="button" href="https://eventos.inema.pro/jev/en/">Open the area page ↗</a>
+</section>
+<section class="band">
+<h2>Review what you’ve learned</h2>
+<p>
+The public lab showed correct answers in every case you opened. Does that measure Jev’s quality?
+</p>
+<details>
+<summary>View suggested answer</summary>
+<p>
+No. The 20 public cases and the replay are original and simulated; they are for studying
+formulation, policies, and errors. Quality in Portuguese and calibration still need independent data
+and human reference answers.
+</p>
+<p>
+If your answer was different, return to the relevant topic and describe the difference in one
+sentence. This check won’t block your progress.
+</p>
+</details>
+<h3>Module summary</h3>
+<ul>
+<li>structured decision model; TypeSafe; Jev Decision Lab; context and criteria; the system is responsible for actions</li>
+<li>Choice: explicit alternatives; Noul: probability of yes; Score: ordered levels; confidence is not authorization</li>
+<li>lab requires no key; simulated answers; 20 cases; context, questions, criteria; local Python server</li>
+<li>Understand; Apply; Build and Evaluate; 12 modules; 36 lessons; 12 labs; final project; 18 hours</li>
+<li>area-specific package; fixture; --live; batch runs and resume; jev-decidir skill; jev-gw; conservative failure mode</li>
+<li>simulation; rules baseline; real integration; evaluation needed; Laya under evaluation; not a benchmark</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Check the source</h3>
+<p>
+Pages read on 28/09/2026. Area content changes; the official page takes precedence over this
+summary.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/jev/" target="_blank" rel="noopener">JEV Area · eventos.inema.pro</a>
+</li>
+<li>
+<a href="https://inematds.github.io/jev/app/" target="_blank" rel="noopener">JEV Lab</a>
+</li>
+<li>
+<a href="https://inematds.github.io/jev-curso/" target="_blank" rel="noopener">JEV Course</a>
+</li>
+<li>
+<a href="https://inematds.github.io/jev-gw/guia/" target="_blank" rel="noopener">jev-gw Guide</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha3/modulo-3-1.html">← Previous</a>
+<a class="button" href="index.html">Back to learning path</a>
+<a class="button primary" href="../../curso/trilha3/modulo-3-3.html">Next area →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">INEMA Events Areas · quick course · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edition v2 · v1.1.1<br>Content drawn from the eventos.inema.pro pages, read on 28/09/2026. Progress and notes stay in this browser; export them from My Journey.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Module complete</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

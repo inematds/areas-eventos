@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-en">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="INEMA Events Areas — what each area is">
+<meta name="description" content="Quick course: what each of the nine subject areas on eventos.inema.pro is—AI Management, AGI-ready, Cultivated AI, Claude → Codex, Codex + Claude, OSWork, RSI, JEV, and WebMCP."><title>Improve, decide, and open up | INEMA Events Areas</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/en/curso/trilha3/index.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha3/index.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha3/index.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha3/index.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha3/index.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-en", "tracks": [{"n": "1", "title": "Manage and direct agents", "modules": [{"id": "1-1", "title": "AI Management: 2027, the year of managing agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: Your Work Becomes Managing Agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Cultivated AI: you cultivate an agent; you don’t program one", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Tools and environment", "modules": [{"id": "2-1", "title": "Claude → Codex: Separate the brain from the model", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: one does the work, the other reviews it", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: Which Edition Is for You?", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Improve, decide, and open up", "modules": [{"id": "3-1", "title": "RSI: AI that helps improve AI", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: AI Decisions in Practice", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: Your Site Talking to Agents", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav class="topnav" aria-label="Main navigation">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">INEMA Areas<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>My Journey</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Appearance</button>
+<button onclick="toggleTheme()" aria-label="Toggle light and dark theme">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Manage and direct agents</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Tools and environment</span>
+</a>
+<a href="../../curso/trilha3/index.html" aria-current="page">T3<span class="long"> · Improve, decide, and open up</span>
+</a>
+<a href="https://eventos.inema.pro/en/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Course language">
+<a href="../../../curso/trilha3/index.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="index.html" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="../../../es/curso/trilha3/index.html" hreflang="es" lang="es">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Dark</button>
+<button type="button" data-inema-set-theme="claro">Light</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Focus</button>
+<button type="button" data-inema-set-theme="contraste">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<header class="hero">
+<div>
+<p class="kicker">
+LEARNING PATH 03 / INEMA AREAS
+</p>
+<h1>Improve, decide, and open up</h1>
+<p>
+RSI, JEV, and WebMCP: improve through testing, decide through evaluation, and prepare your site for
+agents.
+</p>
+<div class="meter" data-inema-meter="trilha:3" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="RSI → JEV → WebMCP → AREA WORKSHEET → FIRST STEP"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / LEARNING PATH 3</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">RSI</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / LEARNING PATH 3</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">JEV</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / LEARNING PATH 3</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">WebMCP</text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / LEARNING PATH 3</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">AREA WORKSHEET</text><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / LEARNING PATH 3</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">FIRST STEP</text></svg>
+<figcaption class="help-note">Three areas, with the same deliverables for each: the worksheet and the first step.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>3</strong>
+<span>areas</span>
+</div>
+<div><strong>18</strong>
+<span>topics</span>
+</div>
+<div><strong>60 min</strong>
+<span>with practice</span>
+</div>
+<div><strong>1</strong>
+<span>worksheet per area</span>
+</div>
+</div>
+<h2>Learning path map</h2>
+<div class="grid">
+<a class="card" href="#modulo-3-1">
+<div class="overline">
+<span>3.1</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 RSI: AI that helps improve AI</h3>
+<p>
+AI improvement cycles
+</p>
+</a>
+<a class="card" href="#modulo-3-2">
+<div class="overline">
+<span>3.2</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 JEV: AI Decisions in Practice</h3>
+<p>
+AI decisions in practice
+</p>
+</a>
+<a class="card" href="#modulo-3-3">
+<div class="overline">
+<span>3.3</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 WebMCP: Your Site Talking to Agents</h3>
+<p>
+sites that communicate with agents
+</p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Detailed content</h2>
+<article class="module-card" id="modulo-3-1" data-inema-module="3-1" data-inema-track="3">
+<p class="kicker">
+MODULE 3.1
+</p>
+<h2 class="text-2xl font-bold">RSI: AI that helps improve AI</h2>
+<p>
+Explain the three levels of improvement in AI and turn an improvement idea into a verifiable test,
+with a recorded version and a way to roll back.
+</p>
+<div class="meter" data-inema-meter="modulo:3-1" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-1-1">
+<span class="number">1</span>
+<span>What RSI Is</span>
+</button>
+<div class="topic-explanation" id="p-3-1-1">
+<h4>What it is</h4>
+<p>
+RSI stands for recursive self-improvement: the idea of AI helping improve AI. The area’s central
+question is practical: how does a system propose changes, test results, and keep what works? The
+page treats this as a field of study and an open collection of resources, with references, examples,
+and criteria for evaluating claims. The starting point is a distinction: improving a response,
+improving an agent, and improving the ability to create new agents are different things. An agent
+here is an AI system that receives a goal and carries out steps using instructions, memory, and
+tools.
+</p>
+<h4>Why learn it</h4>
+<p>
+Claims about AI improving itself come up often and tend to mix these three levels. If you understand
+the difference, you can ask what exactly improved and what evidence supports the claim.
+</p>
+<h4>Key concepts</h4>
+<p>
+recursive self-improvement; propose, test, keep; three different levels; open collection of
+resources; criteria for evaluating claims
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-1-2">
+<span class="number">2</span>
+<span>Three Distinct Levels</span>
+</button>
+<div class="topic-explanation" id="p-3-1-2">
+<h4>What it is</h4>
+<p>
+The first level is reviewing the response: the model critiques and revises an output. This can
+improve a task without changing its parameters—the internal values learned during training—or its
+development process. The second level is improving the system: the agent’s instructions, memory,
+tools, or code change, and the versions need to be compared on held-out tasks while keeping a way to
+roll back. The third level is investigating recursion: the improvement helps produce future
+improvements. This mechanism needs evidence, because more attempts or a higher score do not prove
+unlimited growth.
+</p>
+<h4>Why learn it</h4>
+<p>
+Each level calls for a different kind of control. Reviewing a response is inexpensive and
+reversible; changing the system calls for version tracking and tests; claiming recursion calls for
+strong evidence. Mixing up the levels can lead you to accept guarantees no one has measured.
+</p>
+<h4>Key concepts</h4>
+<p>
+review the response; improve the system; investigate recursion; parameters; held-out tasks; ability
+to roll back
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-1-3">
+<span class="number">3</span>
+<span>From Idea to a Verifiable Test</span>
+</button>
+<div class="topic-explanation" id="p-3-1-3">
+<h4>What it is</h4>
+<p>
+The page suggests starting with a small task: answer based on a policy, create questions from a
+text, or extract action items from notes. First define the task, the correct reference, and the
+limits for data, spending, and actions. Then record the initial version and separate development
+cases from cases held out for validation. Propose one change at a time and compare using the same
+criteria, including errors, cost, and review effort. Finally, validate before adopting: save results
+and versions, decide who has the final say, and keep a rollback path.
+</p>
+<h4>Why learn it</h4>
+<p>
+A familiar evaluation can be exploited, the page warns. Keeping tests independent, checking for
+invented data, and looking at results outside the sample helps you avoid mistaking a local gain for
+general autonomy.
+</p>
+<h4>Key concepts</h4>
+<p>
+small task; correct reference; held-out cases; one change at a time; same criteria; validate before
+adopting; rollback
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-1-4">
+<span class="number">4</span>
+<span>LOOP-R: The Cycle with Guardrails</span>
+</button>
+<div class="topic-explanation" id="p-3-1-4">
+<h4>What it is</h4>
+<p>
+LOOP-R is the project’s framework for organizing improvements: Run, Measure, Critique, Propose,
+Test, Validate, Promote, and Repeat. The page describes it as ready to use in Claude Code, with nine
+assistants in separate roles, a record of each version, a spending cap, and a command to roll back.
+The safety rule is explicit: the system cannot decide to replace the current version with a worse
+one. In the RSI course, LOOP-R is presented as a conceptual proposal from the project. There is also
+a LOOP-R course with five tracks and 21 lessons for owners and managers without a technical
+background.
+</p>
+<h4>Why learn it</h4>
+<p>
+A cycle without guardrails can replace a good version with a worse one without anyone noticing. A
+spending cap, version records, and rollback make the cycle auditable and safe to repeat.
+</p>
+<h4>Key concepts</h4>
+<p>
+Run; Measure; Critique; Propose; Test; Validate; Promote; Repeat; nine assistants; spending cap;
+roll back
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-1-5">
+<span class="number">5</span>
+<span>Where to Start: Course and Guide</span>
+</button>
+<div class="topic-explanation" id="p-3-1-5">
+<h4>What it is</h4>
+<p>
+The “Start here” section has two resources. The RSI Course v6.2 has 18 lessons in six modules, with
+exercises, reviews, and materials for applying LOOP-R and recording approved knowledge, in
+Portuguese, English, and Spanish. The RSI Guide maps the topic, including mechanisms, applications,
+and limits, also in three languages. The page includes an important caveat: the project brings
+together research and educational content; it is not a ready-to-run autonomous RSI system. The code
+and materials are in the rsi repository on GitHub.
+</p>
+<h4>Why learn it</h4>
+<p>
+Starting with the guide gives you the vocabulary and an understanding of the limits; the course
+turns that into practice with exercises. Knowing the project is educational helps you avoid
+expecting a tool that improves itself.
+</p>
+<h4>Key concepts</h4>
+<p>
+RSI v6.2; 18 lessons; six modules; RSI Guide; PT / EN / ES; educational content, not an autonomous
+system
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-1-6">
+<span class="number">6</span>
+<span>The Resource Collection: Copiloto, Dream-RSI, 2028</span>
+</button>
+<div class="topic-explanation" id="p-3-1-6">
+<h4>What it is</h4>
+<p>
+Along with the guide and course, the resource collection includes three materials with clear
+caveats. RSI Copiloto is a local assistant with AI, memory, tasks, and routines that compares
+instructions, asks for human review, and lets you roll back changes; its public demo uses programmed
+examples, without AI, and real AI is available only in the local version. Dream-RSI is an
+independent educational guide, not affiliated with Google, about learning from experiment histories;
+the lab and the eight sessions are future plans, not an implementation of the paper. Alerta IA 2028
+is a course with three tracks about the improvement cycle, evidence, and the limits of evaluation.
+It treats 2028 scenarios as hypotheses, with no guaranteed timeline. The page also lists references
+such as Self-Refine, Reflexion, Darwin Gödel Machine, and AlphaEvolve, reviewed on September 25,
+2026; their results were not reproduced in the project.
+</p>
+<h4>Why learn it</h4>
+<p>
+Each resource says what is available now and what is still a plan. Reading those caveats is an
+exercise in the field itself: separating evidence from claims.
+</p>
+<h4>Key concepts</h4>
+<p>
+RSI Copiloto; demo without AI; independent Dream-RSI; Alerta IA 2028; scenarios as hypotheses;
+original references in English
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-3-1.html">View full version →</a>
+<button data-modal-src="modulo-3-1.html">View in modal</button>
+</div>
+</article>
+<article class="module-card" id="modulo-3-2" data-inema-module="3-2" data-inema-track="3">
+<p class="kicker">
+MODULE 3.2
+</p>
+<h2 class="text-2xl font-bold">JEV: AI Decisions in Practice</h2>
+<p>
+Explain what a structured decision with Jev is, choose between Choice, Noul, and Score, and separate
+what has already been observed from what still needs to be measured.
+</p>
+<div class="meter" data-inema-meter="modulo:3-2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-2-1">
+<span class="number">1</span>
+<span>What JEV is</span>
+</button>
+<div class="topic-explanation" id="p-3-2-1">
+<h4>What it is</h4>
+<p>
+Jev is TypeSafe’s structured decision model. A structured decision is a closed question with context
+and criteria. Its answer is a choice, a probability, or a level, not free-form text. The Jev
+Decision Lab is INEMA’s educational project for formulating questions, comparing answers, and
+understanding when a decision needs review. The model receives context and criteria; your system
+remains responsible for taking action. The lab separates this choice from text generation and tool
+execution.
+</p>
+<h4>Why learn it</h4>
+<p>
+Many AI tasks at work don’t call for text; they call for a decision: which queue should this ticket
+go to? Does this passage support the claim? Separating decisions, generation, and execution makes
+clear who is responsible for each part and makes it easier to measure accuracy.
+</p>
+<h4>Key concepts</h4>
+<p>
+structured decision model; TypeSafe; Jev Decision Lab; context and criteria; the system is
+responsible for actions
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-2-2">
+<span class="number">2</span>
+<span>Choice, Noul, and Score</span>
+</button>
+<div class="topic-explanation" id="p-3-2-2">
+<h4>What it is</h4>
+<p>
+The page presents three ways to ask a question. Choice selects from explicit alternatives, such as
+which queue or which agent. Noul estimates the probability of an affirmative answer, such as the
+chance that a passage supports a claim. Score evaluates a rubric with ordered levels, such as low,
+medium, and high. One course module covers how to distinguish the three based on the kind of answer
+you need, and another covers confidence and error: using uncertainty without turning it into
+automatic authorization.
+</p>
+<h4>Why learn it</h4>
+<p>
+Choosing the wrong format produces answers that are hard to use: a score when you needed a queue, or
+a yes when there were several levels. The form of the question determines how you will measure
+results and which policy to apply.
+</p>
+<h4>Key concepts</h4>
+<p>
+Choice: explicit alternatives; Noul: probability of yes; Score: ordered levels; confidence is not
+authorization
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-2-3">
+<span class="number">3</span>
+<span>20 cases in the public lab</span>
+</button>
+<div class="topic-explanation" id="p-3-2-3">
+<h4>What it is</h4>
+<p>
+The lab runs in your browser, requires no key, and doesn’t call any API: its answers are simulated.
+Each of the 20 cases includes context, questions, criteria, a simulated answer, an explanation, and
+a next step. Examples include support triage, a contract checklist, agent routing, and semantic diff
+review. You can edit the questions, import a request, export the result, or open a report; changing
+a case invalidates its previous simulated answer. To go further, you can clone the project and run
+the local server with Python 3.10 or later. The core uses only the standard library.
+</p>
+<h4>Why learn it</h4>
+<p>
+The lab lets you make mistakes without cost or risk. You learn to formulate the context, options,
+and policy before spending credits or touching a real system.
+</p>
+<h4>Key concepts</h4>
+<p>
+lab requires no key; simulated answers; 20 cases; context, questions, criteria; local Python server
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-2-4">
+<span class="number">4</span>
+<span>The course: 3 learning paths, 36 lessons</span>
+</button>
+<div class="topic-explanation" id="p-3-2-4">
+<h4>What it is</h4>
+<p>
+The course &quot;Jev in Practice&quot; has three learning paths, 12 modules, and 36 lessons with
+theory, examples, exercises, and answers. The Understand path covers where Jev fits, the three
+question types, confidence and error, and cost. Apply covers support, documents, models and agents,
+and the browser. Build and Evaluate covers integration, quality measurement, operations, and the
+final project. Modules 1 through 8 are conceptual; modules 9 through 12 use JSON, the terminal, and
+Python. The estimated time is 18 hours. There are 12 labs with fictional data and answer keys. The
+final project asks you to decide whether there is evidence to adopt, collect more data, or not
+automate. The HTML v2 course is in Portuguese, with progress tracking, questions, and notes.
+</p>
+<h4>Why learn it</h4>
+<p>
+The course takes you from &quot;understanding the idea&quot; to &quot;deciding whether to
+adopt&quot; using a rubric. The final project accepts &quot;do not automate&quot; as an answer,
+which trains sound judgment rather than enthusiasm.
+</p>
+<h4>Key concepts</h4>
+<p>
+Understand; Apply; Build and Evaluate; 12 modules; 36 lessons; 12 labs; final project; 18 hours
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-2-5">
+<span class="number">5</span>
+<span>17 packages and ways to use them</span>
+</button>
+<div class="topic-explanation" id="p-3-2-5">
+<h4>What it is</h4>
+<p>
+A package is a kit for a specific area with context, criteria, a request, a fixture (a ready-made
+example for testing), and instructions. The current collection has 17 packages, covering areas from
+support and sales to YouTube comments, meetings, video clips, and curation. All packages share the
+executor and Python core: without the --live option, a package uses the simulated fixture; with it,
+the package makes a real query, which requires a backend key and may use credits. There is also
+batch execution with resume support, the jev-decidir skill for Codex and Claude Code, and jev-gw, a
+gateway with a daily spending cap, cache, cost logging, and a conservative failure mode that sends
+cases for human review. The packages are in the repository; there is no PyPI distribution, universal
+installer, or ready-made n8n connector yet.
+</p>
+<h4>Why learn it</h4>
+<p>
+You can move gradually: start offline, understand the output, and only then pay for real queries.
+The gateway shows how to protect the system that calls Jev when something fails.
+</p>
+<h4>Key concepts</h4>
+<p>
+area-specific package; fixture; --live; batch runs and resume; jev-decidir skill; jev-gw;
+conservative failure mode
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-2-6">
+<span class="number">6</span>
+<span>What has been observed and what still needs to be measured</span>
+</button>
+<div class="topic-explanation" id="p-3-2-6">
+<h4>What it is</h4>
+<p>
+The page separates four situations. Learning simulation: the 20 cases and replay are original and
+simulated; they do not measure model quality. Rules baseline: 20 correct out of 24 fictional tickets
+(83.33%), a result of the rules, not Jev. Real integration tested: on 09/19/2026, the ten original
+packages received responses through OpenRouter with the expected classifications in the fictional
+examples. This confirms the integration, not a benchmark; the seven new packages have only
+controlled tests. Evaluation still needed: quality in Portuguese, calibration, and operational use
+require independent data and human reference judgments. Laya, a local alternative under evaluation,
+passed 14 application tests and got 13 correct out of 16 synthetic examples. This does not prove it
+is superior.
+</p>
+<h4>Why learn it</h4>
+<p>
+This separation is what makes the area trustworthy: every number comes with what it proves and what
+it does not prove. Repeating these numbers out of context would overstate the results.
+</p>
+<h4>Key concepts</h4>
+<p>
+simulation; rules baseline; real integration; evaluation needed; Laya under evaluation; not a
+benchmark
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-3-2.html">View full version →</a>
+<button data-modal-src="modulo-3-2.html">View in modal</button>
+</div>
+</article>
+<article class="module-card" id="modulo-3-3" data-inema-module="3-3" data-inema-track="3">
+<p class="kicker">
+MODULE 3.3
+</p>
+<h2 class="text-2xl font-bold">WebMCP: Your Site Talking to Agents</h2>
+<p>
+Explain what changes when agents visit websites, what WebMCP is, and the first concrete step: assess
+your own site and fix the basics.
+</p>
+<div class="meter" data-inema-meter="modulo:3-3" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-3-1">
+<span class="number">1</span>
+<span>What Is WebMCP</span>
+</button>
+<div class="topic-explanation" id="p-3-3-1">
+<h4>What it is</h4>
+<p>
+WebMCP is a way for a page to describe what it can do to AI agents. Without WebMCP, an agent has to
+find fields, click, type, and interpret the screen. That breaks when the layout changes. With
+WebMCP, the page exposes tools with a name, description, argument schema, and response, and the
+agent calls the right tool by name. There are two paths: a declarative tool, where an existing form
+gets a toolname and a description, and an imperative tool, where JavaScript registers capabilities
+with JSON Schema and handles state, errors, cancellation, and fallback. This is experimental
+technology, currently behind an Origin Trial in the browser, which means it is available for
+testing.
+</p>
+<h4>Why learn it</h4>
+<p>
+It is the difference between an agent guessing and a site telling it. The site gets to decide what
+is allowed, what needs confirmation, and what can be canceled.
+</p>
+<h4>Key concepts</h4>
+<p>
+operating pixels vs. interacting with capabilities; declarative tool; imperative tool; JSON Schema;
+Origin Trial
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-3-2">
+<span class="number">2</span>
+<span>The Next Visitor Is an Agent</span>
+</button>
+<div class="topic-explanation" id="p-3-3-2">
+<h4>What it is</h4>
+<p>
+The page lists six changes. On the visitor side: agents already use browsers to fill out forms and
+complete tasks; search has become asking an assistant, which creates the GEO and AEO challenge; and
+the standard is taking shape now. On the publisher side: a site stops being just a screen and gains
+a catalog of capabilities layered over the human journey; discoverability becomes a requirement,
+with robots.txt, sitemap.xml, llms.txt, JSON-LD, Open Graph, and a clear identity; and security
+stays with the site, not the model. GEO and AEO are practices for appearing in and being cited by AI
+assistant answers, not just search engines.
+</p>
+<h4>Why learn it</h4>
+<p>
+If you own the site, the last three changes are your to-do list. Those who understand the
+limitations early can learn at a lower cost.
+</p>
+<h4>Key concepts</h4>
+<p>
+agents in the browser; search has become asking; GEO and AEO; catalog of capabilities;
+discoverability; site security
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-3-3">
+<span class="number">3</span>
+<span>Free Assessment: Readiness</span>
+</button>
+<div class="topic-explanation" id="p-3-3-3">
+<h4>What it is</h4>
+<p>
+WebMCP Readiness, at webmcp.inema.pro, opens the URL in a disposable browser, gathers observable
+signals, and turns the scan into a correction plan. It is a passive scanner: it checks robots.txt,
+sitemap.xml, and llms.txt and does not run any site tools. You get an overall score and four
+independent scores—WebMCP, SEO, GEO, and AEO—with evidence, alerts, blockers, up to 12 prioritized
+fixes, and recommended courses for each gap, in a JSON report. The scan examines only the URL you
+provide; it inventories the sitemap, but does not crawl its pages. The advanced scanners for each
+phase appear in the report as planned, not ready.
+</p>
+<h4>Why learn it</h4>
+<p>
+Starting with an assessment shows you where your site stands before you study. The page also makes
+the limitation clear: the scanner does not promise indexing, ranking, or citation by AI.
+</p>
+<h4>Key concepts</h4>
+<p>
+passive scanner; disposable browser; overall score + four scores; up to 12 fixes; JSON report; what
+requires human review
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-3-4">
+<span class="number">4</span>
+<span>Eight Layers of a Ready Site</span>
+</button>
+<div class="topic-explanation" id="p-3-3-4">
+<h4>What it is</h4>
+<p>
+The page organizes the architecture into eight layers, in the order the training builds them. The
+first four describe the site: discovery (can the agent find the site?), tools (what can the site
+do?), contract (how do you call it and what comes back?), and state and errors (what happens when
+something goes wrong?). The last four protect the site: control (who confirms?), permissions (who
+can call?), backend and MCP (where does the truth live?), and evals and observability (is it really
+working?). The rule that applies across all layers: the LLM chooses the tool; the site decides
+whether it can run. The assessment already measures all of layer 1 and the observable signals from
+layers 2 and 5.
+</p>
+<h4>Why learn it</h4>
+<p>
+The layers show that exposing a tool is only the start. Without confirmation, permissions, and
+backend authorization, an agent can trigger something it should not.
+</p>
+<h4>Key concepts</h4>
+<p>
+discovery; tools; contract; state and errors; control; permissions; backend and MCP; evals
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-3-5">
+<span class="number">5</span>
+<span>Six Fixes for This Week</span>
+</button>
+<div class="topic-explanation" id="p-3-3-5">
+<h4>What it is</h4>
+<p>
+Before any training phase, the page lists six fixes the site owner can make, each tied to an item
+the scanner checks. First, run the scan and record the scores as a baseline. Second, publish the
+three public files: robots.txt, an updated sitemap.xml, and an llms.txt that introduces the site to
+AI models. Third, fix the SEO basics the agent also reads: title, description, canonical, headings
+in order, image alt text, Open Graph, and JSON-LD. Fourth, write for people answering questions,
+with direct answers, definitions, lists, and tables. Fifth, show who is behind the site, with the
+organization, authorship, update date, and evidence. Sixth, choose a form that does not change
+anything risky as your first tool, such as a search or status check.
+</p>
+<h4>Why learn it</h4>
+<p>
+These fixes do not require you to program tools, and they already raise the scores. The page sums up
+the method: fix things, run the scan again, and watch the score rise.
+</p>
+<h4>Key concepts</h4>
+<p>
+baseline; robots.txt, sitemap.xml, llms.txt; basic SEO; AEO: direct answers; GEO: authorship and
+evidence; first safe tool
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-3-3-6">
+<span class="number">6</span>
+<span>The training and where to continue</span>
+</button>
+<div class="topic-explanation" id="p-3-3-6">
+<h4>What it is</h4>
+<p>
+WebMCP Training has an overview and four phases, all open and in Portuguese: Builder (build),
+Integrator (integrate), Agent Developer (orchestrate), and Expert (operate). Each phase has four
+modules with six topics each and uses JavaScript. If you do not code, start with the overview and
+diagnostic, then bring the phases to your team. Layers 1 and 2 are taught in Builder, 3 and 4 in
+Integrator, 5 and 6 in Agent Developer, and 7 and 8 in Expert. The page also points to AIV 2026 for
+AEO and GEO, the Computer Use with GPT-6 Astra course, and Super-Agentes, along with projects such
+as the Kit do Arquiteto de Agentes, INEMACCBOT, and os-agentes. The final invitation is direct: your
+own site is the best first module.
+</p>
+<h4>Why learn it</h4>
+<p>
+Knowing which phase teaches each layer lets you enter the training at the point that fits your role,
+instead of starting from scratch.
+</p>
+<h4>Key concepts</h4>
+<p>
+overview; Builder; Integrator; Agent Developer; Expert; four modules with six topics each; related
+courses
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-3-3.html">View full version →</a>
+<button data-modal-src="modulo-3-3.html">View in modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">INEMA Events Areas · quick course · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edition v2 · v1.1.1<br>Content drawn from the eventos.inema.pro pages, read on 28/09/2026. Progress and notes stay in this browser; export them from My Journey.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Module complete</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-es">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas de INEMA Eventos — qué es cada área">
+<meta name="description" content="Curso rápido: qué es cada una de las nueve áreas temáticas de eventos.inema.pro — Gestión de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV y WebMCP."><title>Gestionar y dirigir agentes | Áreas de INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/es/curso/trilha1/index.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha1/index.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha1/index.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha1/index.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha1/index.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-es", "tracks": [{"n": "1", "title": "Gestionar y dirigir agentes", "modules": [{"id": "1-1", "title": "Gestión de IA: 2027, el año de gestionar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: tu trabajo pasa a ser dirigir agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: un agente no se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Herramientas y entorno", "modules": [{"id": "2-1", "title": "Claude → Codex: separa el cerebro del modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: uno hace, el otro revisa", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qué edición es para ti", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Mejorar, decidir y abrir", "modules": [{"id": "3-1", "title": "RSI: la IA que ayuda a mejorar la IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisiones de IA en la práctica", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: tu sitio conversa con agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav class="topnav" aria-label="Navegación principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Mi recorrido</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Apariencia</button>
+<button onclick="toggleTheme()" aria-label="Cambiar entre tema claro y oscuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" aria-current="page">T1<span class="long"> · Gestionar y dirigir agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Herramientas y entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Mejorar, decidir y abrir</span>
+</a>
+<a href="https://eventos.inema.pro/es/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Idioma del curso">
+<a href="../../../curso/trilha1/index.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../en/curso/trilha1/index.html" hreflang="en" lang="en">English</a>
+<a href="index.html" hreflang="es" lang="es" aria-current="page">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Oscuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Enfoque</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifas</button>
+<button data-inema-set-font="leitura">Con serifas</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<header class="hero">
+<div>
+<p class="kicker">
+RUTA 01 / ÁREAS INEMA
+</p>
+<h1>Gestionar y dirigir agentes</h1>
+<p>
+Gestión de IA, AGI-ready e IA Cultivada: el trabajo pasa a ser dirigir, cultivar y evaluar agentes.
+</p>
+<div class="meter" data-inema-meter="trilha:1" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Gestión de IA → AGI-ready → IA Cultivada → FICHA DEL ÁREA → PRIMER PASO"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / RUTA 1</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Gestión de IA</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / RUTA 1</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">AGI-ready</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / RUTA 1</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">IA Cultivada</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / RUTA 1</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">FICHA DEL ÁREA</text><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / RUTA 1</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">PRIMER PASO</text></svg>
+<figcaption class="help-note">Tres áreas, y para cada una el mismo resultado: la ficha y el primer paso.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>3</strong>
+<span>áreas</span>
+</div>
+<div><strong>18</strong>
+<span>temas</span>
+</div>
+<div><strong>60 min</strong>
+<span>con práctica</span>
+</div>
+<div><strong>1</strong>
+<span>ficha por área</span>
+</div>
+</div>
+<h2>Mapa de la ruta</h2>
+<div class="grid">
+<a class="card" href="#modulo-1-1">
+<div class="overline">
+<span>1.1</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 Gestión de IA: 2027, el año de gestionar agentes</h3>
+<p>
+2027: gestionar agentes
+</p>
+</a>
+<a class="card" href="#modulo-1-2">
+<div class="overline">
+<span>1.2</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 AGI-ready: tu trabajo pasa a ser dirigir agentes</h3>
+<p>
+dirigir agentes
+</p>
+</a>
+<a class="card" href="#modulo-1-3">
+<div class="overline">
+<span>1.3</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 IA Cultivada: un agente no se programa, se cultiva</h3>
+<p>
+no se programa, se cultiva
+</p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Contenido detallado</h2>
+<article class="module-card" id="modulo-1-1" data-inema-module="1-1" data-inema-track="1">
+<p class="kicker">
+MÓDULO 1.1
+</p>
+<h2 class="text-2xl font-bold">Gestión de IA: 2027, el año de gestionar agentes</h2>
+<p>
+Explicar por qué una empresa con agentes necesita gestión y no solo tecnología, usando las 8
+competencias y LOOP-R.
+</p>
+<div class="meter" data-inema-meter="modulo:1-1" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-1-1">
+<span class="number">1</span>
+<span>La idea central: gestionar lo que se creó</span>
+</button>
+<div class="topic-explanation" id="p-1-1-1">
+<h4>Qué es</h4>
+<p>
+El área Gestión de IA de eventos.inema.pro comienza con una frase: &quot;En 2026 enseñamos a crear
+agentes. 2027 es el año de aprender a gestionarlos&quot;. Un agente es una IA que recibe una
+responsabilidad y realiza tareas con herramientas, en vez de limitarse a responder una pregunta.
+Gestionar un agente significa asignarle un papel, un objetivo, contexto, herramientas, nivel de
+autonomía y evaluación, como siempre se ha hecho con las personas. La página también plantea una
+decisión más difícil: no poner agentes a ejecutar procesos antiguos más rápido, sino rediseñar la
+empresa para trabajar a la velocidad de los agentes. El área reúne esta idea, las 8 competencias del
+gestor de IA, LOOP-R, la Formación Gestión de IA 2027 y los cursos y proyectos de INEMA que ya
+cubren la mayor parte del recorrido.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Crear un agente dejó de ser el principal obstáculo. Lo que frena a la empresa viene después: quién
+responde por él, qué puede hacer por su cuenta, cómo se mide y cuánto cuesta. Entender esta idea
+cambia la pregunta de &quot;¿qué herramienta?&quot; a &quot;¿cómo gestiono esto?&quot;.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Gestión de personas + gestión de procesos + gestión de agentes; es gestión, no solo tecnología;
+rediseñar antes de acelerar.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-1-2">
+<span class="number">2</span>
+<span>El tercer objeto de la gestión</span>
+</button>
+<div class="topic-explanation" id="p-1-1-2">
+<h4>Qué es</h4>
+<p>
+La página muestra las eras de la gestión, cada una como respuesta a lo que la empresa necesitaba
+coordinar. De 1980 a 2000, gestión de personas: puesto, responsabilidad, herramientas, límites y
+evaluación. De 2000 a 2020, gestión de procesos: diseñar, documentar, capacitar y ejecutar. De 2020
+a 2025, transformación digital: diseñar, automatizar y monitorear; de 2025 a 2026, creación de
+agentes, con prompts, skills, contexto, tools y memoria. En 2027, la gestión coordina al mismo
+tiempo personas, agentes, modelos, procesos y presupuesto computacional. Esta área es para la
+empresa que ya tiene agentes y necesita gestionarlos; la creación del agente en sí se trata en el
+área AGI-ready.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Quien trata al agente como un proyecto de TI deja fuera lo que determina el resultado:
+responsabilidades, límites y medidas. Ver al agente como el tercer objeto de la gestión pone el tema
+en manos de quienes administran.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Tres cambios: crear se volvió fácil, gestionar no; el proceso antiguo no merece acelerarse; el
+proceso deja de ser inmutable.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-1-3">
+<span class="number">3</span>
+<span>Gestionar agentes como personas</span>
+</button>
+<div class="topic-explanation" id="p-1-1-3">
+<h4>Qué es</h4>
+<p>
+La idea central de la página es que gestionar agentes se parece mucho a la gestión de personas de
+siempre, solo que con más mediciones. Cambian las palabras, no la lógica: empleado, puesto,
+responsabilidad, herramientas, límites y evaluación se convierten en agente, papel, objetivo,
+contexto, herramientas, autonomía y evaluación. Se suman dos elementos que las personas no tenían:
+contexto explícito y autonomía gradual. Autonomía gradual significa que el agente no recibe
+&quot;todo o nada&quot;, sino un nivel de autonomía, es decir, un límite para lo que puede decidir
+por su cuenta. Además, se puede medir prácticamente todo lo que hace el agente.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Muchas reglas que la empresa ya conoce siguen siendo útiles y acortan el camino. La separación de
+funciones, los niveles de autonomía y la revisión humana no tienen que inventarse para los agentes;
+hay que aplicárselos.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Contabilidad: quien registra no aprueba; asuntos legales: el agente prepara, el abogado decide y
+firma; salud: algunas decisiones quedan fuera del nivel de autonomía del agente.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-1-4">
+<span class="number">4</span>
+<span>Las 8 competencias del gestor de IA</span>
+</button>
+<div class="topic-explanation" id="p-1-1-4">
+<h4>Qué es</h4>
+<p>
+La página enumera ocho competencias en el orden en que las usa un gestor. La estrategia pregunta qué
+resultado buscamos; la arquitectura del trabajo, si el proceso aún debería existir; la delegación,
+qué debe entregar exactamente el agente; la orquestación, si conviene usar uno o varios agentes, en
+serie o en paralelo. La gobernanza decide qué puede hacer por su cuenta, qué debe confirmar y qué
+nunca debe ejecutar; la economía pregunta cuánto cuesta producir el resultado; la evaluación, si el
+resultado es bueno y con qué se compara; y la evolución, qué aprendimos en esta ejecución. Las
+primeras cuatro definen qué hará el agente; las últimas cuatro, si debe seguir haciéndolo. El
+gerente de 2027 administra nueve elementos, desde personas y agentes hasta el presupuesto
+computacional, y mide indicadores como el costo por resultado, el retrabajo y el nivel de autonomía.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Las competencias sirven como lista de verificación: si alguna queda sin respuesta, allí es donde el
+agente fallará. También ayudan a decidir qué estudiar, porque la página indica en qué curso se
+enseña cada competencia actualmente.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Estrategia; arquitectura; delegación; orquestación; gobernanza; economía; evaluación; evolución;
+costo por tarea completada.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-1-5">
+<span class="number">5</span>
+<span>El proceso no es sagrado: LOOP-R</span>
+</button>
+<div class="topic-explanation" id="p-1-1-5">
+<h4>Qué es</h4>
+<p>
+La página compara cuatro generaciones de procesos. El proceso tradicional se diseñaba, documentaba,
+enseñaba y ejecutaba; el automatizado se diseñaba, automatizaba y monitoreaba; el agéntico parte de
+un objetivo, el agente lo ejecuta y lo mide, y una persona o un agente lo evalúa. LOOP-R completa el
+ciclo: ejecutar, observar, criticar, proponer, experimentar, validar, implementar y repetir. Así, el
+proceso se convierte en un sistema vivo, con versiones como el software. Las reglas son tres: no
+automatices un proceso deficiente; las personas dirigen y los agentes ejecutan; implementar y
+revertir son etapas del proceso, no accidentes.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Sin este ciclo, la empresa solo pregunta &quot;¿terminó la tarea?&quot; y no aprende nada de cada
+ejecución. Con él, cada ejecución propone la siguiente mejora y cualquier cambio que empeore el
+resultado se revierte sin complicaciones.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Cuatro generaciones; LOOP-R; proceso con versión; promover y revertir; desmontar antes de
+automatizar.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-1-6">
+<span class="number">6</span>
+<span>Formación 2027 y por dónde empezar</span>
+</button>
+<div class="topic-explanation" id="p-1-1-6">
+<h4>Qué es</h4>
+<p>
+La Formación Gestión de IA 2027 tiene diez módulos y un proyecto final, con el curso Gestión de IA
+como eje central. Los módulos abarcan desde la empresa agéntica, pasando por proceso no es sagrado,
+delegación y autonomía, economía de los agentes y gobernanza, hasta la empresa que aprende con el
+LOOP-R. El proyecto final es Gestoria, un simulador de gestión de una empresa agéntica en catorce
+pasos. La página es clara: la formación es el empaquetado de una tesis, no un curso nuevo publicado
+hoy, y entre el 75% y el 80% de la base ya existe en cursos y proyectos abiertos. El área reúne los
+cursos Gestión de IA, Os Super-Agentes Chegaram, Super-Agentes na prática, Arquiteto de Trabalho com
+IA, LOOP-R y Copilot + Agentes, y los proyectos Gestoria, LOOP-R, Arquiteto de Execução, Agentic OS,
+Kit do Arquiteto de Agentes y Kit Copilot + Agentes.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Saber qué ya está disponible evita esperar por un curso que todavía se va a empaquetar. El camino
+sugerido es empezar por los cursos existentes, en el orden de los módulos.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Diez módulos; Gestoria como proyecto final; entre el 75% y el 80% de la base ya existe; el mejor
+primer módulo es un proceso de tu empresa.
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-1-1.html">Ver completo →</a>
+<button data-modal-src="modulo-1-1.html">Ver en ventana modal</button>
+</div>
+</article>
+<article class="module-card" id="modulo-1-2" data-inema-module="1-2" data-inema-track="1">
+<p class="kicker">
+MÓDULO 1.2
+</p>
+<h2 class="text-2xl font-bold">AGI-ready: tu trabajo pasa a ser dirigir agentes</h2>
+<p>
+Explicar la diferencia entre dar instrucciones paso a paso y delegar en un agente, usando la escala
+intención, objetivo, prompt, skill, contexto, herramientas, memoria, permisos y evals.
+</p>
+<div class="meter" data-inema-meter="modulo:1-2" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-2-1">
+<span class="number">1</span>
+<span>La IA dejó de esperar instrucciones</span>
+</button>
+<div class="topic-explanation" id="p-1-2-1">
+<h4>Qué es</h4>
+<p>
+El área AGI-ready comienza con la frase: «La IA dejó de esperar instrucciones. Tu trabajo pasa a ser
+dirigir agentes». La página recuerda que, durante tres años, intentamos poner toda la operación
+dentro de un prompt gigante. Con agentes que trabajan durante horas o días, el juego cambia: tú
+indicas el destino y el agente encuentra el camino. Aquí, un agente es una IA que recibe una
+responsabilidad, planifica, ejecuta, supervisa y vuelve con el resultado. El área reúne lo que está
+cambiando, el modelo mental para seguir el ritmo y los cursos y proyectos de INEMA para empezar hoy,
+sin programar.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Quien sigue operando la IA solo con instrucciones breves compite con el propio agente. Quien aprende
+a delegar multiplica su capacidad, y eso se entrena.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+El destino, no el camino; trabajar durante horas o días; delegar; dirigir agentes sin programar.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-2-2">
+<span class="number">2</span>
+<span>La tarea se convierte en responsabilidad</span>
+</button>
+<div class="topic-explanation" id="p-1-2-2">
+<h4>Qué es</h4>
+<p>
+La página describe seis cambios: los tres primeros vienen de quienes están dentro de los
+laboratorios, y los tres siguientes muestran lo que esto significa para ti. El primero es que la
+tarea se convierte en responsabilidad: dejas de pedir «haz esta hoja de cálculo» y pasas a encargar
+«encárgate de la conciliación de este mes». El segundo es que la confianza se convierte en una
+curva, no en un interruptor: lo que el agente decide por su cuenta, lo que propone y tú apruebas, y
+lo que nunca toca, cada punto con una persona responsable. El tercero es que tu valor se desplaza
+hacia lo que la IA no decide: definir el objetivo, elegir qué importa, decir qué no puede pasar y
+evaluar si el resultado quedó bien. La página también cita, como fuente externa, un video en inglés
+sobre el artículo «Alien Minds», de Jakub Pachocki, científico jefe de OpenAI, que reconoce que la
+capacidad crece más rápido que el control.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Sin este cambio, sigues escribiendo instrucciones para una herramienta que ya puede encargarse del
+resultado. Y sin una curva de confianza, o lo bloqueas todo o le das demasiada libertad.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Tarea × responsabilidad; confianza como curva; matriz de confianza; papel de gerente de agentes.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-2-3">
+<span class="number">3</span>
+<span>El fin del prompt como programa completo</span>
+</button>
+<div class="topic-explanation" id="p-1-2-3">
+<h4>Qué es</h4>
+<p>
+La página advierte que hablar del «fin del prompt» es una simplificación exagerada: el prompt no
+desaparece. Lo que termina es el prompt como programa completo, con toda la inteligencia de la
+operación escrita en lenguaje natural, como se hacía entre 2023 y 2025. El micro-prompting consiste
+en enseñar cada paso: haz A, luego B, luego C; si falta un paso, el resultado sale mal. Ahora el
+prompt indica el objetivo, qué importa, las restricciones, los recursos y qué cuenta como un buen
+resultado. Y trabaja junto con el Skill, que es conocimiento o procedimiento reutilizable:
+instrucciones, archivos de referencia, plantillas, scripts y pautas para usar herramientas.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Separar el prompt del Skill evita reescribir los mismos nueve pasos cada vez. El prompt queda corto
+y la calidad viene del manual operativo que el agente ya tiene.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Prompt = lo que quiero ahora (el briefing); Skill = cómo suele trabajar nuestra organización; Prompt
+→ Context → Skill → Agent Engineering → Orchestration.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-2-4">
+<span class="number">4</span>
+<span>La escala de un agente que trabaja</span>
+</button>
+<div class="topic-explanation" id="p-1-2-4">
+<h4>Qué es</h4>
+<p>
+La página organiza la arquitectura en niveles, con un mismo ejemplo: aumentar la conversión de un
+curso. La intención responde «¿por qué?»; el objetivo, «¿qué?»; el prompt es la orientación para
+esta ejecución; Skill es cómo hacerlo bien, una y otra vez. Después vienen el contexto (lo que
+necesita saber), las herramientas (las manos del agente, como navegador, CRM, hojas de cálculo, APIs
+y MCP), la memoria (la experiencia acumulada) y, por último, los permisos y evals. Los evals son
+pruebas que indican si el resultado cumple el criterio de éxito; junto con los límites, la
+aprobación humana y los registros, forman el control de calidad. Como resume la página, no queremos
+solo un agente poderoso: queremos un agente que se pueda controlar.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Cuando un agente falla, la escala muestra en qué nivel está el problema: faltó contexto, faltó un
+Skill o faltó un criterio. Sin ella, cada falla termina en un prompt más largo.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Intención; objetivo; prompt; skill; contexto; herramientas; memoria; permisos y evals; una persona
+define el destino y evalúa el resultado.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-2-5">
+<span class="number">5</span>
+<span>Seis acciones para esta semana</span>
+</button>
+<div class="topic-explanation" id="p-1-2-5">
+<h4>Qué es</h4>
+<p>
+La página traduce el cambio en seis consejos que caben en tu agenda. Primero: separa las tareas de
+las responsabilidades en tu lista de pedidos a la IA. Segundo: reescribe un prompt como una
+delegación, con el objetivo, lo que importa, lo que no puede pasar, los recursos y cómo vas a
+evaluarlo; pide un plan antes de cualquier acción. Tercero: si explicaste el mismo procedimiento
+tres veces, conviértelo en un Skill con manual, plantilla, lista de verificación y ejemplos. Cuarto:
+escribe la matriz de confianza; quinto: da contexto antes de dar herramientas; sexto: define qué es
+&quot;bueno&quot; antes de ejecutar.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Son pasos pequeños y verificables, no un proyecto de meses. Cada uno es el primer escalón de una
+competencia que la página enumera: pensar en procesos, dirigir IA, construir agentes, integrar
+sistemas, evaluar y supervisar, conocer el negocio.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Tarea × responsabilidad; delegación en cinco partes; Skill para lo que se repite; matriz de
+confianza; contexto antes que herramientas; eval antes de ejecutar.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-2-6">
+<span class="number">6</span>
+<span>Cursos, proyectos y tres puertas</span>
+</button>
+<div class="topic-explanation" id="p-1-2-6">
+<h4>Qué es</h4>
+<p>
+El área reúne cursos para quienes toman decisiones y no programan, y cursos para quienes quieren
+construir. Para empezar: Os Super-Agentes Chegaram (6 clases), Super-Agentes na prática (8 clases) y
+Arquiteto de Trabalho com IA (8 clases). Para pasar a la herramienta: Arquitetura de Intenção,
+Computer Use com o GPT-6 Astra, Subagentes e Superpowers, además de la grabación Agentes do Zero:
+Fundamentos (5 días). Los proyectos con código y guía son OS Coach, os-agentes, Kit do Arquiteto de
+Agentes, INEMACCBOT, Content2Video, WebMCP Readiness, Fable 5.1 · Prompt de Sistema y STORM
+Research. La página cierra con tres puertas al mismo ecosistema: INEMA.CLUB (cursos abiertos),
+INEMA.VIP (comunidad) e INEMA.PRO (plataforma práctica).
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Cada proyecto es una parte de la arquitectura que funciona de verdad: INEMACCBOT muestra la matriz
+de confianza en código; WebMCP Readiness muestra el lado de &quot;tools&quot; desde el sitio. Ver un
+ejemplo terminado acelera la primera delegación.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Empieza por Os Super-Agentes Chegaram; cursos abiertos en portugués; proyectos con código y guía;
+INEMA.CLUB, INEMA.VIP, INEMA.PRO.
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-1-2.html">Ver completo →</a>
+<button data-modal-src="modulo-1-2.html">Ver en ventana modal</button>
+</div>
+</article>
+<article class="module-card" id="modulo-1-3" data-inema-module="1-3" data-inema-track="1">
+<p class="kicker">
+MÓDULO 1.3
+</p>
+<h2 class="text-2xl font-bold">IA Cultivada: un agente no se programa, se cultiva</h2>
+<p>
+Explicar por qué un agente mejora gracias al entorno que cultivas y no al modelo, usando los ocho
+elementos, el ciclo y los cinco archivos del kit.
+</p>
+<div class="meter" data-inema-meter="modulo:1-3" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-3-1">
+<span class="number">1</span>
+<span>El proceso que produce el comportamiento</span>
+</button>
+<div class="topic-explanation" id="p-1-3-1">
+<h4>Qué es</h4>
+<p>
+El área IA Cultivada comienza con la tesis: &quot;Antes, programábamos el comportamiento. Ahora,
+programamos el proceso que produce el comportamiento.&quot; Nadie escribe línea por línea la
+capacidad de un modelo grande para hacer analogías o planificar una empresa: los laboratorios crean
+las condiciones y las capacidades surgen. La página distingue dos niveles de cultivo. En el nivel 1,
+el laboratorio cultiva el modelo con arquitectura, datos, objetivo, compute, entrenamiento y
+feedback, y tú no participas. En el nivel 2, cultivas el agente: el modelo ya viene listo, con los
+pesos congelados, y lo que cultivas es el entorno que lo rodea.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Esta distinción explica por qué el mismo modelo se convierte en un pasante confundido para una
+persona y en un profesional confiable para otra. El modelo es igual al de tu competencia; el jardín
+no.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Cultivar, no construir; nivel 1 (modelo) × nivel 2 (agente); pesos congelados; lo que aprende es el
+sistema.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-3-2">
+<span class="number">2</span>
+<span>Los ocho elementos del cultivo</span>
+</button>
+<div class="topic-explanation" id="p-1-3-2">
+<h4>Qué es</h4>
+<p>
+Todo agente, ya sea un asistente personal o un agente de ventas, se cultiva con los mismos ocho
+ingredientes. Función: de qué se encarga, un papel a la vez. Contexto: lo que necesita saber; una
+buena página vale más que veinte páginas volcadas sin orden. Herramientas: lo que puede operar,
+empezando por la lectura; reglas y límites: qué hace sin preguntar, qué requiere confirmación y qué
+nunca hace. Los ejemplos son casos reales anotados, incluidos los malos; la memoria es lo que
+permanece entre sesiones; la evaluación pregunta si está bien y con qué se compara; el feedback
+convierte cada falla en un cambio en el archivo, no en la conversación. Los cuatro primeros hacen
+que el agente funcione; los cuatro últimos hacen que mejore.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+La página observa que la mayoría de las personas se detiene en el cuarto elemento y se queja de que
+&quot;la IA no aprende&quot;. Conocer los ocho permite ver dónde está el vacío.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Función; contexto; herramientas; reglas y límites; ejemplos; memoria; evaluación; feedback; software
+tradicional × IA Cultivada.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-3-3">
+<span class="number">3</span>
+<span>Cada vuelta del ciclo es una cosecha</span>
+</button>
+<div class="topic-explanation" id="p-1-3-3">
+<h4>Qué es</h4>
+<p>
+El ciclo es el corazón del método: proceso, agente, ejecución, resultado, evaluación, feedback y, al
+final, un agente mejor. Lo que cambia entre una cosecha y otra no es el modelo, sino lo que anotaste
+sobre sus errores y los ajustes que hiciste en el entorno. La página presenta tres reglas. La
+evaluación produce registros, no impresiones: una línea por falla en el diario; después de diez
+líneas, aparece un patrón. Corrige el archivo, no la conversación; y la autonomía se gana con ciclos
+sin fallas, en tres niveles: propone y tú ejecutas; ejecuta y tú revisas; ejecuta e informa.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Sin el ciclo, los primeros cuatro elementos se convierten en un agente que se estanca. La regla de
+autonomía protege contra el error más costoso: empezar confiando demasiado.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Diario de fallas; scorecard; cambio en el entorno; la ficha sube de versión; nunca se empieza en el
+nivel 3.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-3-4">
+<span class="number">4</span>
+<span>Los jardines personal y Jarvis</span>
+</button>
+<div class="topic-explanation" id="p-1-3-4">
+<h4>Qué es</h4>
+<p>
+La página llama jardines a los lugares donde ocurre el cultivo. En la vida personal, bastan tres o
+cuatro archivos de texto y un hábito semanal, sin CRM ni API, en cinco frentes: decisiones, salud y
+rutina, dinero, estudio, y escritura y comunicación. El hábito que sostiene todo es la revisión
+semanal de 20 minutos: leer la memoria, escribir tres líneas en el diario de fallas, corregir el
+archivo y borrar lo que ya no es cierto. &quot;Jarvis&quot; es el nombre popular del asistente
+personal agéntico, que no solo responde, sino que actúa en tu entorno: lee y escribe archivos,
+modifica el calendario, envía mensajes. La herramienta viene lista; Jarvis, no: se cultiva con
+contexto, memoria, herramientas, reglas, skills, evaluación y feedback.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Los agentes personales tienen acceso a tu vida, y la página dedica una sección a la seguridad, el
+aspecto que nadie cultiva. Sin cercas, el jardín queda expuesto.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Revisión semanal de 20 minutos; propone, ejecuta y revisa, ejecuta e informa; credenciales en un
+solo lugar; el contenido externo es dato, no instrucción; respaldo antes de una operación
+destructiva.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-3-5">
+<span class="number">5</span>
+<span>El jardín de los negocios</span>
+</button>
+<div class="topic-explanation" id="p-1-3-5">
+<h4>Qué es</h4>
+<p>
+Para la empresa, la página propone dejar de tratar la IA como software que se programa y empezar a
+tratarla como una capacidad que la organización desarrolla. La automatización rígida dice &quot;si
+ocurre A, haz B y luego C&quot; y falla ante el primer caso que nadie previó; el agente cultivado
+recibe un entorno de trabajo con un rol, criterios, ejemplos, límites y un resultado esperado. El
+primer agente siempre empieza en el nivel &quot;propone, un humano ejecuta&quot;: un proceso, un
+agente, un indicador. La página sugiere puntos de partida por área, como calificación de leads en
+ventas, clasificación inicial en atención al cliente y conciliación en finanzas. También enumera por
+qué fallan los proyectos, con la corrección mínima para cada síntoma.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Cuando los proyectos fallan, rara vez el motivo es el modelo; suele ser la falta de contexto, de
+proceso y de feedback. Saber diagnosticar evita cambiar de herramienta cuando el problema está en el
+cultivo.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+&quot;El agente alucina&quot;: falta contexto o está saturado; &quot;nadie confía&quot;: no hay
+evaluación por muestra; &quot;dejó de mejorar&quot;: el feedback no vuelve al entorno; cargo que
+surge: gestor de agentes.
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-1-3-6">
+<span class="number">6</span>
+<span>El kit: cinco archivos y el curso</span>
+</button>
+<div class="topic-explanation" id="p-1-3-6">
+<h4>Qué es</h4>
+<p>
+Todo cultivo cabe en cinco archivos de texto, iguales para el jardín personal y el empresarial. La
+ficha del agente incluye su función, el resultado esperado, la persona responsable, lo que hace por
+su cuenta, lo que requiere confirmación y lo que nunca hace, además de la versión y la fecha. El
+contexto es &quot;Sobre mí&quot; o &quot;Sobre la empresa&quot;; los ejemplos anotados reúnen casos
+buenos, malos y excepciones aprobadas, con sus motivos; el diario de fallas tiene una línea por
+falla; el scorecard registra la revisión y la decisión de mantener, subir o bajar de nivel. El área
+reúne el curso IA Cultivada, en una sola página y también en inglés y español; los kits personal,
+Jarvis y empresa; el generador de fichas; el diagnóstico de madurez de ocho preguntas; y el
+repositorio iacultivada en GitHub, con las skills /cultivar y /revisao-semanal. Para gestionar los
+agentes en la empresa, la página indica el área Gestión de IA; para construirlos, el área AGI-ready.
+</p>
+<h4>Por qué aprender</h4>
+<p>
+Con los archivos listos, no empiezas desde cero ni dependes de recordar lo que acordaste con la IA.
+La página resume el punto de partida: elige un jardín, una función y tres reglas; lo demás es un
+ciclo.
+</p>
+<h4>Conceptos clave</h4>
+<p>
+Ficha del agente; contexto; ejemplos anotados; diario de fallas; scorecard; kits; generador;
+diagnóstico; /cultivar y /revisao-semanal.
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-1-3.html">Ver completo →</a>
+<button data-modal-src="modulo-1-3.html">Ver en ventana modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">Áreas de INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edición v2 · v1.1.1<br>Contenido tomado de las páginas de eventos.inema.pro, leídas el 28/09/2026. El progreso y las notas quedan en este navegador; expórtalos desde tu recorrido.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-en">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="INEMA Events Areas — what each area is">
+<meta name="description" content="Quick course: what each of the nine subject areas on eventos.inema.pro is—AI Management, AGI-ready, Cultivated AI, Claude → Codex, Codex + Claude, OSWork, RSI, JEV, and WebMCP."><title>Codex + Claude: one does the work, the other reviews it | INEMA Events Areas</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/en/curso/trilha2/modulo-2-2.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha2/modulo-2-2.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha2/modulo-2-2.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha2/modulo-2-2.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha2/modulo-2-2.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-en", "tracks": [{"n": "1", "title": "Manage and direct agents", "modules": [{"id": "1-1", "title": "AI Management: 2027, the year of managing agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: Your Work Becomes Managing Agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Cultivated AI: you cultivate an agent; you don’t program one", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Tools and environment", "modules": [{"id": "2-1", "title": "Claude → Codex: Separate the brain from the model", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: one does the work, the other reviews it", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: Which Edition Is for You?", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Improve, decide, and open up", "modules": [{"id": "3-1", "title": "RSI: AI that helps improve AI", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: AI Decisions in Practice", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: Your Site Talking to Agents", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav class="topnav" aria-label="Main navigation">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">INEMA Areas<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>My Journey</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Appearance</button>
+<button onclick="toggleTheme()" aria-label="Toggle light and dark theme">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Manage and direct agents</span>
+</a>
+<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Tools and environment</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Improve, decide, and open up</span>
+</a>
+<a href="https://eventos.inema.pro/en/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Course language">
+<a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="modulo-2-2.html" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="../../../es/curso/trilha2/modulo-2-2.html" hreflang="es" lang="es">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Dark</button>
+<button type="button" data-inema-set-theme="claro">Light</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Focus</button>
+<button type="button" data-inema-set-theme="contraste">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Home</a> / <a href="index.html">Tools and environment</a> / Module 2.2</div>
+<article id="modulo-2-2" data-inema-module="2-2" data-inema-track="2">
+<header class="hero">
+<div>
+<p class="kicker">
+MODULE 2.2 / 5 OF 9
+</p>
+<h1>Codex + Claude: one does the work, the other reviews it</h1>
+<p>
+Explain how to use Claude and Codex on the same project, covering the Use Both kit’s six levels, the
+routing card, and the difference between claudex and Use Both.
+</p>
+<p class="area-note">Area page: <a href="https://eventos.inema.pro/codex-claude/en/">eventos.inema.pro/codex-claude/en/</a> · in the menu: “use both together”</p>
+<div class="meter" data-inema-meter="modulo:2-2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="One plans, the other critiques → The six levels of Use Both → Who Does What: The Route Card → One Path: claudex × Use Both → Create Images with Codex, Step by Step → A First Step and All the Projects"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / CODEX-CLAUDE</text><text x="36" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">One plans, the other critiques</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / CODEX-CLAUDE</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">The six levels of Use Both</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / CODEX-CLAUDE</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Who Does What: The Route Card</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / CODEX-CLAUDE</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">One Path: claudex × Use Both</text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / CODEX-CLAUDE</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Create Images with Codex, Step by Step</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / CODEX-CLAUDE</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">A First Step and All the Projects</text></svg>
+<figcaption class="help-note">The 6 topics in this module. At the end, you’ll fill out the area worksheet.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>topics</span>
+</div>
+<div><strong>~20 min</strong>
+<span>reading and practice</span>
+</div>
+<div><strong>1</strong>
+<span>area worksheet</span>
+</div>
+<div><strong>1</strong>
+<span>ready-to-use prompt</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-2-2#topico-1">
+<h2>
+<span class="number">1</span>One plans, the other critiques</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-2-t1-p1">
+The Codex + Claude area’s central idea is: “One plans, the other critiques. Use both together.”
+Claude and Codex complement each other when each handles one part and the other checks the real
+artifact: the actual file, diff, or image. The rule that runs through it all: the second assistant
+gets the same brief and the real artifact, never a vague summary of what the first assistant did.
+The page is INEMA’s meeting place for the two tools. It brings together the Use Both kit’s six
+levels, a table showing who does what, and cards for all courses and projects. To move from one tool
+to the other, use the sister area Claude → Codex.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-2-t1-p2">
+This is for people who already have Claude Code and Codex and don’t want to choose just one. A
+second opinion from another model catches issues the author may miss.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-2-t1-p3">
+one does the work, the other reviews it; real artifact; same brief; it’s not Claude or Codex; sister
+area Claude → Codex
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-2-t1-ex">
+A developer writes a feature plan with one assistant and gives the same file to the other for a
+read-only review. The critique catches a missing test before anyone writes a line of code.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do</h4>
+<p>
+Choose a recent plan or document of yours and note who could review it using the same brief, without
+a summary.
+</p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p>
+Judging the area by its name: read the main idea on the page before deciding if it’s for you.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-2-2#topico-2">
+<h2>
+<span class="number">2</span>The six levels of Use Both</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-2-t2-p1">
+The Use Both kit organizes working with both tools into six workflow levels, with ready-to-use
+prompts and two small skills. Level 1 is having them discuss: one writes the plan, the other
+critiques the same file in read-only mode, for no more than two rounds. Level 2, optional, is
+generating images, only if an image tool is available in the session and after checking access and
+billing. Level 3 is splitting building and review: one builds in a branch, the other reviews the
+diff against the brief and test results. Level 4 is supervised computer use, with passwords,
+payments, and important submissions kept under your control. Level 5 is a goal with a stop
+condition, observable success, and limits on files, rounds, and spending. Level 6 is handoff and
+prime: the handoff records the state in a portable file, and prime makes the next assistant read and
+verify that state before continuing.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-2-t2-p2">
+The levels give you a path to follow: you can start by discussing a plan and move up only when you
+need to. Each level includes limits to prevent uncontrolled spending or actions.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-2-t2-p3">
+discuss; generate images; build and review; supervised computer use; goal with a stop condition;
+handoff and prime
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-2-t2-ex">
+A team uses level 3: one assistant implements a fix in a branch, and the other reviews the diff
+along with the test output. Tests and human approval determine what goes into the project.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Find out which of the six levels you already use and which one could come next.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="Discuss · Images · Build · Computer · Goal with stop · Handoff/prime"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Discuss</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Images</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Build</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Computer</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#60a5fa"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Goal with stop</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Handoff/prime</text></svg>
+<figcaption class="help-note">The six Use Both levels, from discussing a plan to switching sessions; each has its own limit.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-2-2#topico-3">
+<h2>
+<span class="number">3</span>Who Does What: The Route Card</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-2-t3-p1">
+The route card is a table in the kit that says, for each task, who does the first pass, who does the
+second, and what counts as done. Plan the work: Claude / Opus plans, Codex critiques the
+assumptions, and the result is a plan with scope and acceptance tests. Build a feature: Claude /
+Opus builds, Codex reviews the diff, and done means tests pass and findings are resolved. Tackle a
+difficult bug: Codex works toward a bounded goal, with tests and a human checkpoint. Switch sessions
+or models: create a handoff snapshot, and prime checks the current state. The page notes that these
+are &quot;editorial choices, not a measured model ranking&quot;: try them and keep the route that
+produces the best evidence.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-2-t3-p2">
+Having a starting route saves you from debating from scratch for every task. Knowing it is not a
+benchmark keeps you from treating it as a fixed rule.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-2-t3-p3">
+first pass; second pass; finish line; editorial choices, not a ranking; models and billing vary by
+account
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-2-t3-ex">
+An analyst needs to review a requirements document. The route says either tool can write it, while
+the other checks the facts and requirements; done means every required claim has evidence.
+</p>
+</div>
+<h4>Steps to try</h4>
+<ol class="timeline">
+<li>Open the area page beside this lesson.</li>
+<li>Choose a task from your week and fill in the route card’s three columns: first pass, second pass, and finish line.</li>
+<li>Write one sentence about what changed in your understanding.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Plan · Build · Hard bug · Switch session"><rect x="12.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Plan</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">Claude; Codex critiques</text><rect x="133.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="145.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Build</text><text x="145.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">Claude; Codex reviews</text><rect x="255.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#60a5fa"/><text x="267.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Hard bug</text><text x="267.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">Codex with a goal</text><rect x="376.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="388.5" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Switch session</text><text x="388.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">handoff and prime</text></svg>
+<figcaption class="help-note">Four lines on the routing card: who starts and who checks. These are editorial choices, not measured rankings.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-2-2#topico-4">
+<h2>
+<span class="number">4</span>One Path: claudex × Use Both</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-2-t4-p1">
+The page organizes courses and projects into one path: understand, migrate or stay tool-agnostic,
+use both together, and automate the discussion. The common link is the project’s Markdown files,
+such as AGENTS.md, tasks, and handoffs, which any runtime can read. Two different tools appear along
+this path. claudex is a Claude Code plugin, or software: Claude writes PLAN.md and Codex critiques
+it from 3 angles, in a loop until LGTM or N rounds. Use Both is a method kit, with a guide, prompts,
+templates, and 2 skills. It covers all six workflows, manually or semiautomatically. The page sums
+it up: they are complementary; for a large plan, use claudex; for everything else, such as reviewing
+a diff, setting a goal with a stop condition, or switching sessions, use Use Both.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-2-t4-p2">
+Knowing which layer each tool works at helps you avoid installing software to solve a process
+problem, or the other way around.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-2-t4-p3">
+Understand → Migrate → Use both → Automate the discussion; claudex = software; Use Both = method;
+LGTM; complementary
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-2-t4-ex">
+A technical lead has a large architecture plan and uses claudex for the automated discussion. For
+day-to-day work, such as reviewing diffs and switching sessions, the team follows the Use Both
+levels.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do</h4>
+<p>
+Compare the &quot;Limit&quot; row in the claudex × Use Both table and note how many rounds each
+recommends.
+</p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p>
+Jumping to the tool or course without understanding the problem the area addresses.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Understand · Migrate · Use both · Automate debate"><rect x="12.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Understand</text><path d="M240.0 38.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="14" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Migrate</text><path d="M379.0 66v10H123.0v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M118.0 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Use both</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="222.0" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Automate debate</text></svg>
+<figcaption class="help-note">Courses and kits cover steps along the same path, connected by the project’s Markdown files.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-2-2#topico-5">
+<h2>
+<span class="number">5</span>Create Images with Codex, Step by Step</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-2-t5-p1">
+The page gives a real example: someone with a Codex subscription uses its image generator,
+image_gen, which INEMA calls &quot;image 2.5.&quot; Today at INEMA, Claude Code runs codex exec in
+non-interactive mode and asks image_gen for a PNG in a folder; if Codex fails or there is no credit,
+it falls back to the local model FLUX.2 klein. Each generation uses subscription credit, so it runs
+only when authorized. The image is checked afterward because text near the edges may be made up. The
+kit proposes using level 2 step by step: first confirm the tool and billing, never switch
+automatically to a paid API, save the actual file in the project, and open it at the size it will be
+used. In the page’s words, INEMA’s approach runs automatically in batches, with a local fallback;
+the kit’s approach is manual, with more cost checks and review.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-2-t5-p2">
+Generated images have costs and visible errors. The two approaches show how to balance automation
+with review before using the file.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-2-t5-p3">
+image_gen; codex exec; FLUX.2 klein fallback; check first, inspect afterward; save as a sibling
+version instead of overwriting
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-2-t5-ex">
+A designer uses Codex to create a cover for a resource. Before publishing, they open the file at its
+actual size, spot a made-up word near the edge, and save the correction as a sibling version without
+deleting the original.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Before you generate your next image, write down which tool you’ll use and how it charges.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Check tool · Generate draft · Save file · Inspect · Sibling versions"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Check tool</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="11" font-family="sans-serif">Generate draft</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Save file</text><path d="M421.66666666666663 66v10H165.66666666666669v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M160.66666666666669 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="97.33333333333334" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="109.33333333333334" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Inspect</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#60a5fa"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Sibling versions</text></svg>
+<figcaption class="help-note">Kit level 2, piece by piece: check the cost first and the actual file afterward, without overwriting the original.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-2-2#topico-6">
+<h2>
+<span class="number">6</span>A First Step and All the Projects</h2>
+<h3>What it is</h3>
+<p data-inema-block="m2-2-t6-p1">
+The page sums up how to start: &quot;The best first step: a plan of your own, reviewed by the other
+one.&quot; Choose a small task, write the brief and acceptance criteria, ask one to make the plan
+and the other to critique it in the same file, for no more than two rounds, and create a handoff
+before closing the session. The area includes six courses: Claude → Codex (PT, EN, and ES), Codex
+Básico, Master Codex, iClaudeX, MakeClaudeX, and DeepClaudeX. It also includes kits and references:
+agente-claude-codex, Use Both, claudex on GitHub, Codex Cheat Sheet, and the topic map on
+INEMA.CLUB. The page cites an external video by Mark Kashef, which the Use Both kit follows, as a
+source of the author’s opinions, not a benchmark. His summary is in RESUMO-VIDEO.md in the kit
+repository.
+</p>
+<h3>Why learn it</h3>
+<p data-inema-block="m2-2-t6-p2">
+A short first cycle shows the value of a second look in practice. The courses and kits show you
+where to go deeper at each step.
+</p>
+<h3>Key concepts</h3>
+<p data-inema-block="m2-2-t6-p3">
+a plan of your own, reviewed by the other one; no more than two rounds; Codex Básico; Master Codex;
+iClaudeX; MakeClaudeX; DeepClaudeX; Use Both; claudex; Codex Cheat Sheet
+</p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m2-2-t6-ex">
+A coordinator asks Claude to plan a reporting routine and Codex to critique it in read-only mode.
+After the second round, the plan is settled, and they record a handoff to pick it up the next day.
+</p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p>
+Open the Use Both guide and read level 1 before running your first reviewed plan.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Mark as read</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? I have a question</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Topics in this module">
+<p class="kicker">
+IN THIS LESSON
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. One plans, the other critiques</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. The six levels of Use Both</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Who Does What: The Route Card</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. One Path: claudex × Use Both</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Create Images with Codex, Step by Step</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. A First Step and All the Projects</a>
+</li>
+</ul>
+<a href="#laboratorio">Final lab ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criteria for reviewing your worksheet</h2>
+<p>
+Use this rubric after the lab. Each row asks for evidence; marking a topic as read doesn’t mean the
+worksheet is complete.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Expected evidence</th>
+<th>If it doesn’t meet the criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main idea</td>
+<td>You can describe the area in one sentence that reflects the page.</td>
+<td>Reread the top of the page and topic 1.</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>You can say who the area is for and who it isn’t for.</td>
+<td>Return to topic 2 and write an example from your work.</td>
+</tr>
+<tr>
+<td>Core elements</td>
+<td>You can name the area’s core elements.</td>
+<td>Use the module diagram as a guide.</td>
+</tr>
+<tr>
+<td>First step</td>
+<td>You chose a small, concrete step.</td>
+<td>Copy the first step recommended on the page itself.</td>
+</tr>
+<tr>
+<td>Starting point</td>
+<td>You know which course, kit, or project to open first.</td>
+<td>Check topic 6 and the page’s access section.</td>
+</tr>
+<tr>
+<td>Source</td>
+<td>Every statement in the worksheet comes from the page.</td>
+<td>Replace your assumptions with what the page says.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+HANDS-ON / ~10 MIN
+</p>
+<h2>Have the other assistant review your plan</h2>
+<p>Keep the area page open: <a href="https://eventos.inema.pro/codex-claude/en/">https://eventos.inema.pro/codex-claude/en/</a>. Use an example from your work, without personal or client data.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="2-2-1">
+<span>Choose a small task and write the brief, plan, and acceptance criteria in a file called plan-v1.md.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-2-2">
+<span>Run the command in the copyable block (or use the reverse path with claude -p) and confirm that review.md was created and plan-v1.md didn’t change.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-2-3">
+<span>Read the review and mark each finding as resolved, rejected with a reason, or pending. Don’t go beyond two rounds.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-2-4">
+<span>Write a short handoff with the plan’s status, decisions, and next action for the next session to read before acting.</span>
+</label>
+</li>
+</ol>
+<h3>Command: Codex reviews your plan, read-only</h3>
+<p>
+Paste it into Claude, ChatGPT, or Codex. Replace the words inside &lt; and &gt; with details about
+your situation.
+</p>
+<pre><code>codex exec --sandbox read-only -c model_reasoning_effort=medium \
+  --output-last-message review.md \
+  &#x27;Read plan-v1.md. Point out correctness issues and missing tests, with evidence, impact, and the smallest fix. Do not change files.&#x27;
+
+# Reverse path (Codex wrote it, Claude reviews):
+claude -p --model opus --effort medium \
+  &#x27;Read plan-v1.md and review it read-only: issues, assumptions, and missing tests. Do not change files.&#x27; &gt; review-claude.md</code>
+</pre>
+<button data-copy-prev>Copy block</button>
+<h3>Completion criterion</h3>
+<p>
+Explain how to use Claude and Codex on the same project, covering the Use Both kit’s six levels, the
+routing card, and the difference between claudex and Use Both. Keep the worksheet with the main
+idea, audience, first step, and starting point.
+</p>
+<a class="button" href="https://eventos.inema.pro/codex-claude/en/">Open the area page ↗</a>
+</section>
+<section class="band">
+<h2>Review what you’ve learned</h2>
+<p>
+Claude wrote the plan, and Claude itself approved it in the same session. Why isn’t that enough?
+</p>
+<details>
+<summary>View suggested answer</summary>
+<p>
+Because the model that wrote the plan tends to approve its own work, and two AIs agreeing is not
+independent proof. The tests and your approval are what count.
+</p>
+<p>
+If your answer was different, return to the relevant topic and describe the difference in one
+sentence. This check won’t block your progress.
+</p>
+</details>
+<h3>Module summary</h3>
+<ul>
+<li>one does the work, the other reviews it; real artifact; same brief; it’s not Claude or Codex; sister area Claude → Codex</li>
+<li>discuss; generate images; build and review; supervised computer use; goal with a stop condition; handoff and prime</li>
+<li>first pass; second pass; finish line; editorial choices, not a ranking; models and billing vary by account</li>
+<li>Understand → Migrate → Use both → Automate the discussion; claudex = software; Use Both = method; LGTM; complementary</li>
+<li>image_gen; codex exec; FLUX.2 klein fallback; check first, inspect afterward; save as a sibling version instead of overwriting</li>
+<li>a plan of your own, reviewed by the other one; no more than two rounds; Codex Básico; Master Codex; iClaudeX; MakeClaudeX; DeepClaudeX; Use Both; claudex; Codex Cheat Sheet</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Check the source</h3>
+<p>
+Pages read on 28/09/2026. Area content changes; the official page takes precedence over this
+summary.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/codex-claude/" target="_blank" rel="noopener">Codex + Claude area</a>
+</li>
+<li>
+<a href="https://inematds.github.io/use-both-claude-codex/guia/" target="_blank" rel="noopener">Use Both guide</a>
+</li>
+<li>
+<a href="https://github.com/inematds/claudex" target="_blank" rel="noopener">claudex on GitHub</a>
+</li>
+<li>
+<a href="https://inematds.github.io/curso-claude-codex/" target="_blank" rel="noopener">Claude → Codex course</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha2/modulo-2-1.html">← Previous</a>
+<a class="button" href="index.html">Back to learning path</a>
+<a class="button primary" href="../../curso/trilha2/modulo-2-3.html">Next area →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">INEMA Events Areas · quick course · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edition v2 · v1.1.1<br>Content drawn from the eventos.inema.pro pages, read on 28/09/2026. Progress and notes stay in this browser; export them from My Journey.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Module complete</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

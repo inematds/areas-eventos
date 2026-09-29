@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-es">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas de INEMA Eventos — qué es cada área">
+<meta name="description" content="Curso rápido: qué es cada una de las nueve áreas temáticas de eventos.inema.pro — Gestión de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV y WebMCP."><title>RSI: la IA que ayuda a mejorar la IA | Áreas de INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/es/curso/trilha3/modulo-3-1.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-1.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha3/modulo-3-1.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha3/modulo-3-1.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-1.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-es", "tracks": [{"n": "1", "title": "Gestionar y dirigir agentes", "modules": [{"id": "1-1", "title": "Gestión de IA: 2027, el año de gestionar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: tu trabajo pasa a ser dirigir agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: un agente no se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Herramientas y entorno", "modules": [{"id": "2-1", "title": "Claude → Codex: separa el cerebro del modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: uno hace, el otro revisa", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qué edición es para ti", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Mejorar, decidir y abrir", "modules": [{"id": "3-1", "title": "RSI: la IA que ayuda a mejorar la IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisiones de IA en la práctica", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: tu sitio conversa con agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav class="topnav" aria-label="Navegación principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Mi recorrido</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Apariencia</button>
+<button onclick="toggleTheme()" aria-label="Cambiar entre tema claro y oscuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Gestionar y dirigir agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Herramientas y entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html" aria-current="page">T3<span class="long"> · Mejorar, decidir y abrir</span>
+</a>
+<a href="https://eventos.inema.pro/es/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Idioma del curso">
+<a href="../../../curso/trilha3/modulo-3-1.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../en/curso/trilha3/modulo-3-1.html" hreflang="en" lang="en">English</a>
+<a href="modulo-3-1.html" hreflang="es" lang="es" aria-current="page">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Oscuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Enfoque</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifas</button>
+<button data-inema-set-font="leitura">Con serifas</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Mejorar, decidir y abrir</a> / Módulo 3.1</div>
+<article id="modulo-3-1" data-inema-module="3-1" data-inema-track="3">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 3.1 / 7 DE 9
+</p>
+<h1>RSI: la IA que ayuda a mejorar la IA</h1>
+<p>
+Explicar los tres niveles de mejora en IA y convertir una idea de mejora en una prueba verificable,
+con la versión registrada y una forma de volver atrás.
+</p>
+<p class="area-note">Página del área: <a href="https://eventos.inema.pro/rsi/es/">eventos.inema.pro/rsi/es/</a> · en el menú: “ciclos de mejora en IA”</p>
+<div class="meter" data-inema-meter="modulo:3-1" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Qué es RSI → Tres niveles que no deben confundirse → De la idea a una prueba verificable → LOOP-R: el ciclo con límites → Por dónde empezar: curso y guía → El acervo: Copiloto, Dream-RSI, 2028"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / RSI</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Qué es RSI</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / RSI</text><text x="271" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">Tres niveles que no deben confundirse</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / RSI</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">De la idea a una prueba verificable</text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / RSI</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">LOOP-R: el ciclo con límites</text><path d="M355 180v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / RSI</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Por dónde empezar: curso y guía</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / RSI</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">El acervo: Copiloto, Dream-RSI, 2028</text></svg>
+<figcaption class="help-note">Los 6 temas de este módulo. Al final, completas la ficha del área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>temas</span>
+</div>
+<div><strong>~20 min</strong>
+<span>lectura y práctica</span>
+</div>
+<div><strong>1</strong>
+<span>ficha del área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt listo</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-3-1#topico-1">
+<h2>
+<span class="number">1</span>Qué es RSI</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-1-t1-p1">
+RSI es la sigla en inglés de mejora recursiva de sí misma: la idea de una IA que ayuda a mejorar la
+propia IA. La pregunta central del área es práctica: ¿cómo propone cambios un sistema, prueba los
+resultados y conserva lo que funciona? La página presenta el tema como un área de estudio y un
+acervo abierto, con referencias, ejemplos y criterios para evaluar las promesas. El punto de partida
+es una distinción: mejorar una respuesta, mejorar un agente y mejorar la capacidad de crear agentes
+nuevos son cosas diferentes. Aquí, un agente es un sistema de IA que recibe un objetivo y ejecuta
+pasos con instrucciones, memoria y herramientas.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-1-t1-p2">
+Las promesas de IA que se mejora sola aparecen con frecuencia y suelen mezclar estos tres niveles.
+Si entiendes la diferencia, puedes preguntar qué mejoró exactamente y qué evidencia lo respalda.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-1-t1-p3">
+mejora recursiva de sí misma; proponer, probar, conservar; tres niveles diferentes; acervo abierto;
+criterios para evaluar promesas
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-1-t1-ex">
+Un proveedor dice que su asistente «aprende solo». La gerente pregunta: ¿vuelve a hacer la
+respuesta, cambia sus propias instrucciones o produce mejoras futuras? ¿Y cómo se midió? La
+respuesta determina si el producto está en el primer, segundo o tercer nivel.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Escribe en una frase una promesa de mejora automática que hayas escuchado y marca cuál de los tres
+niveles describe realmente.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Juzgar el área por su nombre: lee la idea central en la página antes de decidir si es para ti.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-3-1#topico-2">
+<h2>
+<span class="number">2</span>Tres niveles que no deben confundirse</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-1-t2-p1">
+El primer nivel es revisar la respuesta: el modelo critica y vuelve a generar una salida. Esto puede
+mejorar una tarea sin cambiar sus parámetros, los valores internos aprendidos durante el
+entrenamiento, ni su proceso de desarrollo. El segundo nivel es mejorar el sistema: cambian las
+instrucciones, la memoria, las herramientas o el código del agente, y hay que comparar las versiones
+con tareas reservadas, conservando la posibilidad de volver atrás. El tercer nivel es investigar la
+recursión: la mejora ayuda a producir mejoras futuras. Este mecanismo necesita evidencia, porque
+hacer más intentos o conseguir una calificación más alta no demuestra un crecimiento ilimitado.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-1-t2-p2">
+Cada nivel requiere un tipo de control diferente. Revisar una respuesta cuesta poco y es reversible;
+cambiar el sistema exige registrar versiones y hacer pruebas; afirmar que hay recursión requiere
+evidencia sólida. Confundir los niveles lleva a aceptar garantías que nadie ha medido.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-1-t2-p3">
+revisar la respuesta; mejorar el sistema; investigar la recursión; parámetros; tareas reservadas;
+posibilidad de volver atrás
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-1-t2-ex">
+Un equipo pide al modelo que revise su propio resumen antes de entregarlo: eso es nivel 1. Después
+reescribe la instrucción del agente de atención al cliente y compara las dos versiones con casos
+separados: nivel 2. Ninguna de las dos cosas, por sí sola, es una IA que crea IA mejores.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Clasifica en los tres niveles de la página tres mejoras que hayas hecho en prompts o agentes y anota
+si alguna tenía una forma de volver atrás.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 88" role="img" aria-label="Revisar · Sistema · Recursión"><path d="M30 40h430" stroke="#475569" stroke-width="2"/><circle cx="30.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="30.0" y="72" text-anchor="start" fill="#f1f5f9" font-size="14" font-family="sans-serif">Revisar</text><text x="30.0" y="22" text-anchor="start" fill="#94a3b8" font-size="11" font-family="monospace">nivel 1</text><circle cx="245.0" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="245.0" y="72" text-anchor="middle" fill="#f1f5f9" font-size="14" font-family="sans-serif">Sistema</text><text x="245.0" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">nivel 2</text><circle cx="460.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="460.0" y="72" text-anchor="end" fill="#f1f5f9" font-size="14" font-family="sans-serif">Recursión</text><text x="460.0" y="22" text-anchor="end" fill="#94a3b8" font-size="11" font-family="monospace">nivel 3</text></svg>
+<figcaption class="help-note">Los tres niveles aumentan la ambición y la exigencia de evidencia: revisar una respuesta no cambia el sistema, y solo el tercer nivel habla de mejoras que generan mejoras.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-3-1#topico-3">
+<h2>
+<span class="number">3</span>De la idea a una prueba verificable</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-1-t3-p1">
+La página propone empezar con una tarea pequeña: responder con base en una política, crear preguntas
+a partir de un texto o extraer acciones de notas. Primero define la tarea, la referencia correcta y
+los límites de datos, gasto y acciones. Después registra la versión inicial y separa los casos de
+desarrollo de los casos reservados para la validación. Propón un cambio a la vez y compara con los
+mismos criterios, incluidos los errores, el costo y el esfuerzo de revisión. Por último, valida
+antes de adoptar: guarda los resultados y las versiones, define quién decide y conserva una forma de
+revertir el cambio.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-1-t3-p2">
+Es posible manipular una evaluación conocida, y la página lo advierte. Mantener las pruebas
+independientes, revisar si hay datos inventados y observar resultados fuera de la muestra evita
+confundir una mejora local con autonomía general.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-1-t3-p3">
+tarea pequeña; referencia correcta; casos reservados; un cambio a la vez; mismos criterios; validar
+antes de adoptar; reversión
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-1-t3-ex">
+Una escuela prueba una instrucción que crea preguntas a partir de un texto. Usa cuatro textos para
+ajustarla y guarda dos que nadie ha visto. La nueva versión acierta más en los cuatro, pero falla en
+uno de los reservados; la coordinación decide mantener la versión anterior hasta entender el error.
+</p>
+</div>
+<h4>Pasos para probarlo</h4>
+<ol class="timeline">
+<li>Abre la página del área junto a esta lección.</li>
+<li>Elige una tarea tuya y escribe estas cuatro líneas: tarea y referencia; versión inicial y casos reservados; el único cambio; quién decide y cómo volver atrás.</li>
+<li>Anota en una frase qué cambió en tu comprensión.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Definir tarea · Versión inicial · Un cambio · Mismos criterios · Validar y decidir"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Definir tarea</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Versión inicial</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Un cambio</text><path d="M421.66666666666663 66v10H165.66666666666669v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M160.66666666666669 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="97.33333333333334" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="109.33333333333334" y="121.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Mismos criterios</text><path d="M240.0 116.0h22" stroke="#475569" stroke-width="2"/><path d="M256.0 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="268.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#c084fc"/><text x="280.0" y="121.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Validar y decidir</text></svg>
+<figcaption class="help-note">Una prueba verificable distingue un ajuste de una validación: el cambio solo se adopta después de superar los casos reservados, con posibilidad de revertirlo.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-3-1#topico-4">
+<h2>
+<span class="number">4</span>LOOP-R: el ciclo con límites</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-1-t4-p1">
+LOOP-R es el framework del proyecto para organizar mejoras: Ejecutar, Medir, Criticar, Proponer,
+Probar, Validar, Promover y Repetir. La página lo describe como listo para usar en Claude Code, con
+nueve asistentes de funciones separadas, registro de cada versión, un límite de costo y un comando
+para revertir cambios. La regla de seguridad es explícita: ninguna versión peor reemplaza a la
+actual por decisión del sistema. En el curso RSI, LOOP-R aparece como una propuesta conceptual del
+proyecto. También hay un curso LOOP-R con cinco rutas y 21 clases para personas propietarias de
+negocios y gerentes sin conocimientos técnicos.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-1-t4-p2">
+Un ciclo de mejora sin límites puede reemplazar una buena versión por una peor sin que nadie se dé
+cuenta. Un límite de costo, el registro de versiones y la reversión hacen que el ciclo sea auditable
+y seguro de repetir.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-1-t4-p3">
+Ejecutar; Medir; Criticar; Proponer; Probar; Validar; Promover; Repetir; nueve asistentes; límite de
+costo; revertir
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-1-t4-ex">
+Un gerente usa el ciclo para mejorar la instrucción que clasifica las solicitudes de clientes. Cada
+ronda genera una versión registrada; cuando la nueva versión empeora en una prueba, no se promueve y
+la actual sigue vigente.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Abre la guía de LOOP-R y anota en cuál de las ocho etapas suele detenerse tu proceso actual de
+ajuste de prompts.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Saltar a la herramienta o al curso sin entender el problema que resuelve el área.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="Ejecutar · Medir · Criticar · Proponer · Probar · Validar · Promover · Repetir"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Ejecutar</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Medir</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Criticar</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Proponer</text><rect x="10.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="22.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Probar</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Validar</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Promover</text><rect x="370.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Repetir</text></svg>
+<figcaption class="help-note">Las ocho etapas de LOOP-R repiten el ciclo, pero Validar y Promover funcionan como barreras: una versión peor no reemplaza a la actual.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-3-1#topico-5">
+<h2>
+<span class="number">5</span>Por dónde empezar: curso y guía</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-1-t5-p1">
+La sección «Empieza aquí» incluye dos materiales. El curso RSI v6.2 tiene 18 clases en seis módulos,
+con ejercicios, repasos y materiales para aplicar LOOP-R y registrar conocimiento aprobado, en
+portugués, inglés y español. La Guía RSI es un mapa del tema, con mecanismos, aplicaciones y
+límites, también en tres idiomas. La página incluye una aclaración importante: el proyecto reúne
+investigación y contenido educativo; no es un sistema RSI autónomo listo para funcionar. El código y
+los materiales están en el repositorio rsi en GitHub.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-1-t5-p2">
+Empezar por la guía te da el vocabulario y te muestra los límites; el curso convierte eso en
+práctica con ejercicios. Saber que el proyecto es educativo evita que esperes de él una herramienta
+que se mejora sola.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-1-t5-p3">
+RSI v6.2; 18 clases; seis módulos; Guía RSI; PT / EN / ES; contenido educativo, no un sistema
+autónomo
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-1-t5-ex">
+Una consultora quiere explicar RSI a un equipo directivo. Usa la Guía RSI para presentar el mapa de
+los tres niveles y recomienda el curso RSI v6.2 a la persona del equipo que dirigirá las pruebas de
+mejora.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Abre la Guía RSI, lee la parte sobre los límites y anota una frase que usarías para responder a
+quien promete una IA que se mejora sola.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-3-1#topico-6">
+<h2>
+<span class="number">6</span>El acervo: Copiloto, Dream-RSI, 2028</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-1-t6-p1">
+Además de la guía y el curso, el acervo reúne tres materiales con aclaraciones claras. RSI Copiloto
+es un asistente local con IA, memoria, tareas y rutinas, que compara instrucciones, solicita
+revisión humana y permite revertir cambios; la demostración pública usa ejemplos programados, sin
+IA, y la IA real solo está en la versión local. Dream-RSI es una guía educativa independiente, no
+afiliada a Google, sobre cómo aprender de historiales de experimentos; el laboratorio y las ocho
+sesiones son planes futuros, no una implementación del artículo. Alerta IA 2028 es un curso en tres
+rutas sobre el ciclo de mejora, la evidencia y los límites de la evaluación. Presenta los escenarios
+de 2028 como hipótesis, sin fechas garantizadas. La página también incluye referencias como
+Self-Refine, Reflexion, Darwin Gödel Machine y AlphaEvolve, consultadas el 25 de septiembre de 2026,
+cuyos resultados no se reprodujeron en el proyecto.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-1-t6-p2">
+Cada material indica qué está disponible y qué todavía es un plan. Leer esas aclaraciones es el
+ejercicio central del área: distinguir la evidencia de las promesas.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-1-t6-p3">
+RSI Copiloto; demostración sin IA; Dream-RSI independiente; Alerta IA 2028; escenarios como
+hipótesis; referencias originales en inglés
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-1-t6-ex">
+Un analista prueba la demostración de Copiloto y nota que las respuestas están programadas. En vez
+de concluir que «la IA acertó todo», registra que necesita la versión local para probarla de verdad.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Elige uno de los tres materiales y escribe qué ofrece ya y qué dice la página que todavía es un plan
+o un ejemplo programado.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="RSI Copiloto · Dream-RSI · Alerta IA 2028 · LOOP-R"><rect x="12.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">RSI Copiloto</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">demo sin IA</text><rect x="133.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="145.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">Dream-RSI</text><text x="145.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">independiente</text><rect x="255.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="267.0" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Alerta IA 2028</text><text x="267.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">escenarios = hipótesis</text><rect x="376.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="388.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">LOOP-R</text><text x="388.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">no se incorpora una versión peor</text></svg>
+<figcaption class="help-note">Cada material de la colección incluye una salvedad: lee el subtítulo antes de sacar conclusiones sobre lo que ofrece.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Temas de este módulo">
+<p class="kicker">
+EN ESTA LECCIÓN
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Qué es RSI</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Tres niveles que no deben confundirse</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. De la idea a una prueba verificable</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. LOOP-R: el ciclo con límites</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Por dónde empezar: curso y guía</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. El acervo: Copiloto, Dream-RSI, 2028</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratorio final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criterios para revisar tu ficha</h2>
+<p>
+Usa esta rúbrica después del laboratorio. Cada fila pide una evidencia; marcar como leído no
+significa que completaste la ficha.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia esperada</th>
+<th>Si no cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idea central</td>
+<td>Puedes resumir el área en una frase propia, fiel a la página.</td>
+<td>Vuelve a leer la parte superior de la página y el tema 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Sabes decir para quién es el área y para quién no.</td>
+<td>Vuelve al tema 2 y escribe un ejemplo de tu trabajo.</td>
+</tr>
+<tr>
+<td>Bloques</td>
+<td>Puedes nombrar las partes centrales del área.</td>
+<td>Usa el diagrama del módulo como guía.</td>
+</tr>
+<tr>
+<td>Primer paso</td>
+<td>Elegiste un paso concreto y pequeño.</td>
+<td>Copia el primer paso que recomienda la propia página.</td>
+</tr>
+<tr>
+<td>Punto de entrada</td>
+<td>Sabes qué curso, kit o proyecto abrir primero.</td>
+<td>Consulta el tema 6 y la sección de acceso de la página.</td>
+</tr>
+<tr>
+<td>Fuente</td>
+<td>Cada afirmación de la ficha se basa en la página.</td>
+<td>Cambia lo que supusiste por lo que dice la página.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+A PRACTICAR / ~10 MIN
+</p>
+<h2>Tu primer ciclo de mejora en papel</h2>
+<p>Deja abierta la página del área: <a href="https://eventos.inema.pro/rsi/es/">https://eventos.inema.pro/rsi/es/</a>. Usa un ejemplo de tu trabajo, sin datos personales ni de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="3-1-1">
+<span>Elige una tarea pequeña de tu trabajo, como extraer acciones de notas de reuniones, y escribe cuál sería la respuesta correcta para tres ejemplos ficticios.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-1-2">
+<span>Separa esos ejemplos en dos grupos: dos para desarrollar el cambio y uno reservado, que solo usarás para la validación.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-1-3">
+<span>Registra la versión inicial de la instrucción, propón UN cambio y prueba ambas versiones con los mismos ejemplos. Anota los aciertos, errores, costo y tiempo de revisión.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-1-4">
+<span>Comprueba si el cambio funciona en el ejemplo reservado; solo entonces adóptalo. Anota quién tomó la decisión y cómo volver a la versión anterior.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: mi primera prueba de mejora (RSI)</h3>
+<p>
+Pégalo en Claude, ChatGPT o Codex. Cambia lo que está entre &lt; y &gt; por tu situación.
+</p>
+<pre><code>Lee https://eventos.inema.pro/rsi/ y la guía https://inematds.github.io/rsi/guia/.
+Quiero probar una mejora en una tarea de mi trabajo, sin prometer más de lo que puedo medir.
+Mi tarea: &lt;describe la tarea, p. ej.: extraer acciones de notas de reuniones&gt;.
+Mi instrucción actual: &lt;pega la instrucción o el prompt que usas hoy&gt;.
+1. Di en cuál de los tres niveles (revisar la respuesta, mejorar el sistema, investigar la recursión) encaja mi idea.
+2. Diseña la prueba: referencia correcta, límites de datos/gasto/acciones, casos de desarrollo y casos reservados.
+3. Propón UN solo cambio en la instrucción y la tabla para comparar las dos versiones (errores, costo, esfuerzo de revisión).
+4. Di quién debe decidir si se adopta y cómo volver a la versión anterior.
+No inventes resultados: deja los campos de resultados en blanco para que yo los complete.</code>
+</pre>
+<button data-copy-prev>Copiar bloque</button>
+<h3>Criterio de finalización</h3>
+<p>
+Explicar los tres niveles de mejora en IA y convertir una idea de mejora en una prueba verificable,
+con la versión registrada y una forma de volver atrás. Guarda la ficha con la idea central, el
+público, el primer paso y el punto de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/rsi/es/">Abrir la página del área ↗</a>
+</section>
+<section class="band">
+<h2>Revisa lo que quedó</h2>
+<p>
+Después de diez intentos, la nueva instrucción obtuvo una calificación más alta en el mismo conjunto
+que usaste para ajustarla. ¿Eso demuestra que es mejor?
+</p>
+<details>
+<summary>Ver respuesta comentada</summary>
+<p>
+No. Se puede explotar una evaluación conocida; el cambio debe funcionar también en casos reservados,
+con los mismos criterios. Más intentos o una calificación más alta no demuestran un crecimiento
+ilimitado.
+</p>
+<p>
+Si tu respuesta fue distinta, vuelve al tema correspondiente y escribe la diferencia en una frase.
+La revisión no impide que continúes estudiando.
+</p>
+</details>
+<h3>Resumen del módulo</h3>
+<ul>
+<li>mejora recursiva de sí misma; proponer, probar, conservar; tres niveles diferentes; acervo abierto; criterios para evaluar promesas</li>
+<li>revisar la respuesta; mejorar el sistema; investigar la recursión; parámetros; tareas reservadas; posibilidad de volver atrás</li>
+<li>tarea pequeña; referencia correcta; casos reservados; un cambio a la vez; mismos criterios; validar antes de adoptar; reversión</li>
+<li>Ejecutar; Medir; Criticar; Proponer; Probar; Validar; Promover; Repetir; nueve asistentes; límite de costo; revertir</li>
+<li>RSI v6.2; 18 clases; seis módulos; Guía RSI; PT / EN / ES; contenido educativo, no un sistema autónomo</li>
+<li>RSI Copiloto; demostración sin IA; Dream-RSI independiente; Alerta IA 2028; escenarios como hipótesis; referencias originales en inglés</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulta la fuente</h3>
+<p>
+Páginas leídas el 28/09/2026. El contenido de las áreas cambia; la página oficial tiene más validez
+que este resumen.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/rsi/" target="_blank" rel="noopener">Área RSI · eventos.inema.pro</a>
+</li>
+<li>
+<a href="https://inematds.github.io/curso-rsi/" target="_blank" rel="noopener">Curso RSI v6.2</a>
+</li>
+<li>
+<a href="https://inematds.github.io/rsi/guia/" target="_blank" rel="noopener">Guía RSI</a>
+</li>
+<li>
+<a href="https://inematds.github.io/loop-r/guia/" target="_blank" rel="noopener">Framework LOOP-R</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha2/modulo-2-3.html">← Anterior</a>
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../../curso/trilha3/modulo-3-2.html">Siguiente área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas de INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edición v2 · v1.1.1<br>Contenido tomado de las páginas de eventos.inema.pro, leídas el 28/09/2026. El progreso y las notas quedan en este navegador; expórtalos desde tu recorrido.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

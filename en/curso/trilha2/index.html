@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-en">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="INEMA Events Areas — what each area is">
+<meta name="description" content="Quick course: what each of the nine subject areas on eventos.inema.pro is—AI Management, AGI-ready, Cultivated AI, Claude → Codex, Codex + Claude, OSWork, RSI, JEV, and WebMCP."><title>Tools and environment | INEMA Events Areas</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/en/curso/trilha2/index.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha2/index.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha2/index.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha2/index.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha2/index.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-en", "tracks": [{"n": "1", "title": "Manage and direct agents", "modules": [{"id": "1-1", "title": "AI Management: 2027, the year of managing agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: Your Work Becomes Managing Agents", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Cultivated AI: you cultivate an agent; you don’t program one", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Tools and environment", "modules": [{"id": "2-1", "title": "Claude → Codex: Separate the brain from the model", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: one does the work, the other reviews it", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: Which Edition Is for You?", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Improve, decide, and open up", "modules": [{"id": "3-1", "title": "RSI: AI that helps improve AI", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: AI Decisions in Practice", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: Your Site Talking to Agents", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav class="topnav" aria-label="Main navigation">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">INEMA Areas<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>My Journey</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Appearance</button>
+<button onclick="toggleTheme()" aria-label="Toggle light and dark theme">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Manage and direct agents</span>
+</a>
+<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Tools and environment</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Improve, decide, and open up</span>
+</a>
+<a href="https://eventos.inema.pro/en/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Course language">
+<a href="../../../curso/trilha2/index.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="index.html" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="../../../es/curso/trilha2/index.html" hreflang="es" lang="es">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Dark</button>
+<button type="button" data-inema-set-theme="claro">Light</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Focus</button>
+<button type="button" data-inema-set-theme="contraste">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<header class="hero">
+<div>
+<p class="kicker">
+LEARNING PATH 02 / INEMA AREAS
+</p>
+<h1>Tools and environment</h1>
+<p>
+Claude → Codex, Codex + Claude, and OSWork: where agents work and how to avoid getting locked into
+just one.
+</p>
+<div class="meter" data-inema-meter="trilha:2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Claude → Codex → Codex + Claude → OSWork → AREA WORKSHEET → FIRST STEP"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / LEARNING PATH 2</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Claude → Codex</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / LEARNING PATH 2</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Codex + Claude</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / LEARNING PATH 2</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">OSWork</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / LEARNING PATH 2</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">AREA WORKSHEET</text><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / LEARNING PATH 2</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">FIRST STEP</text></svg>
+<figcaption class="help-note">Three areas, with the same deliverables for each: the worksheet and the first step.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>3</strong>
+<span>areas</span>
+</div>
+<div><strong>18</strong>
+<span>topics</span>
+</div>
+<div><strong>60 min</strong>
+<span>with practice</span>
+</div>
+<div><strong>1</strong>
+<span>worksheet per area</span>
+</div>
+</div>
+<h2>Learning path map</h2>
+<div class="grid">
+<a class="card" href="#modulo-2-1">
+<div class="overline">
+<span>2.1</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 Claude → Codex: Separate the brain from the model</h3>
+<p>
+migrate or stay tool-agnostic
+</p>
+</a>
+<a class="card" href="#modulo-2-2">
+<div class="overline">
+<span>2.2</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 Codex + Claude: one does the work, the other reviews it</h3>
+<p>
+use both together
+</p>
+</a>
+<a class="card" href="#modulo-2-3">
+<div class="overline">
+<span>2.3</span>
+<span>~20 min</span>
+</div>
+<h3>🧭 OSWork: Which Edition Is for You?</h3>
+<p>
+from chat to your agent environment
+</p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Detailed content</h2>
+<article class="module-card" id="modulo-2-1" data-inema-module="2-1" data-inema-track="2">
+<p class="kicker">
+MODULE 2.1
+</p>
+<h2 class="text-2xl font-bold">Claude → Codex: Separate the brain from the model</h2>
+<p>
+Explain why lock-in lives in the runtime and how the Audit → Adapt → Prove → Handoff method moves
+project knowledge into a portable core.
+</p>
+<div class="meter" data-inema-meter="modulo:2-1" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-1-1">
+<span class="number">1</span>
+<span>The thesis: separate the brain from the model</span>
+</button>
+<div class="topic-explanation" id="p-2-1-1">
+<h4>What it is</h4>
+<p>
+The Claude → Codex area starts with one statement: “Don’t migrate your brain. Separate the brain
+from the model.” The “brain” is everything you’ve accumulated in a project: context, rules,
+decisions, tasks, skills, handoffs, and memory. According to the page, only CLAUDE.md and AGENTS.md
+are tied to a provider; everything else is portable Markdown, plain text that any agent can read.
+When that material lives in a portable layer inside the project, Claude Code, Codex CLI, Gemini, or
+a local model in a container become just executors: programs that do the work based on those files.
+Switching models becomes a change at the boundary, not at the center. The area brings together the
+thesis, the method, a course with 3 tracks, a kit of scripts, and mega-prompts that put it into
+practice.
+</p>
+<h4>Why learn it</h4>
+<p>
+Models change often because of price, access, or quality. If your project knowledge is in the right
+place, each switch costs little instead of requiring you to rebuild it.
+</p>
+<h4>Key concepts</h4>
+<p>
+brain = context, rules, decisions, tasks, skills, handoffs, and memory; portable Markdown; executor;
+change the boundary, not the center
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-1-2">
+<span class="number">2</span>
+<span>Lock-in lives in the runtime</span>
+</button>
+<div class="topic-explanation" id="p-2-1-2">
+<h4>What it is</h4>
+<p>
+Lock-in means being tied to a provider because leaving would be costly. The page states: “Lock-in
+isn’t in the model. It’s in what you’ve left inside the runtime.” The runtime is the program that
+runs the agent, such as Claude Code or Codex CLI. Someone who has used a coding assistant for a few
+months may have accumulated instructions, memory, skills, hooks, and thousands of sessions in a
+format only that runtime can read. The page describes three changes: lock-in is invisible until the
+day you switch; the same knowledge can work with any model; and you have less dependence and more
+control. The content lasts; the format is disposable. Mixing them is what makes migration harder.
+</p>
+<h4>Why learn it</h4>
+<p>
+This area is for people who use Claude Code or Codex on real projects and worry about switching
+models. Understanding where the dependence lives shows what needs to move out of the runtime before
+a switch becomes necessary.
+</p>
+<h4>Key concepts</h4>
+<p>
+lock-in; runtime; CLAUDE.md, native memory, and JSONL sessions store the work; they aren’t the work;
+durable content, disposable format
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-1-3">
+<span class="number">3</span>
+<span>The method: audit before you change</span>
+</button>
+<div class="topic-explanation" id="p-2-1-3">
+<h4>What it is</h4>
+<p>
+The method has four steps, in this order: Audit, Adapt, Prove, and Handoff, “never implementing
+before auditing.” Auditing means making a read-only inventory of both runtimes: skills, commands,
+subagents, hooks, and MCP. Each skill is classified as reusable, an adapter, native, or unresolved.
+Adapting means splitting the CLAUDE.md: portable rules go into AGENTS.md, while anything that
+depends on a Claude plugin, hook, or menu stays in the specific file, which imports only the
+portable rules. Proving means opening a new session and asking five continuity questions: the goal
+and success criteria, a rule and its source file, the last decision, the next action, and any
+conflicts. Handoff means recording decisions, open items, next steps, and paths in a Markdown file
+that the next session reads before acting.
+</p>
+<h4>Why learn it</h4>
+<p>
+This order avoids the costliest mistake: changing files before you know what’s there. The proof rule
+also keeps you from confusing a created file with knowledge the agent actually used.
+</p>
+<h4>Key concepts</h4>
+<p>
+Audit → Adapt → Prove → Handoff; MODE: audit; portable × residue; five continuity questions; file
+existence is not proof
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-1-4">
+<span class="number">4</span>
+<span>The portable core, file by file</span>
+</button>
+<div class="topic-explanation" id="p-2-1-4">
+<h4>What it is</h4>
+<p>
+The portable core has seven places, each with an owner and an update rule. AGENTS.md holds stable
+rules and the reading order; context/overview.md, verified facts with their sources and dates;
+context/current-state.md, what works and what’s pending; context/sources.md, where each piece of
+information comes from. context/decisions/ holds one accepted decision per file; tasks/current.md
+states the goal, owner, success criteria, and next action; handoffs/latest.md prepares the next
+session to continue. The page explains that these names are conventions: no runtime loads these
+folders on its own. The reading order at the top of AGENTS.md tells it to read them. Each piece of
+information has a type: fact, preference, hypothesis, or decision, and “provenance wins over
+timestamp,” meaning the source matters more than the date and nothing is deleted; use superseded_by
+instead.
+</p>
+<h4>Why learn it</h4>
+<p>
+Mixing facts with hypotheses, or decisions with preferences, can make the agent repeat old mistakes
+and contradict what’s already been resolved. Owners and dates let you promote information to
+approved context, always with your approval.
+</p>
+<h4>Key concepts</h4>
+<p>
+AGENTS.md; context/; decisions/; tasks/current.md; handoffs/latest.md; fact, preference, hypothesis,
+decision; provenance wins over timestamp; keep secrets out of the repository
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-1-5">
+<span class="number">5</span>
+<span>Migrate or stay model-agnostic</span>
+</button>
+<div class="topic-explanation" id="p-2-1-5">
+<h4>What it is</h4>
+<p>
+The page breaks the decision into three effort levels, not opinions. Level 1 is to import in the app
+with one click: it’s quick, but limited to what the other side accepts. The Codex CLI, for example,
+has no native import. Level 2 is to migrate with the kit using one command: run the
+agente-claude-codex scripts to audit, adapt, install the core, port skills, and prove. Level 3 is a
+durable, portable personal layer: knowledge lives in the project, and the runtime is
+interchangeable. Staying model-agnostic, meaning you don’t depend on any specific model, is Level 3
+and, according to the page, the only option that survives the next switch. Being model-agnostic
+doesn’t mean leaving Claude: you can still choose the executor for each task.
+</p>
+<h4>Why learn it</h4>
+<p>
+Not everyone needs Level 3 right now. The page lists when to migrate now, due to cost, access, or
+policy, and when it makes sense to stay model-agnostic, such as when you use two executors or work
+with client projects.
+</p>
+<h4>Key concepts</h4>
+<p>
+Level 1: import; Level 2: migrate with the kit; Level 3: portable personal layer; migrate now × stay
+model-agnostic; cost of doing nothing
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-1-6">
+<span class="number">6</span>
+<span>Course, kit, and the first step</span>
+</button>
+<div class="topic-explanation" id="p-2-1-6">
+<h4>What it is</h4>
+<p>
+The course Claude → Codex: migrate or stay model-agnostic is free and available in Portuguese, with
+English and Spanish versions. According to the curriculum, it has 3 tracks, 18 modules, and 108
+topics. Track 1 covers fundamentals and vocabulary, Track 2 walks through the kit command by
+command, and Track 3 presents six projects based on a real system. The agente-claude-codex kit uses
+bash and Markdown, with three ways to use it: scripts, mega-prompts, and the portable core template.
+doctor.sh answers “is my environment ready?” and audit.sh saves a read-only report. The kit also
+includes adapt-instructions.sh, init-core.sh, sync-skills.sh with polyskill, readback-test.sh,
+drift-report.sh, and promover-memoria.sh. The page sums it up: “The best first step is one of your
+own projects, in audit mode.”
+</p>
+<h4>Why learn it</h4>
+<p>
+The course explains why, and the kit does the work without deleting anything: nothing in ~/.claude
+or ~/.codex is copied in bulk or deleted, and installing a skill creates a backup alongside it.
+Starting with the audit shows you in one session what’s portable and what depends on a hook.
+</p>
+<h4>Key concepts</h4>
+<p>
+3-track course; agente-claude-codex kit; doctor.sh; audit.sh; mega-prompts A and B; Topic Map;
+sister area Codex + Claude
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-1.html">View full version →</a>
+<button data-modal-src="modulo-2-1.html">View in modal</button>
+</div>
+</article>
+<article class="module-card" id="modulo-2-2" data-inema-module="2-2" data-inema-track="2">
+<p class="kicker">
+MODULE 2.2
+</p>
+<h2 class="text-2xl font-bold">Codex + Claude: one does the work, the other reviews it</h2>
+<p>
+Explain how to use Claude and Codex on the same project, covering the Use Both kit’s six levels, the
+routing card, and the difference between claudex and Use Both.
+</p>
+<div class="meter" data-inema-meter="modulo:2-2" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-2-1">
+<span class="number">1</span>
+<span>One plans, the other critiques</span>
+</button>
+<div class="topic-explanation" id="p-2-2-1">
+<h4>What it is</h4>
+<p>
+The Codex + Claude area’s central idea is: “One plans, the other critiques. Use both together.”
+Claude and Codex complement each other when each handles one part and the other checks the real
+artifact: the actual file, diff, or image. The rule that runs through it all: the second assistant
+gets the same brief and the real artifact, never a vague summary of what the first assistant did.
+The page is INEMA’s meeting place for the two tools. It brings together the Use Both kit’s six
+levels, a table showing who does what, and cards for all courses and projects. To move from one tool
+to the other, use the sister area Claude → Codex.
+</p>
+<h4>Why learn it</h4>
+<p>
+This is for people who already have Claude Code and Codex and don’t want to choose just one. A
+second opinion from another model catches issues the author may miss.
+</p>
+<h4>Key concepts</h4>
+<p>
+one does the work, the other reviews it; real artifact; same brief; it’s not Claude or Codex; sister
+area Claude → Codex
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-2-2">
+<span class="number">2</span>
+<span>The six levels of Use Both</span>
+</button>
+<div class="topic-explanation" id="p-2-2-2">
+<h4>What it is</h4>
+<p>
+The Use Both kit organizes working with both tools into six workflow levels, with ready-to-use
+prompts and two small skills. Level 1 is having them discuss: one writes the plan, the other
+critiques the same file in read-only mode, for no more than two rounds. Level 2, optional, is
+generating images, only if an image tool is available in the session and after checking access and
+billing. Level 3 is splitting building and review: one builds in a branch, the other reviews the
+diff against the brief and test results. Level 4 is supervised computer use, with passwords,
+payments, and important submissions kept under your control. Level 5 is a goal with a stop
+condition, observable success, and limits on files, rounds, and spending. Level 6 is handoff and
+prime: the handoff records the state in a portable file, and prime makes the next assistant read and
+verify that state before continuing.
+</p>
+<h4>Why learn it</h4>
+<p>
+The levels give you a path to follow: you can start by discussing a plan and move up only when you
+need to. Each level includes limits to prevent uncontrolled spending or actions.
+</p>
+<h4>Key concepts</h4>
+<p>
+discuss; generate images; build and review; supervised computer use; goal with a stop condition;
+handoff and prime
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-2-3">
+<span class="number">3</span>
+<span>Who Does What: The Route Card</span>
+</button>
+<div class="topic-explanation" id="p-2-2-3">
+<h4>What it is</h4>
+<p>
+The route card is a table in the kit that says, for each task, who does the first pass, who does the
+second, and what counts as done. Plan the work: Claude / Opus plans, Codex critiques the
+assumptions, and the result is a plan with scope and acceptance tests. Build a feature: Claude /
+Opus builds, Codex reviews the diff, and done means tests pass and findings are resolved. Tackle a
+difficult bug: Codex works toward a bounded goal, with tests and a human checkpoint. Switch sessions
+or models: create a handoff snapshot, and prime checks the current state. The page notes that these
+are &quot;editorial choices, not a measured model ranking&quot;: try them and keep the route that
+produces the best evidence.
+</p>
+<h4>Why learn it</h4>
+<p>
+Having a starting route saves you from debating from scratch for every task. Knowing it is not a
+benchmark keeps you from treating it as a fixed rule.
+</p>
+<h4>Key concepts</h4>
+<p>
+first pass; second pass; finish line; editorial choices, not a ranking; models and billing vary by
+account
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-2-4">
+<span class="number">4</span>
+<span>One Path: claudex × Use Both</span>
+</button>
+<div class="topic-explanation" id="p-2-2-4">
+<h4>What it is</h4>
+<p>
+The page organizes courses and projects into one path: understand, migrate or stay tool-agnostic,
+use both together, and automate the discussion. The common link is the project’s Markdown files,
+such as AGENTS.md, tasks, and handoffs, which any runtime can read. Two different tools appear along
+this path. claudex is a Claude Code plugin, or software: Claude writes PLAN.md and Codex critiques
+it from 3 angles, in a loop until LGTM or N rounds. Use Both is a method kit, with a guide, prompts,
+templates, and 2 skills. It covers all six workflows, manually or semiautomatically. The page sums
+it up: they are complementary; for a large plan, use claudex; for everything else, such as reviewing
+a diff, setting a goal with a stop condition, or switching sessions, use Use Both.
+</p>
+<h4>Why learn it</h4>
+<p>
+Knowing which layer each tool works at helps you avoid installing software to solve a process
+problem, or the other way around.
+</p>
+<h4>Key concepts</h4>
+<p>
+Understand → Migrate → Use both → Automate the discussion; claudex = software; Use Both = method;
+LGTM; complementary
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-2-5">
+<span class="number">5</span>
+<span>Create Images with Codex, Step by Step</span>
+</button>
+<div class="topic-explanation" id="p-2-2-5">
+<h4>What it is</h4>
+<p>
+The page gives a real example: someone with a Codex subscription uses its image generator,
+image_gen, which INEMA calls &quot;image 2.5.&quot; Today at INEMA, Claude Code runs codex exec in
+non-interactive mode and asks image_gen for a PNG in a folder; if Codex fails or there is no credit,
+it falls back to the local model FLUX.2 klein. Each generation uses subscription credit, so it runs
+only when authorized. The image is checked afterward because text near the edges may be made up. The
+kit proposes using level 2 step by step: first confirm the tool and billing, never switch
+automatically to a paid API, save the actual file in the project, and open it at the size it will be
+used. In the page’s words, INEMA’s approach runs automatically in batches, with a local fallback;
+the kit’s approach is manual, with more cost checks and review.
+</p>
+<h4>Why learn it</h4>
+<p>
+Generated images have costs and visible errors. The two approaches show how to balance automation
+with review before using the file.
+</p>
+<h4>Key concepts</h4>
+<p>
+image_gen; codex exec; FLUX.2 klein fallback; check first, inspect afterward; save as a sibling
+version instead of overwriting
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-2-6">
+<span class="number">6</span>
+<span>A First Step and All the Projects</span>
+</button>
+<div class="topic-explanation" id="p-2-2-6">
+<h4>What it is</h4>
+<p>
+The page sums up how to start: &quot;The best first step: a plan of your own, reviewed by the other
+one.&quot; Choose a small task, write the brief and acceptance criteria, ask one to make the plan
+and the other to critique it in the same file, for no more than two rounds, and create a handoff
+before closing the session. The area includes six courses: Claude → Codex (PT, EN, and ES), Codex
+Básico, Master Codex, iClaudeX, MakeClaudeX, and DeepClaudeX. It also includes kits and references:
+agente-claude-codex, Use Both, claudex on GitHub, Codex Cheat Sheet, and the topic map on
+INEMA.CLUB. The page cites an external video by Mark Kashef, which the Use Both kit follows, as a
+source of the author’s opinions, not a benchmark. His summary is in RESUMO-VIDEO.md in the kit
+repository.
+</p>
+<h4>Why learn it</h4>
+<p>
+A short first cycle shows the value of a second look in practice. The courses and kits show you
+where to go deeper at each step.
+</p>
+<h4>Key concepts</h4>
+<p>
+a plan of your own, reviewed by the other one; no more than two rounds; Codex Básico; Master Codex;
+iClaudeX; MakeClaudeX; DeepClaudeX; Use Both; claudex; Codex Cheat Sheet
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-2.html">View full version →</a>
+<button data-modal-src="modulo-2-2.html">View in modal</button>
+</div>
+</article>
+<article class="module-card" id="modulo-2-3" data-inema-module="2-3" data-inema-track="2">
+<p class="kicker">
+MODULE 2.3
+</p>
+<h2 class="text-2xl font-bold">OSWork: Which Edition Is for You?</h2>
+<p>
+Explain what OSWork is, what you build with it, and which of the five editions (v2, v6.2, v6, v5,
+Quick) fits each person’s experience and available time.
+</p>
+<div class="meter" data-inema-meter="modulo:2-3" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 of 0</span>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-3-1">
+<span class="number">1</span>
+<span>AI as a Work System</span>
+</button>
+<div class="topic-explanation" id="p-2-3-1">
+<h4>What it is</h4>
+<p>
+OSWork presents itself as “AI as a work system” and “from chat to your agent environment.” An agent
+is an AI that carries out tasks using tools and files, rather than only replying in a conversation.
+The course teaches you to organize files, instructions, memory, and tools into a work system you can
+verify. The page’s central line is: “Your next conversation can start where the last one left off.”
+To do that, OSWork teaches you to turn loose requests into organized work: define the goal, choose
+the context, do a small task, and check the result. You start in chat and work your way up to a
+restricted bot and supervised operation on a VPS, a server rented online.
+</p>
+<h4>Why learn it</h4>
+<p>
+Without organization, every conversation with AI starts from scratch. A system with files and rules
+keeps track of what’s already been decided and makes the result verifiable.
+</p>
+<h4>Key concepts</h4>
+<p>
+work system; from chat to an agent environment; goal, context, small task, check; restricted bot;
+supervised VPS
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-3-2">
+<span class="number">2</span>
+<span>Five editions, five paths</span>
+</button>
+<div class="topic-explanation" id="p-2-3-2">
+<h4>What it is</h4>
+<p>
+The page offers “five ways to organize your work with AI” and asks you to choose based on your
+experience and available time. OSWork v2 is the technical path. OSWork v6.2 is the complete,
+step-by-step path. OSWork v6 is for beginners and takes a visual approach. OSWork v5 is for
+beginners 40+. OSWork Quick gets straight to the point. According to the page, courses and videos
+are available in Portuguese, Spanish, and English; through the area access, v6.2 and v6 have their
+own links in EN and ES.
+</p>
+<h4>Why learn it</h4>
+<p>
+Choosing the right edition can keep you from giving up at the first terminal or getting bored with
+the basics. Each path covers the same idea at a different level of depth.
+</p>
+<h4>Key concepts</h4>
+<p>
+v2 technical; v6.2 complete, step by step; v6 visual for beginners; v5 for beginners 40+; Quick gets
+straight to the point
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-3-3">
+<span class="number">3</span>
+<span>v2 and v6.2: the complete path</span>
+</button>
+<div class="topic-explanation" id="p-2-3-3">
+<h4>What it is</h4>
+<p>
+OSWork v2 is the technical path: eight modules, four tracks, and 48 topics. It goes from chat to the
+terminal and Codex, files, Skills, Git, a Telegram bot, and supervised VPS operation. It also
+includes a practice kit. The eight modules are: Models; Chat, Work, and Desktop; Terminal and Codex
+in Practice; Folders, Markdown, and Secrets; AGENTS, Skills, and Memory; Git and GitHub Without
+Losing Work; Telegram as a Work Interface; and VPS from Scratch and 24/7 Operation. OSWork v6.2 is
+the same path redesigned for beginners: eight modules and 48 lessons of about 15 minutes each, with
+visual step-by-step guidance and a glossary of technical terms. In v2, students can mark topics as
+read, record questions, take notes, and export their learning journey; progress is saved in the
+browser and kept separate by language.
+</p>
+<h4>Why learn it</h4>
+<p>
+If you want to get as far as a bot and server, you need the full path. v6.2 makes that path
+accessible even without a technical background.
+</p>
+<h4>Key concepts</h4>
+<p>
+v2: 8 modules, 4 tracks, 48 topics, kit; v6.2: 48 lessons of ~15 min, glossary; Codex; Skills; Git;
+Telegram; VPS
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-3-4">
+<span class="number">4</span>
+<span>v6, v5, and Quick: for beginners</span>
+</button>
+<div class="topic-explanation" id="p-2-3-4">
+<h4>What it is</h4>
+<p>
+Three editions are for beginners and don’t require installation or programming. OSWork v6 has seven
+lessons of about 15 minutes each, with simulated chat screens, real before-and-after examples, and
+visual step-by-step guidance. You create folders by topic, a sheet with your rules, a request
+template, and a review routine, without installing anything. OSWork v5 is for professionals 40+ who
+aren’t very familiar with AI: seven lessons of 20 to 25 minutes on organizing folders, guidelines,
+reusable requests, and a review routine, with no programming. OSWork Quick is the short, visual
+version for professionals 40+: seven lessons and about 77 minutes of study, covering the same topics
+as v5 with less text. Quick is also available as a video, with Nei’s avatar and voice,
+illustrations, and SRT captions in Portuguese, Spanish, and English.
+</p>
+<h4>Why learn it</h4>
+<p>
+For beginners, the value comes from organizing and checking your work, not from technical tools.
+These editions teach you to do that in a short time.
+</p>
+<h4>Key concepts</h4>
+<p>
+v6: 7 lessons of ~15 min, visual, no installation; v5: 7 lessons of 20 to 25 min, 40+; Quick: 7
+lessons, ~77 min, also available as video
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-3-5">
+<span class="number">5</span>
+<span>What you build</span>
+</button>
+<div class="topic-explanation" id="p-2-3-5">
+<h4>What it is</h4>
+<p>
+The page lists what you build along the way: a project folder with inputs, outputs, and its own
+instructions; a record of decisions and failures, along with a reusable Skill; a Git history for
+reviewing and recovering changes; and a query bot with sample data and an operations plan. A Skill
+is a packaged procedure an agent can reuse; Git is a system that keeps file versions. The kit
+section says: “Your first environment starts with real files.” The kit includes templates for
+AGENTS.md, memory, decisions, a failure log, a task contract, a report Skill, and a VPS plan. It
+also includes a Python bot with an offline self-test. The practice bot is deterministic: it doesn’t
+call an AI model or run messages as commands.
+</p>
+<h4>Why learn it</h4>
+<p>
+Finishing with concrete files, rather than just notes, makes what you learn reusable at work. The
+kit templates save you from starting from scratch.
+</p>
+<h4>Key concepts</h4>
+<p>
+project folder; record of decisions and failures; Skill; Git; query bot with sample data; ZIP kit;
+deterministic bot
+</p>
+</div>
+</div>
+<div class="topic-item">
+<button onclick="toggleTopic(this)" aria-expanded="false" aria-controls="p-2-3-6">
+<span class="number">6</span>
+<span>Start with a small task</span>
+</button>
+<div class="topic-explanation" id="p-2-3-6">
+<h4>What it is</h4>
+<p>
+The page advises: “Start with a small task.” There are three steps: choose the first module and
+compare two options available in your environment; create a practice folder and adapt the kit’s task
+contract; save the result, record a question, and return to your learning journey. In the “Before
+you start” section, the page explains that you can begin with the fundamentals without programming,
+and that the technical labs introduce the terminal, Git, and Python step by step. You can read the
+content without signing up; subscriptions, API usage, and VPS rentals are separate services that
+students choose for themselves. The course doesn’t promise an unsupervised autonomous agent: it
+teaches limits, verification, logs, and recovery.
+</p>
+<h4>Why learn it</h4>
+<p>
+A small task gives you a quick result and shows what still needs organizing. Knowing what costs
+extra helps you avoid surprises.
+</p>
+<h4>Key concepts</h4>
+<p>
+small task; practice folder; task contract; no programming at the start; read without signing up;
+paid services are separate; supervised operation
+</p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-3.html">View full version →</a>
+<button data-modal-src="modulo-2-3.html">View in modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">INEMA Events Areas · quick course · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edition v2 · v1.1.1<br>Content drawn from the eventos.inema.pro pages, read on 28/09/2026. Progress and notes stay in this browser; export them from My Journey.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Module complete</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

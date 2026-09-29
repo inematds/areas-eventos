@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-es">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas de INEMA Eventos — qué es cada área">
+<meta name="description" content="Curso rápido: qué es cada una de las nueve áreas temáticas de eventos.inema.pro — Gestión de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV y WebMCP."><title>Gestión de IA: 2027, el año de gestionar agentes | Áreas de INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/es/curso/trilha1/modulo-1-1.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha1/modulo-1-1.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha1/modulo-1-1.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha1/modulo-1-1.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha1/modulo-1-1.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-es", "tracks": [{"n": "1", "title": "Gestionar y dirigir agentes", "modules": [{"id": "1-1", "title": "Gestión de IA: 2027, el año de gestionar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: tu trabajo pasa a ser dirigir agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: un agente no se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Herramientas y entorno", "modules": [{"id": "2-1", "title": "Claude → Codex: separa el cerebro del modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: uno hace, el otro revisa", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qué edición es para ti", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Mejorar, decidir y abrir", "modules": [{"id": "3-1", "title": "RSI: la IA que ayuda a mejorar la IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisiones de IA en la práctica", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: tu sitio conversa con agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav class="topnav" aria-label="Navegación principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Mi recorrido</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Apariencia</button>
+<button onclick="toggleTheme()" aria-label="Cambiar entre tema claro y oscuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" aria-current="page">T1<span class="long"> · Gestionar y dirigir agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Herramientas y entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Mejorar, decidir y abrir</span>
+</a>
+<a href="https://eventos.inema.pro/es/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Idioma del curso">
+<a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../en/curso/trilha1/modulo-1-1.html" hreflang="en" lang="en">English</a>
+<a href="modulo-1-1.html" hreflang="es" lang="es" aria-current="page">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Oscuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Enfoque</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifas</button>
+<button data-inema-set-font="leitura">Con serifas</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Gestionar y dirigir agentes</a> / Módulo 1.1</div>
+<article id="modulo-1-1" data-inema-module="1-1" data-inema-track="1">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 1.1 / 1 DE 9
+</p>
+<h1>Gestión de IA: 2027, el año de gestionar agentes</h1>
+<p>
+Explicar por qué una empresa con agentes necesita gestión y no solo tecnología, usando las 8
+competencias y LOOP-R.
+</p>
+<p class="area-note">Página del área: <a href="https://eventos.inema.pro/gestao-ia/es/">eventos.inema.pro/gestao-ia/es/</a> · en el menú: “2027: gestionar agentes”</p>
+<div class="meter" data-inema-meter="modulo:1-1" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="La idea central: gestionar lo que se creó → El tercer objeto de la gestión → Gestionar agentes como personas → Las 8 competencias del gestor de IA → El proceso no es sagrado: LOOP-R → Formación 2027 y por dónde empezar"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / GESTAO-IA</text><text x="36" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">La idea central: gestionar lo que se creó</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / GESTAO-IA</text><text x="271" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">El tercer objeto de la gestión</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / GESTAO-IA</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Gestionar agentes como personas</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / GESTAO-IA</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Las 8 competencias del gestor de IA</text><path d="M355 180v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / GESTAO-IA</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">El proceso no es sagrado: LOOP-R</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / GESTAO-IA</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Formación 2027 y por dónde empezar</text></svg>
+<figcaption class="help-note">Los 6 temas de este módulo. Al final, completas la ficha del área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>temas</span>
+</div>
+<div><strong>~20 min</strong>
+<span>lectura y práctica</span>
+</div>
+<div><strong>1</strong>
+<span>ficha del área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt listo</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-1-1#topico-1">
+<h2>
+<span class="number">1</span>La idea central: gestionar lo que se creó</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-1-t1-p1">
+El área Gestión de IA de eventos.inema.pro comienza con una frase: &quot;En 2026 enseñamos a crear
+agentes. 2027 es el año de aprender a gestionarlos&quot;. Un agente es una IA que recibe una
+responsabilidad y realiza tareas con herramientas, en vez de limitarse a responder una pregunta.
+Gestionar un agente significa asignarle un papel, un objetivo, contexto, herramientas, nivel de
+autonomía y evaluación, como siempre se ha hecho con las personas. La página también plantea una
+decisión más difícil: no poner agentes a ejecutar procesos antiguos más rápido, sino rediseñar la
+empresa para trabajar a la velocidad de los agentes. El área reúne esta idea, las 8 competencias del
+gestor de IA, LOOP-R, la Formación Gestión de IA 2027 y los cursos y proyectos de INEMA que ya
+cubren la mayor parte del recorrido.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t1-p2">
+Crear un agente dejó de ser el principal obstáculo. Lo que frena a la empresa viene después: quién
+responde por él, qué puede hacer por su cuenta, cómo se mide y cuánto cuesta. Entender esta idea
+cambia la pregunta de &quot;¿qué herramienta?&quot; a &quot;¿cómo gestiono esto?&quot;.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-1-t1-p3">
+Gestión de personas + gestión de procesos + gestión de agentes; es gestión, no solo tecnología;
+rediseñar antes de acelerar.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-1-t1-ex">
+Una gerente administrativa ya tiene tres agentes creados por el equipo, cada uno por una persona
+diferente. Nadie sabe quién aprueba lo que producen ni cuánto cuestan al mes. Su problema no es
+crear un cuarto agente, sino gestionar los tres que ya existen.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Haz una lista de los agentes o automatizaciones con IA que ya usa tu equipo y escribe al lado de
+cada uno el nombre de la persona responsable del resultado.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Juzgar el área por su nombre: lee la idea central en la página antes de decidir si es para ti.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-1-1#topico-2">
+<h2>
+<span class="number">2</span>El tercer objeto de la gestión</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-1-t2-p1">
+La página muestra las eras de la gestión, cada una como respuesta a lo que la empresa necesitaba
+coordinar. De 1980 a 2000, gestión de personas: puesto, responsabilidad, herramientas, límites y
+evaluación. De 2000 a 2020, gestión de procesos: diseñar, documentar, capacitar y ejecutar. De 2020
+a 2025, transformación digital: diseñar, automatizar y monitorear; de 2025 a 2026, creación de
+agentes, con prompts, skills, contexto, tools y memoria. En 2027, la gestión coordina al mismo
+tiempo personas, agentes, modelos, procesos y presupuesto computacional. Esta área es para la
+empresa que ya tiene agentes y necesita gestionarlos; la creación del agente en sí se trata en el
+área AGI-ready.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t2-p2">
+Quien trata al agente como un proyecto de TI deja fuera lo que determina el resultado:
+responsabilidades, límites y medidas. Ver al agente como el tercer objeto de la gestión pone el tema
+en manos de quienes administran.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-1-t2-p3">
+Tres cambios: crear se volvió fácil, gestionar no; el proceso antiguo no merece acelerarse; el
+proceso deja de ser inmutable.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-1-t2-ex">
+Una oficina pone un agente a seguir el mismo flujo de revisión que antes hacían tres personas en
+papel. El agente es rápido, pero repite etapas que solo existían porque antes no había otra forma de
+trabajar. La pregunta correcta habría sido si ese flujo aún debía existir.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Elige uno de tus procesos e indica en qué era se diseñó: personas, procesos, digital o agentes.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 88" role="img" aria-label="Personas · Procesos · Digital · Construcción · Gestión de agentes"><path d="M30 40h430" stroke="#475569" stroke-width="2"/><circle cx="30.0" cy="40" r="9" fill="#152234" stroke="#34d399" stroke-width="3"/><text x="30.0" y="72" text-anchor="start" fill="#f1f5f9" font-size="12" font-family="sans-serif">Personas</text><text x="30.0" y="22" text-anchor="start" fill="#94a3b8" font-size="11" font-family="monospace">1980–2000</text><circle cx="137.5" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="137.5" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Procesos</text><text x="137.5" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">2000–2020</text><circle cx="245.0" cy="40" r="9" fill="#152234" stroke="#34d399" stroke-width="3"/><text x="245.0" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Digital</text><text x="245.0" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">2020–2025</text><circle cx="352.5" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="352.5" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Construcción</text><text x="352.5" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">2025–2026</text><circle cx="460.0" cy="40" r="9" fill="#152234" stroke="#34d399" stroke-width="3"/><text x="460.0" y="72" text-anchor="end" fill="#f1f5f9" font-size="12" font-family="sans-serif">Gestión de agentes</text><text x="460.0" y="22" text-anchor="end" fill="#94a3b8" font-size="11" font-family="monospace">2027</text></svg>
+<figcaption class="help-note">Cada era de la gestión incorporó un nuevo objeto para coordinar; en 2027 los agentes se suman a las personas y los procesos, sin reemplazarlos.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-1-1#topico-3">
+<h2>
+<span class="number">3</span>Gestionar agentes como personas</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-1-t3-p1">
+La idea central de la página es que gestionar agentes se parece mucho a la gestión de personas de
+siempre, solo que con más mediciones. Cambian las palabras, no la lógica: empleado, puesto,
+responsabilidad, herramientas, límites y evaluación se convierten en agente, papel, objetivo,
+contexto, herramientas, autonomía y evaluación. Se suman dos elementos que las personas no tenían:
+contexto explícito y autonomía gradual. Autonomía gradual significa que el agente no recibe
+&quot;todo o nada&quot;, sino un nivel de autonomía, es decir, un límite para lo que puede decidir
+por su cuenta. Además, se puede medir prácticamente todo lo que hace el agente.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t3-p2">
+Muchas reglas que la empresa ya conoce siguen siendo útiles y acortan el camino. La separación de
+funciones, los niveles de autonomía y la revisión humana no tienen que inventarse para los agentes;
+hay que aplicárselos.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-1-t3-p3">
+Contabilidad: quien registra no aprueba; asuntos legales: el agente prepara, el abogado decide y
+firma; salud: algunas decisiones quedan fuera del nivel de autonomía del agente.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-1-t3-ex">
+En una oficina contable, el agente registra y clasifica los documentos del mes, pero otra persona
+sigue encargándose de aprobarlos. Como dice la página, el agente llega hasta la puerta de la firma,
+nunca más allá.
+</p>
+</div>
+<h4>Pasos para probarlo</h4>
+<ol class="timeline">
+<li>Abre la página del área junto a esta lección.</li>
+<li>Toma la descripción del puesto de alguien de tu equipo y reescríbela para un agente, agregando el contexto explícito y el nivel de autonomía.</li>
+<li>Anota en una frase qué cambió en tu comprensión.</li>
+</ol>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-1-1#topico-4">
+<h2>
+<span class="number">4</span>Las 8 competencias del gestor de IA</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-1-t4-p1">
+La página enumera ocho competencias en el orden en que las usa un gestor. La estrategia pregunta qué
+resultado buscamos; la arquitectura del trabajo, si el proceso aún debería existir; la delegación,
+qué debe entregar exactamente el agente; la orquestación, si conviene usar uno o varios agentes, en
+serie o en paralelo. La gobernanza decide qué puede hacer por su cuenta, qué debe confirmar y qué
+nunca debe ejecutar; la economía pregunta cuánto cuesta producir el resultado; la evaluación, si el
+resultado es bueno y con qué se compara; y la evolución, qué aprendimos en esta ejecución. Las
+primeras cuatro definen qué hará el agente; las últimas cuatro, si debe seguir haciéndolo. El
+gerente de 2027 administra nueve elementos, desde personas y agentes hasta el presupuesto
+computacional, y mide indicadores como el costo por resultado, el retrabajo y el nivel de autonomía.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t4-p2">
+Las competencias sirven como lista de verificación: si alguna queda sin respuesta, allí es donde el
+agente fallará. También ayudan a decidir qué estudiar, porque la página indica en qué curso se
+enseña cada competencia actualmente.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-1-t4-p3">
+Estrategia; arquitectura; delegación; orquestación; gobernanza; economía; evaluación; evolución;
+costo por tarea completada.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-1-t4-ex">
+Un equipo elige el modelo más barato por token para un agente de atención al cliente. El agente se
+equivoca y necesita dos intentos por caso. La página resume el cálculo: un agente barato que se
+equivoca y necesita dos intentos costó el doble de lo que indica la tabla.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Califica de 0 a 2 cada una de las 8 competencias en tu agente principal y marca la más baja.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Saltar a la herramienta o al curso sin entender el problema que resuelve el área.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="Estrategia · Arquitectura · Delegación · Orquestación · Gobernanza · Economía · Evaluación · Evolución"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Estrategia</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Arquitectura</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Delegación</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Orquestación</text><rect x="10.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="22.0" y="101.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Gobernanza</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Economía</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#34d399"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="12" font-family="sans-serif">Evaluación</text><rect x="370.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="101.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Evolución</text></svg>
+<figcaption class="help-note">Las primeras cuatro competencias definen qué hará el agente; las últimas cuatro, si seguirá haciéndolo.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-1-1#topico-5">
+<h2>
+<span class="number">5</span>El proceso no es sagrado: LOOP-R</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-1-t5-p1">
+La página compara cuatro generaciones de procesos. El proceso tradicional se diseñaba, documentaba,
+enseñaba y ejecutaba; el automatizado se diseñaba, automatizaba y monitoreaba; el agéntico parte de
+un objetivo, el agente lo ejecuta y lo mide, y una persona o un agente lo evalúa. LOOP-R completa el
+ciclo: ejecutar, observar, criticar, proponer, experimentar, validar, implementar y repetir. Así, el
+proceso se convierte en un sistema vivo, con versiones como el software. Las reglas son tres: no
+automatices un proceso deficiente; las personas dirigen y los agentes ejecutan; implementar y
+revertir son etapas del proceso, no accidentes.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t5-p2">
+Sin este ciclo, la empresa solo pregunta &quot;¿terminó la tarea?&quot; y no aprende nada de cada
+ejecución. Con él, cada ejecución propone la siguiente mejora y cualquier cambio que empeore el
+resultado se revierte sin complicaciones.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-1-t5-p3">
+Cuatro generaciones; LOOP-R; proceso con versión; promover y revertir; desmontar antes de
+automatizar.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-1-t5-ex">
+Un equipo de atención prueba durante dos semanas una nueva respuesta estándar propuesta por el
+agente. Como bajó la tasa de retrabajo, se promueve el cambio y pasa a ser la nueva versión del
+proceso; si hubiera empeorado, se volvería a la versión anterior.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Desglosa un proceso en etapas y marca cada una como tarea humana, agente, automatización simple,
+Computer Use o API.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 154" role="img" aria-label="Ejecutar · Observar · Criticar y proponer · Experimentar · Validar · Incorporar"><rect x="12.0" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="24.0" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Ejecutar</text><path d="M154.66666666666666 38.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="194.66666666666666" y="43.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Observar</text><path d="M325.3333333333333 38.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 33.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="14" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="365.3333333333333" y="43.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Criticar y proponer</text><path d="M421.66666666666663 66v10H80.33333333333333v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M75.33333333333333 80l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/><rect x="12.0" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="24.0" y="121.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Experimentar</text><path d="M154.66666666666666 116.0h22" stroke="#475569" stroke-width="2"/><path d="M170.66666666666666 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="182.66666666666666" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#34d399"/><text x="194.66666666666666" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Validar</text><path d="M325.3333333333333 116.0h22" stroke="#475569" stroke-width="2"/><path d="M341.3333333333333 111.0l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/><rect x="353.3333333333333" y="92" width="136.66666666666666" height="48" rx="9" fill="#152234" stroke="#38bdf8"/><text x="365.3333333333333" y="121.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Incorporar</text></svg>
+<figcaption class="help-note">En LOOP-R, la propia ejecución propone la siguiente mejora: lo que se valida se incorpora, y el ciclo se repite.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-1-1#topico-6">
+<h2>
+<span class="number">6</span>Formación 2027 y por dónde empezar</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-1-t6-p1">
+La Formación Gestión de IA 2027 tiene diez módulos y un proyecto final, con el curso Gestión de IA
+como eje central. Los módulos abarcan desde la empresa agéntica, pasando por proceso no es sagrado,
+delegación y autonomía, economía de los agentes y gobernanza, hasta la empresa que aprende con el
+LOOP-R. El proyecto final es Gestoria, un simulador de gestión de una empresa agéntica en catorce
+pasos. La página es clara: la formación es el empaquetado de una tesis, no un curso nuevo publicado
+hoy, y entre el 75% y el 80% de la base ya existe en cursos y proyectos abiertos. El área reúne los
+cursos Gestión de IA, Os Super-Agentes Chegaram, Super-Agentes na prática, Arquiteto de Trabalho com
+IA, LOOP-R y Copilot + Agentes, y los proyectos Gestoria, LOOP-R, Arquiteto de Execução, Agentic OS,
+Kit do Arquiteto de Agentes y Kit Copilot + Agentes.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t6-p2">
+Saber qué ya está disponible evita esperar por un curso que todavía se va a empaquetar. El camino
+sugerido es empezar por los cursos existentes, en el orden de los módulos.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-1-t6-p3">
+Diez módulos; Gestoria como proyecto final; entre el 75% y el 80% de la base ya existe; el mejor
+primer módulo es un proceso de tu empresa.
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-1-t6-ex">
+El dueño de una clínica quiere empezar, pero no sabe por qué curso. Toma el proceso de agendamiento,
+descubre que su duda es sobre qué puede hacer el agente por su cuenta y empieza por el módulo de
+delegación y autonomía, con apoyo de Super-Agentes.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Abre https://eventos.inema.pro/gestao-ia/, lee la lista de los diez módulos y anota cuál responde a
+tu duda de hoy.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="Gestión de IA · Super-Agentes · Arq. Trabajo · LOOP-R · Gestoria"><rect x="12.0" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="24.0" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Gestión de IA</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">columna vertebral</text><rect x="109.2" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="121.2" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Super-Agentes</text><text x="121.2" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">delegación</text><rect x="206.4" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="218.4" y="40" fill="#f1f5f9" font-size="10" font-family="sans-serif">Arq. Trabajo</text><text x="218.4" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">rediseño</text><rect x="303.6" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="315.6" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">LOOP-R</text><text x="315.6" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">evolución</text><rect x="400.8" y="14" width="89.2" height="58" rx="9" fill="#152234" stroke="#34d399"/><text x="412.8" y="40" fill="#f1f5f9" font-size="11" font-family="sans-serif">Gestoria</text><text x="412.8" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">proyecto final</text></svg>
+<figcaption class="help-note">La formación se apoya en lo que ya está publicado: cada columna es un curso o proyecto que cubre una parte de la tesis.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Temas de este módulo">
+<p class="kicker">
+EN ESTA LECCIÓN
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. La idea central: gestionar lo que se creó</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. El tercer objeto de la gestión</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Gestionar agentes como personas</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Las 8 competencias del gestor de IA</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. El proceso no es sagrado: LOOP-R</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Formación 2027 y por dónde empezar</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratorio final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criterios para revisar tu ficha</h2>
+<p>
+Usa esta rúbrica después del laboratorio. Cada fila pide una evidencia; marcar como leído no
+significa que completaste la ficha.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia esperada</th>
+<th>Si no cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idea central</td>
+<td>Puedes resumir el área en una frase propia, fiel a la página.</td>
+<td>Vuelve a leer la parte superior de la página y el tema 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Sabes decir para quién es el área y para quién no.</td>
+<td>Vuelve al tema 2 y escribe un ejemplo de tu trabajo.</td>
+</tr>
+<tr>
+<td>Bloques</td>
+<td>Puedes nombrar las partes centrales del área.</td>
+<td>Usa el diagrama del módulo como guía.</td>
+</tr>
+<tr>
+<td>Primer paso</td>
+<td>Elegiste un paso concreto y pequeño.</td>
+<td>Copia el primer paso que recomienda la propia página.</td>
+</tr>
+<tr>
+<td>Punto de entrada</td>
+<td>Sabes qué curso, kit o proyecto abrir primero.</td>
+<td>Consulta el tema 6 y la sección de acceso de la página.</td>
+</tr>
+<tr>
+<td>Fuente</td>
+<td>Cada afirmación de la ficha se basa en la página.</td>
+<td>Cambia lo que supusiste por lo que dice la página.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+A PRACTICAR / ~10 MIN
+</p>
+<h2>Tu ficha de gestión de un agente</h2>
+<p>Deja abierta la página del área: <a href="https://eventos.inema.pro/gestao-ia/es/">https://eventos.inema.pro/gestao-ia/es/</a>. Usa un ejemplo de tu trabajo, sin datos personales ni de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="1-1-1">
+<span>Elige un proceso de tu empresa que hoy realizan solo personas y escribe en una línea el resultado que produce.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-1-2">
+<span>Responde la pregunta de la página: si hoy tuviera personas, agentes y automatizaciones, ¿este proceso seguiría existiendo de esta manera? Anota qué existe por costumbre y qué responde a una necesidad real.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-1-3">
+<span>Para la etapa que realizaría un agente, completa: papel, objetivo, contexto, herramientas, autonomía (lo hace solo, pide confirmación, nunca lo ejecuta) y cómo se evaluará.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-1-4">
+<span>Revisa la ficha con las 8 competencias: cada una debe tener al menos una línea. La competencia sin respuesta indica por qué módulo de la formación debes empezar.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: diagnóstico de gestión de un agente</h3>
+<p>
+Pégalo en Claude, ChatGPT o Codex. Cambia lo que está entre &lt; y &gt; por tu situación.
+</p>
+<pre><code>Lee https://eventos.inema.pro/gestao-ia/ (área Gestión de IA de INEMA). Usa las 8 competencias de la página (estrategia, arquitectura del trabajo, delegación, orquestación, gobernanza, economía, evaluación, evolución) para evaluar el siguiente agente.
+
+Mi proceso: &lt;describe el proceso y quién realiza cada etapa hoy&gt;
+El agente: &lt;qué hace, con qué herramientas, quién lo aprueba&gt;
+
+Entrega: 1) una tabla competencia | situación actual | qué falta; 2) la lista de lo que el agente hace solo, confirma y nunca ejecuta; 3) tres indicadores para medir al agente (usa la lista de indicadores de la página); 4) qué módulo de la Formación Gestión de IA 2027 debería estudiar primero y por qué. No inventes datos de mi proceso: si falta información, pregunta.</code>
+</pre>
+<button data-copy-prev>Copiar bloque</button>
+<h3>Criterio de finalización</h3>
+<p>
+Explicar por qué una empresa con agentes necesita gestión y no solo tecnología, usando las 8
+competencias y LOOP-R. Guarda la ficha con la idea central, el público, el primer paso y el punto de
+entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/gestao-ia/es/">Abrir la página del área ↗</a>
+</section>
+<section class="band">
+<h2>Revisa lo que quedó</h2>
+<p>
+Un equipo creó un agente en una tarde y ya ejecuta el flujo de aprobación de 2010, solo que más
+rápido. ¿Qué diría el área Gestión de IA?
+</p>
+<details>
+<summary>Ver respuesta comentada</summary>
+<p>
+Que entrega el error más rápido: antes de automatizar, hay que desmontar y rediseñar el proceso, y
+asignar al agente una persona responsable, un nivel de autonomía, una medida y un costo por
+resultado.
+</p>
+<p>
+Si tu respuesta fue distinta, vuelve al tema correspondiente y escribe la diferencia en una frase.
+La revisión no impide que continúes estudiando.
+</p>
+</details>
+<h3>Resumen del módulo</h3>
+<ul>
+<li>Gestión de personas + gestión de procesos + gestión de agentes; es gestión, no solo tecnología; rediseñar antes de acelerar.</li>
+<li>Tres cambios: crear se volvió fácil, gestionar no; el proceso antiguo no merece acelerarse; el proceso deja de ser inmutable.</li>
+<li>Contabilidad: quien registra no aprueba; asuntos legales: el agente prepara, el abogado decide y firma; salud: algunas decisiones quedan fuera del nivel de autonomía del agente.</li>
+<li>Estrategia; arquitectura; delegación; orquestación; gobernanza; economía; evaluación; evolución; costo por tarea completada.</li>
+<li>Cuatro generaciones; LOOP-R; proceso con versión; promover y revertir; desmontar antes de automatizar.</li>
+<li>Diez módulos; Gestoria como proyecto final; entre el 75% y el 80% de la base ya existe; el mejor primer módulo es un proceso de tu empresa.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulta la fuente</h3>
+<p>
+Páginas leídas el 28/09/2026. El contenido de las áreas cambia; la página oficial tiene más validez
+que este resumen.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/gestao-ia/" target="_blank" rel="noopener">Área Gestión de IA</a>
+</li>
+<li>
+<a href="https://inematds.github.io/curso-gestao-ia/" target="_blank" rel="noopener">Curso Gestión de IA</a>
+</li>
+<li>
+<a href="https://inematds.github.io/gestoria/guia/" target="_blank" rel="noopener">Gestoria (guía)</a>
+</li>
+<li>
+<a href="https://inematds.github.io/loop-r/curso/" target="_blank" rel="noopener">LOOP-R (curso)</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../index.html">← Anterior</a>
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../../curso/trilha1/modulo-1-2.html">Siguiente área →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas de INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edición v2 · v1.1.1<br>Contenido tomado de las páginas de eventos.inema.pro, leídas el 28/09/2026. El progreso y las notas quedan en este navegador; expórtalos desde tu recorrido.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

@@ -28,7 +28,8 @@ for path in ROOT.rglob('*.html'):
 errors=[]
 for path,p in pages.items():
  if len(p.ids)!=len(set(p.ids)):errors.append(f'IDs duplicados: {path}')
- if p.meta.get('inema-course')!='areas-eventos-v2':errors.append(f'Meta ausente: {path}')
+ loc=path.relative_to(ROOT).parts[0]
+ if p.meta.get('inema-course')!='areas-eventos-v2'+('-'+loc if loc in ('en','es') else ''):errors.append(f'Meta ausente: {path}')
  if len(p.scripts)!=1:errors.append(f'Manifesto ausente: {path}')
  if 'https://inema.club' not in p.links or 'https://inema.pro' not in p.links:errors.append(f'Link INEMA.CLUB/PRO ausente: {path}')
  for link in p.links:
@@ -49,6 +50,6 @@ land=(ROOT/'index.html').read_text()
 for need in ('/aprender-inteligencia-artificial/','inema.club/cursos/'):
  if need not in land:errors.append(f'Rodapé SEO sem {need}')
 assert not errors,'\n'.join(errors)
-assert len(pages)==13,f'Esperadas 13 páginas, vieram {len(pages)}'
-count=sum(len(p.topics) for p in pages.values());assert count==54,count
-print(f'OK: {len(pages)} páginas, {count} tópicos, IDs, links locais, âncoras, manifestos, INEMA.CLUB + PRO e rodapé SEO.')
+assert len(pages)==39,f'Esperadas 39 páginas, vieram {len(pages)}'
+count=sum(len(p.topics) for p in pages.values());assert count==162,count
+print(f'OK: {len(pages)} páginas, {count} tópicos em PT/EN/ES, IDs, links locais, âncoras, manifestos, INEMA.CLUB + PRO e rodapé SEO.')

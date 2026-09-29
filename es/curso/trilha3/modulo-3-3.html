@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="areas-eventos-v2-es">
+<meta property="og:image" content="https://inematds.github.io/areas-eventos/capa/capa.png">
+<meta property="og:title" content="Áreas de INEMA Eventos — qué es cada área">
+<meta name="description" content="Curso rápido: qué es cada una de las nueve áreas temáticas de eventos.inema.pro — Gestión de IA, AGI-ready, IA Cultivada, Claude → Codex, Codex + Claude, OSWork, RSI, JEV y WebMCP."><title>WebMCP: tu sitio conversa con agentes | Áreas de INEMA Eventos</title>
+<link rel="canonical" href="https://inematds.github.io/areas-eventos/es/curso/trilha3/modulo-3-3.html">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-3.html">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/areas-eventos/en/curso/trilha3/modulo-3-3.html">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/areas-eventos/es/curso/trilha3/modulo-3-3.html">
+<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/areas-eventos/curso/trilha3/modulo-3-3.html">
+<script type="application/json" data-inema-manifest>{"course": "areas-eventos-v2-es", "tracks": [{"n": "1", "title": "Gestionar y dirigir agentes", "modules": [{"id": "1-1", "title": "Gestión de IA: 2027, el año de gestionar agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "AGI-ready: tu trabajo pasa a ser dirigir agentes", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "IA Cultivada: un agente no se programa, se cultiva", "topics": 6, "href": "../../curso/trilha1/modulo-1-3.html"}]}, {"n": "2", "title": "Herramientas y entorno", "modules": [{"id": "2-1", "title": "Claude → Codex: separa el cerebro del modelo", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Codex + Claude: uno hace, el otro revisa", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "OSWork: qué edición es para ti", "topics": 6, "href": "../../curso/trilha2/modulo-2-3.html"}]}, {"n": "3", "title": "Mejorar, decidir y abrir", "modules": [{"id": "3-1", "title": "RSI: la IA que ayuda a mejorar la IA", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "JEV: decisiones de IA en la práctica", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "WebMCP: tu sitio conversa con agentes", "topics": 6, "href": "../../curso/trilha3/modulo-3-3.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav class="topnav" aria-label="Navegación principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">Áreas INEMA<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span aria-hidden="true">-</span>
+<a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Mi recorrido</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Apariencia</button>
+<button onclick="toggleTheme()" aria-label="Cambiar entre tema claro y oscuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Gestionar y dirigir agentes</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Herramientas y entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html" aria-current="page">T3<span class="long"> · Mejorar, decidir y abrir</span>
+</a>
+<a href="https://eventos.inema.pro/es/">eventos.inema.pro ↗</a>
+</div>
+<div class="language-nav" aria-label="Idioma del curso">
+<a href="../../../curso/trilha3/modulo-3-3.html" hreflang="pt-BR" lang="pt-BR">Português</a>
+<a href="../../../en/curso/trilha3/modulo-3-3.html" hreflang="en" lang="en">English</a>
+<a href="modulo-3-3.html" hreflang="es" lang="es" aria-current="page">Español</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Oscuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sepia</button>
+<button type="button" data-inema-set-theme="foco">Enfoque</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifas</button>
+<button data-inema-set-font="leitura">Con serifas</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Mejorar, decidir y abrir</a> / Módulo 3.3</div>
+<article id="modulo-3-3" data-inema-module="3-3" data-inema-track="3">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 3.3 / 9 DE 9
+</p>
+<h1>WebMCP: tu sitio conversa con agentes</h1>
+<p>
+Explicar qué cambia cuando los agentes visitan sitios, qué es WebMCP y cuál es el primer paso
+concreto: diagnosticar tu propio sitio y corregir lo básico.
+</p>
+<p class="area-note">Página del área: <a href="https://eventos.inema.pro/webmcp/es/">eventos.inema.pro/webmcp/es/</a> · en el menú: “sitios que conversan con agentes”</p>
+<div class="meter" data-inema-meter="modulo:3-3" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Qué es WebMCP → El próximo visitante es un agente → Diagnóstico gratuito: Readiness → Ocho capas de un sitio preparado → Seis correcciones para esta semana → La formación y dónde continuar"><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / WEBMCP</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Qué es WebMCP</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / WEBMCP</text><text x="271" y="72" fill="#f1f5f9" font-size="11" font-family="sans-serif">El próximo visitante es un agente</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / WEBMCP</text><text x="36" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Diagnóstico gratuito: Readiness</text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / WEBMCP</text><text x="271" y="162" fill="#f1f5f9" font-size="11" font-family="sans-serif">Ocho capas de un sitio preparado</text><path d="M355 180v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / WEBMCP</text><text x="36" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">Seis correcciones para esta semana</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / WEBMCP</text><text x="271" y="252" fill="#f1f5f9" font-size="11" font-family="sans-serif">La formación y dónde continuar</text></svg>
+<figcaption class="help-note">Los 6 temas de este módulo. Al final, completas la ficha del área.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>temas</span>
+</div>
+<div><strong>~20 min</strong>
+<span>lectura y práctica</span>
+</div>
+<div><strong>1</strong>
+<span>ficha del área</span>
+</div>
+<div><strong>1</strong>
+<span>prompt listo</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-3-3#topico-1">
+<h2>
+<span class="number">1</span>Qué es WebMCP</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-3-t1-p1">
+WebMCP es una forma de que la propia página describa lo que sabe hacer para los agentes de IA. Sin
+WebMCP, el agente tiene que localizar campos, hacer clic, escribir e interpretar la pantalla, y eso
+falla cuando cambia el diseño. Con WebMCP, la página expone herramientas con nombre, descripción,
+esquema de argumentos y respuesta, y el agente llama por su nombre a la herramienta adecuada. Hay
+dos caminos: la herramienta declarativa, en la que un formulario existente recibe un toolname y una
+descripción, y la imperativa, en la que JavaScript registra capacidades con JSON Schema y gestiona
+el estado, los errores, la cancelación y la alternativa. Es una tecnología experimental, actualmente
+disponible mediante Origin Trial en el navegador; es decir, se ofrece a modo de prueba.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-3-t1-p2">
+Es la diferencia entre que el agente adivine y que el sitio le diga. El sitio empieza a decidir qué
+está permitido, qué requiere confirmación y qué se puede cancelar.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-3-t1-p3">
+operar píxeles vs. conversar con capacidades; herramienta declarativa; herramienta imperativa; JSON
+Schema; Origin Trial
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-3-t1-ex">
+Sin WebMCP, el agente escribe el nombre del curso, hace clic en el botón azul y «cree que funcionó».
+Con WebMCP, el sitio expone verificar_vagas e iniciar_inscricao; el agente llama a la primera,
+confirma que hay cupo y la segunda requiere confirmación humana antes de completarse.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Elige un formulario de tu sitio y escribe el nombre y una descripción de una línea que tendría como
+herramienta.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Juzgar el área por su nombre: lee la idea central en la página antes de decidir si es para ti.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-3-3#topico-2">
+<h2>
+<span class="number">2</span>El próximo visitante es un agente</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-3-t2-p1">
+La página enumera seis cambios. Del lado de quienes visitan: los agentes ya usan el navegador para
+completar formularios y tareas; buscar se convirtió en preguntar a un asistente, lo que plantea el
+desafío de GEO y AEO; y el estándar está naciendo ahora. Del lado de quienes publican: el sitio deja
+de ser solo una pantalla y suma un catálogo de capacidades sobre la experiencia humana; ser fácil de
+encontrar se vuelve un requisito, con robots.txt, sitemap.xml, llms.txt, JSON-LD, Open Graph y una
+identidad clara; y la seguridad queda a cargo del sitio, no del modelo. GEO y AEO son las prácticas
+para aparecer y ser citado en las respuestas de asistentes de IA, y no solo en buscadores.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-3-t2-p2">
+Si eres dueño del sitio, los tres últimos cambios son tu lista de trabajo. Quienes entienden pronto
+las limitaciones pueden aprender a bajo costo.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-3-t2-p3">
+agentes en el navegador; buscar se convirtió en preguntar; GEO y AEO; catálogo de capacidades;
+descubrimiento; seguridad en el sitio
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-3-t2-ex">
+Una escuela nota que sus estudiantes preguntan a un asistente «¿qué curso de agentes empieza este
+mes?» en vez de buscar en el sitio. La respuesta depende de lo que el modelo pueda extraer de sus
+páginas; el SEO clásico por sí solo no lo resuelve.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Escribe cuáles de los tres cambios para quienes publican todavía no cumple tu sitio.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 134" role="img" aria-label="El agente navega · Preguntar · Nuevo estándar · Catálogo · Descubrimiento · Seguridad del sitio"><rect x="10.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="22.0" y="41.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">El agente navega</text><rect x="130.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="142.0" y="41.0" fill="#f1f5f9" font-size="13" font-family="sans-serif">Preguntar</text><rect x="250.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="262.0" y="41.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Nuevo estándar</text><rect x="370.0" y="14" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="382.0" y="41.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Catálogo</text><rect x="130.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#c084fc"/><text x="142.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Descubrimiento</text><rect x="250.0" y="74" width="110" height="44" rx="9" fill="#152234" stroke="#38bdf8"/><text x="262.0" y="101.0" fill="#f1f5f9" font-size="10" font-family="sans-serif">Seguridad del sitio</text></svg>
+<figcaption class="help-note">Los primeros tres cambios ocurren para quienes visitan el sitio; los últimos tres son la lista de trabajo de quien lo publica.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-3-3#topico-3">
+<h2>
+<span class="number">3</span>Diagnóstico gratuito: Readiness</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-3-t3-p1">
+WebMCP Readiness, en webmcp.inema.pro, abre la URL en un navegador descartable, reúne señales
+observables y convierte el escaneo en un plan de corrección. Es un escáner pasivo: consulta
+robots.txt, sitemap.xml y llms.txt, y no ejecuta ninguna herramienta del sitio. Recibes una
+calificación general y cuatro calificaciones independientes —WebMCP, SEO, GEO y AEO—, con
+evidencias, alertas, bloqueadores, hasta 12 correcciones priorizadas y los cursos recomendados para
+cada brecha, en un informe JSON. El escaneo analiza en profundidad solo la URL indicada; inventaría
+el sitemap, pero no rastrea sus páginas. En el informe, los escáneres avanzados por fase aparecen
+como planeados, no como disponibles.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-3-t3-p2">
+Empezar por el diagnóstico te muestra dónde está tu sitio antes de estudiar. La página también
+aclara el límite: el escáner no promete indexación, posicionamiento ni citas de IA.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-3-t3-p3">
+escáner pasivo; navegador descartable; calificación general + cuatro calificaciones; hasta 12
+correcciones; informe JSON; lo que requiere revisión humana
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-3-t3-ex">
+Una agencia escanea la página de contacto de un cliente y recibe «falta llms.txt» como primer
+bloqueador del plan. Lo corrige, vuelve a escanear y usa las dos calificaciones para mostrar el
+avance, sin prometer posicionamiento.
+</p>
+</div>
+<h4>Pasos para probarlo</h4>
+<ol class="timeline">
+<li>Abre la página del área junto a esta lección.</li>
+<li>Ejecuta el escaneo en https://webmcp.inema.pro/ con la página principal de tu sitio y guarda el informe JSON como línea base.</li>
+<li>Anota en una frase qué cambió en tu comprensión.</li>
+</ol>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 86" role="img" aria-label="WebMCP · SEO · GEO · AEO"><rect x="12.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="24.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">WebMCP</text><text x="24.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">herramientas y esquemas</text><rect x="133.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="145.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">SEO</text><text x="145.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">title, canonical</text><rect x="255.0" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#c084fc"/><text x="267.0" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">GEO</text><text x="267.0" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">entidad y autoría</text><rect x="376.5" y="14" width="113.5" height="58" rx="9" fill="#152234" stroke="#38bdf8"/><text x="388.5" y="40" fill="#f1f5f9" font-size="14" font-family="sans-serif">AEO</text><text x="388.5" y="59" fill="#94a3b8" font-size="11" font-family="sans-serif">respuestas directas</text></svg>
+<figcaption class="help-note">Readiness devuelve cuatro puntuaciones independientes: WebMCP mide herramientas; SEO, GEO y AEO miden si encuentran y citan el sitio.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-3-3#topico-4">
+<h2>
+<span class="number">4</span>Ocho capas de un sitio preparado</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-3-t4-p1">
+La página organiza la arquitectura en ocho capas, en el orden en que las desarrolla la formación.
+Las primeras cuatro describen el sitio: descubrimiento (¿el agente encuentra el sitio?),
+herramientas (¿qué sabe hacer el sitio?), contrato (¿cómo se invoca y qué devuelve?) y estado y
+errores (¿qué pasa cuando algo falla?). Las últimas cuatro protegen el sitio: control (¿quién
+confirma?), permisos (¿quién puede invocar?), backend y MCP (¿dónde está la verdad?) y evaluaciones
+y observabilidad (¿realmente funciona?). La regla que atraviesa todas las capas es esta: el LLM
+elige la herramienta; el sitio decide si puede ejecutarse. El diagnóstico ya evalúa toda la capa 1 y
+las señales observables de las capas 2 y 5.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-3-t4-p2">
+Las capas muestran que exponer una herramienta es solo el comienzo. Sin confirmación, permisos y
+autorización en el backend, un agente puede activar algo que no debería.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-3-t4-p3">
+descubrimiento; herramientas; contrato; estado y errores; control; permisos; backend y MCP;
+evaluaciones
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-3-t4-ex">
+Una tienda expone una herramienta para consultar pedidos. La descripción dice «solo consulta», el
+backend comprueba si quien la invoca puede ver ese pedido y cualquier cambio requiere confirmación
+humana. Luego, los registros permiten ver si la herramienta hizo lo que decía.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p>
+Marca cuáles de las ocho capas ya cubre tu sitio e indica qué pregunta sobre alguna capa no podrías
+responder hoy.
+</p>
+</div>
+<div>
+<h4>✗ Evítalo</h4>
+<p>
+Saltar a la herramienta o al curso sin entender el problema que resuelve el área.
+</p>
+</div>
+</div>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 312" role="img" aria-label="Descubrimiento · Herramientas · Contrato · Estado y errores · Control y permisos · Backend, MCP, evals"><rect x="12" y="12" width="466" height="42" rx="9" fill="#152234" stroke="#c084fc"/><text x="24" y="38.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Descubrimiento</text><text x="466" y="37.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">¿el agente la encuentra?</text><rect x="22" y="62" width="446" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="34" y="88.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Herramientas</text><text x="456" y="87.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">¿qué hace?</text><rect x="32" y="112" width="426" height="42" rx="9" fill="#152234" stroke="#c084fc"/><text x="44" y="138.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Contrato</text><text x="446" y="137.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">¿qué devuelve?</text><rect x="42" y="162" width="406" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="54" y="188.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Estado y errores</text><text x="436" y="187.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">¿y si falla?</text><rect x="52" y="212" width="386" height="42" rx="9" fill="#152234" stroke="#c084fc"/><text x="64" y="238.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Control y permisos</text><text x="426" y="237.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">¿quién confirma y llama?</text><rect x="62" y="262" width="366" height="42" rx="9" fill="#152234" stroke="#38bdf8"/><text x="74" y="288.0" fill="#f1f5f9" font-size="14" font-family="sans-serif">Backend, MCP, evals</text><text x="416" y="287.0" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">¿dónde está la verdad?</text></svg>
+<figcaption class="help-note">Las cuatro capas inferiores describen el sitio; las cuatro superiores lo protegen. Exponer una herramienta sin las capas superiores es un experimento, no una operación.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-3-3#topico-5">
+<h2>
+<span class="number">5</span>Seis correcciones para esta semana</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-3-t5-p1">
+Antes de cualquier fase de la formación, la página presenta seis correcciones que el dueño del sitio
+puede hacer, cada una vinculada a un elemento que verifica el escáner. Primero, ejecuta el escaneo y
+anota las puntuaciones como línea de base. Segundo, publica los tres archivos públicos: robots.txt,
+sitemap.xml actualizado y un llms.txt que presenta el sitio a los modelos de IA. Tercero, corrige lo
+básico de SEO que también lee el agente: title, description, canonical, headings en orden, alt en
+las imágenes, Open Graph y JSON-LD. Cuarto, escribe para quienes responden preguntas, con respuestas
+directas, definiciones, listas y tablas; quinto, muestra quién está detrás, con entidad, autoría,
+fecha de actualización y evidencias. Sexto, elige como primera herramienta un formulario que no
+cambie nada peligroso, como una búsqueda o una consulta de estado.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-3-t5-p2">
+Son correcciones que no requieren programar herramientas y ya mejoran las puntuaciones. La página
+resume el método: corrige, vuelve a ejecutar el escaneo y mira cómo sube la puntuación.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-3-t5-p3">
+línea de base; robots.txt, sitemap.xml, llms.txt; SEO básico; AEO: respuestas directas; GEO: autoría
+y evidencias; primera herramienta segura
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-3-t5-ex">
+Un consultor independiente publica el llms.txt, añade la fecha de actualización y la autoría a sus
+artículos y crea una sección de preguntas frecuentes con respuestas breves. La semana siguiente,
+suben las puntuaciones de GEO y AEO del escaneo, sin agregar una sola línea de JavaScript.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Haz hoy el consejo 2: comprueba si tu dominio responde en /robots.txt, /sitemap.xml y /llms.txt y
+anota qué falta.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-3-3#topico-6">
+<h2>
+<span class="number">6</span>La formación y dónde continuar</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-3-t6-p1">
+La Formación WebMCP ofrece una visión general y cuatro fases, todas abiertas y en portugués: Builder
+(construir), Integrator (integrar), Agent Developer (orquestar) y Expert (operar). Cada fase tiene
+cuatro módulos de seis temas y usa JavaScript; quienes no programan empiezan por la visión general y
+el diagnóstico, y llevan las fases al equipo. Las capas 1 y 2 se enseñan en Builder; la 3 y la 4, en
+Integrator; la 5 y la 6, en Agent Developer; y la 7 y la 8, en Expert. Junto a la formación, la
+página indica AIV 2026 para AEO y GEO, el curso de Computer Use con GPT-6 Astra y Super-Agentes,
+además de proyectos como el Kit do Arquiteto de Agentes, INEMACCBOT y os-agentes. La invitación
+final es directa: el mejor primer módulo es tu propio sitio.
+</p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-3-t6-p2">
+Saber en qué fase se enseña cada capa te permite entrar a la formación por el punto que corresponde
+a tu función, en lugar de empezar todo desde cero.
+</p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-3-t6-p3">
+visión general; Builder; Integrator; Agent Developer; Expert; cuatro módulos de seis temas; cursos
+relacionados
+</p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-3-t6-ex">
+La dueña de una tienda virtual hace el diagnóstico y revisa la visión general. El desarrollador del
+equipo empieza por Builder para convertir la búsqueda de productos en una herramienta declarativa, y
+deja la parte de permisos para cuando llegue a Agent Developer.
+</p>
+</div>
+<aside class="tip">
+<h4>Pruébalo ahora</h4>
+<p>
+Abre la visión general en https://inematds.github.io/webmcp-1-formacao/ y elige la fase que
+corresponde a tu función.
+</p>
+</aside>
+<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 88" role="img" aria-label="Visión general · Builder · Integrator · Agent Dev. · Expert"><path d="M30 40h430" stroke="#475569" stroke-width="2"/><circle cx="30.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="30.0" y="72" text-anchor="start" fill="#f1f5f9" font-size="12" font-family="sans-serif">Visión general</text><text x="30.0" y="22" text-anchor="start" fill="#94a3b8" font-size="11" font-family="monospace">empieza aquí</text><circle cx="137.5" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="137.5" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Builder</text><text x="137.5" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">capas 1-2</text><circle cx="245.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="245.0" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Integrator</text><text x="245.0" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">capas 3-4</text><circle cx="352.5" cy="40" r="9" fill="#152234" stroke="#38bdf8" stroke-width="3"/><text x="352.5" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-family="sans-serif">Agent Dev.</text><text x="352.5" y="22" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">capas 5-6</text><circle cx="460.0" cy="40" r="9" fill="#152234" stroke="#c084fc" stroke-width="3"/><text x="460.0" y="72" text-anchor="end" fill="#f1f5f9" font-size="12" font-family="sans-serif">Expert</text><text x="460.0" y="22" text-anchor="end" fill="#94a3b8" font-size="11" font-family="monospace">capas 7-8</text></svg>
+<figcaption class="help-note">La formación avanza del diagnóstico a la producción: cada fase enseña dos de las ocho capas.</figcaption>
+</figure>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como leído</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tengo una duda</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Temas de este módulo">
+<p class="kicker">
+EN ESTA LECCIÓN
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Qué es WebMCP</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. El próximo visitante es un agente</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Diagnóstico gratuito: Readiness</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Ocho capas de un sitio preparado</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Seis correcciones para esta semana</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. La formación y dónde continuar</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratorio final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criterios para revisar tu ficha</h2>
+<p>
+Usa esta rúbrica después del laboratorio. Cada fila pide una evidencia; marcar como leído no
+significa que completaste la ficha.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia esperada</th>
+<th>Si no cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idea central</td>
+<td>Puedes resumir el área en una frase propia, fiel a la página.</td>
+<td>Vuelve a leer la parte superior de la página y el tema 1.</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Sabes decir para quién es el área y para quién no.</td>
+<td>Vuelve al tema 2 y escribe un ejemplo de tu trabajo.</td>
+</tr>
+<tr>
+<td>Bloques</td>
+<td>Puedes nombrar las partes centrales del área.</td>
+<td>Usa el diagrama del módulo como guía.</td>
+</tr>
+<tr>
+<td>Primer paso</td>
+<td>Elegiste un paso concreto y pequeño.</td>
+<td>Copia el primer paso que recomienda la propia página.</td>
+</tr>
+<tr>
+<td>Punto de entrada</td>
+<td>Sabes qué curso, kit o proyecto abrir primero.</td>
+<td>Consulta el tema 6 y la sección de acceso de la página.</td>
+</tr>
+<tr>
+<td>Fuente</td>
+<td>Cada afirmación de la ficha se basa en la página.</td>
+<td>Cambia lo que supusiste por lo que dice la página.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+A PRACTICAR / ~10 MIN
+</p>
+<h2>El diagnóstico de tu sitio</h2>
+<p>Deja abierta la página del área: <a href="https://eventos.inema.pro/webmcp/es/">https://eventos.inema.pro/webmcp/es/</a>. Usa un ejemplo de tu trabajo, sin datos personales ni de clientes.</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="3-3-1">
+<span>Ejecuta WebMCP Readiness en webmcp.inema.pro con la URL de tu sitio y anota la calificación general y las cuatro calificaciones (WebMCP, SEO, GEO, AEO).</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-3-2">
+<span>Anota los bloqueadores que aparecen primero en el plan de corrección y comprueba si robots.txt, sitemap.xml y llms.txt existen en tu dominio.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-3-3">
+<span>Corrige un elemento de los seis consejos de la página, como title, description o JSON-LD, sin cambiar nada que pueda ser peligroso.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-3-4">
+<span>Vuelve a ejecutar el escaneo y compara las calificaciones con la línea base; registra qué mejoró y qué todavía requiere revisión humana.</span>
+</label>
+</li>
+</ol>
+<h3>Prompt: plan WebMCP para mi sitio</h3>
+<p>
+Pégalo en Claude, ChatGPT o Codex. Cambia lo que está entre &lt; y &gt; por tu situación.
+</p>
+<pre><code>Lee https://eventos.inema.pro/webmcp/.
+Ejecuté el diagnóstico en https://webmcp.inema.pro/ para mi sitio: &lt;URL de tu sitio&gt;.
+Resultado del escaneo (pega el JSON o las calificaciones y los bloqueadores): &lt;pega aquí&gt;.
+1. Explica cada bloqueador con lenguaje sencillo e indica a cuál de las ocho capas pertenece.
+2. Arma la lista de esta semana usando las seis correcciones de la página, en el orden adecuado para mi caso.
+3. Sugiere UNA primera herramienta declarativa a partir de un formulario mío que no cambie nada peligroso: nombre, descripción y argumentos.
+4. Separa lo que el escáner puede demostrar de lo que requiere revisión humana (autorización en el backend, idempotencia, descripción frente al efecto real).
+5. Indica por qué fase de la Formación WebMCP debemos empezar mi equipo o yo.
+No prometas posicionamiento, indexación ni citas de IA.</code>
+</pre>
+<button data-copy-prev>Copiar bloque</button>
+<h3>Criterio de finalización</h3>
+<p>
+Explicar qué cambia cuando los agentes visitan sitios, qué es WebMCP y cuál es el primer paso
+concreto: diagnosticar tu propio sitio y corregir lo básico. Guarda la ficha con la idea central, el
+público, el primer paso y el punto de entrada.
+</p>
+<a class="button" href="https://eventos.inema.pro/webmcp/es/">Abrir la página del área ↗</a>
+</section>
+<section class="band">
+<h2>Revisa lo que quedó</h2>
+<p>
+El escáner encontró una herramienta declarada en un script de tu sitio. ¿Eso garantiza que está
+protegida y funciona para todos los visitantes?
+</p>
+<details>
+<summary>Ver respuesta comentada</summary>
+<p>
+No. El escáner demuestra lo que es observable; la autorización real en el backend, la idempotencia,
+la correspondencia entre la descripción y el efecto, y que la definición esté registrada para todos
+los visitantes requieren revisión humana.
+</p>
+<p>
+Si tu respuesta fue distinta, vuelve al tema correspondiente y escribe la diferencia en una frase.
+La revisión no impide que continúes estudiando.
+</p>
+</details>
+<h3>Resumen del módulo</h3>
+<ul>
+<li>operar píxeles vs. conversar con capacidades; herramienta declarativa; herramienta imperativa; JSON Schema; Origin Trial</li>
+<li>agentes en el navegador; buscar se convirtió en preguntar; GEO y AEO; catálogo de capacidades; descubrimiento; seguridad en el sitio</li>
+<li>escáner pasivo; navegador descartable; calificación general + cuatro calificaciones; hasta 12 correcciones; informe JSON; lo que requiere revisión humana</li>
+<li>descubrimiento; herramientas; contrato; estado y errores; control; permisos; backend y MCP; evaluaciones</li>
+<li>línea de base; robots.txt, sitemap.xml, llms.txt; SEO básico; AEO: respuestas directas; GEO: autoría y evidencias; primera herramienta segura</li>
+<li>visión general; Builder; Integrator; Agent Developer; Expert; cuatro módulos de seis temas; cursos relacionados</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulta la fuente</h3>
+<p>
+Páginas leídas el 28/09/2026. El contenido de las áreas cambia; la página oficial tiene más validez
+que este resumen.
+</p>
+<ul>
+<li>
+<a href="https://eventos.inema.pro/webmcp/" target="_blank" rel="noopener">Área WebMCP · eventos.inema.pro</a>
+</li>
+<li>
+<a href="https://webmcp.inema.pro/" target="_blank" rel="noopener">WebMCP Readiness</a>
+</li>
+<li>
+<a href="https://inematds.github.io/webmcp-1-formacao/" target="_blank" rel="noopener">Formación WebMCP</a>
+</li>
+<li>
+<a href="https://inematds.github.io/webmcp-2-builder/" target="_blank" rel="noopener">WebMCP Builder</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha3/modulo-3-2.html">← Anterior</a>
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../../index.html">Terminar: volver al mapa →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">Áreas de INEMA Eventos · curso rápido · <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a> - <a class="text-amber-700 dark:text-slate-300" href="https://inema.pro">PRO</a> · Edición v2 · v1.1.1<br>Contenido tomado de las páginas de eventos.inema.pro, leídas el 28/09/2026. El progreso y las notas quedan en este navegador; expórtalos desde tu recorrido.</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>
