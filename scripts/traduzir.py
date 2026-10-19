@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Traduz i18n/source.json (PT) para EN/ES pelo Codex da ASSINATURA (`codex exec -m gpt-6-luna`), sem chave de API.
+"""Traduz i18n/source.json (PT) para EN/ES pelo tradutor central da ASSINATURA
+(`~/projetos/wifi/scripts/inema-traduz`, INEMA_TRADUCAO_*, hoje Sonnet 5.5), sem chave de API. CODEX_MODELO=<id> força outro modelo.
 Só manda texto (nunca HTML/código). Cache por chave em i18n/<lang>.json: reenvia apenas o que falta ou mudou
 (hash da fonte em i18n/<lang>.hash.json). Valida chaves e placeholders {x}; unidade inválida volta na próxima rodada.
 Uso: python3 scripts/traduzir.py en es"""
@@ -7,7 +8,7 @@ import sys,json,os,re,subprocess,tempfile,hashlib,time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];I=ROOT/'i18n'
-MODELO=os.environ.get('CODEX_MODELO','gpt-6-luna');PARALELO=4;LOTE_CHARS=9000;RODADAS=3
+MODELO=os.environ.get('CODEX_MODELO','');PARALELO=4;LOTE_CHARS=9000;RODADAS=3
 NOMES={'en':'English (US)','es':'Spanish (neutral Latin American, "tú")'}
 SISTEMA="""You translate a short Portuguese (Brazil) course into {nome}. The course explains the nine subject areas of the
 site eventos.inema.pro (INEMA, a free AI education community). Audience: professionals and managers, plain adult language,
@@ -25,15 +26,22 @@ Rules:
 Return ONLY the JSON object (no code fences, no comments)."""
 AREA={'en':('"AI Management"','"Cultivated AI"'),'es':('"Gestión de IA"','"IA Cultivada"')}
 
+_TRADUTOR=os.path.expanduser("~/projetos/wifi/scripts/inema-traduz")
+def chamar_tradutor(pedido:str,timeout:int=900)->str:
+ """Tradução pelo tradutor central do INEMA (INEMA_TRADUCAO_* em ~/.config/inema/modelos.env). Assinatura, nunca API."""
+ if os.path.exists(_TRADUTOR):
+  cmd=[_TRADUTOR]+(['--motor','claude' if MODELO.startswith('claude-') else 'codex','--modelo',MODELO] if MODELO else [])
+ else:  # fora da máquina do Nei: Claude Code da assinatura com o modelo da variável (padrão Sonnet 5.5)
+  cmd=["claude","-p","--model",MODELO or os.environ.get("INEMA_TRADUCAO_MODELO","claude-sonnet-5-5"),"--output-format","text","--tools",""]
+ env={k:v for k,v in os.environ.items() if k not in ("ANTHROPIC_API_KEY","OPENAI_API_KEY","CLAUDECODE")}
+ r=subprocess.run(cmd,input=pedido,capture_output=True,text=True,timeout=timeout,env=env)
+ if r.returncode!=0 or not r.stdout.strip():raise RuntimeError(f"tradutor falhou rc={r.returncode}: {(r.stderr or r.stdout)[-300:]}")
+ return r.stdout
+
 def via_codex(lang,lote):
  s=SISTEMA.format(nome=NOMES[lang],gestao=AREA[lang][0],cult=AREA[lang][1])
  pedido=s+"\n\nINPUT JSON:\n"+json.dumps(lote,ensure_ascii=False)
- with tempfile.TemporaryDirectory() as d:
-  out=os.path.join(d,'out.txt')
-  r=subprocess.run(['codex','exec','-m',MODELO,'--skip-git-repo-check','--ephemeral','--sandbox','read-only','-C',d,'-o',out,'-'],
-   input=pedido,capture_output=True,text=True,timeout=900)
-  if r.returncode or not os.path.exists(out):raise RuntimeError(f'codex rc={r.returncode}: {r.stderr[-300:]}')
-  txt=open(out,encoding='utf-8').read().strip()
+ txt=chamar_tradutor(pedido).strip()
  txt=re.sub(r'^```(?:json)?\s*|\s*```$','',txt)
  return json.loads(txt[txt.index('{'):txt.rindex('}')+1])
 

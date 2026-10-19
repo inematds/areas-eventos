@@ -30,7 +30,7 @@ python3 scripts/validate.py
 ## Traduções (EN/ES)
 
 PT é a fonte. `python3 scripts/build.py pt` grava `i18n/source.json` (conteúdo + interface). `python3 scripts/traduzir.py en es`
-traduz pelo Codex da assinatura (`codex exec -m gpt-6-luna`, sem chave de API), com cache e hash por chave em `i18n/<lang>.json`:
+traduz pelo tradutor central da assinatura (`inema-traduz`, `INEMA_TRADUCAO_*`, hoje Sonnet 5.5, sem chave de API), com cache e hash por chave em `i18n/<lang>.json`:
 só o que mudou volta para tradução. Depois `python3 scripts/build.py` gera PT/EN/ES. `en/assets/{learn,site}.js` são as versões
 traduzidas do motor, reaproveitadas do OSWork v2. Progresso e notas são separados por idioma.
 
